@@ -183,8 +183,13 @@
           punti += 4 - Math.abs(mie[id] - p.risposte[id]);
           contate += 1;
         });
-        return { p: p, quota: contate ? Math.round(100 * punti / (4 * contate)) : null };
-      }).filter(function (r) { return r.quota !== null && risposte; })
+        return { p: p, contate: contate, quota: contate ? Math.round(100 * punti / (4 * contate)) : null };
+      });
+      // Un partito entra in classifica solo se ha una posizione documentata su almeno il 60% delle tue risposte:
+      // altrimenti la percentuale dipenderebbe da troppo poche domande.
+      var soglia = Math.ceil(0.6 * risposte);
+      var fuori = classifica.filter(function (r) { return risposte && r.contate < soglia; });
+      classifica = classifica.filter(function (r) { return risposte && r.contate >= soglia; })
         .sort(function (a, b) { return b.quota - a.quota; });
       classifica.forEach(function (r) {
         var li = document.createElement("li");
@@ -200,6 +205,8 @@
         li.appendChild(nome); li.appendChild(barra); li.appendChild(numero);
         lista.appendChild(li);
       });
+      var nota = document.getElementById("fuori-classifica");
+      nota.textContent = fuori.length ? "Fuori classifica, perché non abbiamo trovato abbastanza posizioni documentate sulle domande a cui hai risposto: " + fuori.map(function (r) { return r.p.nome; }).join(", ") + "." : "";
       var sezione = document.getElementById("risultato-test");
       sezione.hidden = false;
       sezione.scrollIntoView({ behavior: "smooth" });

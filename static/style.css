@@ -445,3 +445,8 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .indicatori { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 6px; }
 .indicatori td { padding: 5px 4px; border-bottom: 1px solid var(--linea); vertical-align: top; }
 .fonti-domanda { margin: -4px 0 10px; font-size: 12px; color: var(--tenue); }
+.bollino-coro { display: inline-block; padding: 2px 8px; font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.02em; white-space: nowrap; border: 1px solid var(--testo); }
+.bollino-coro.coro-non_regge { background: var(--accento); color: var(--su-accento); border-color: var(--accento); }
+.bollino-coro.coro-a_meta { box-shadow: inset 0 0 0 1px var(--accento-linea); border-color: var(--accento-linea); }
+.bollino-coro.coro-regge { color: var(--testo-2); border-color: var(--linea-forte, var(--linea)); }
+@media (max-width: 600px) { .bollino-coro { font-size: 10px; padding: 2px 6px; } }
