@@ -93,5 +93,12 @@
   window.addEventListener("hashchange", apriPerAncora);
   // Senza ancora l'articolo si apre dall'inizio, anche se il browser ricorda la posizione della pagina precedente.
   if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
-  if (window.location.hash) apriPerAncora(); else window.scrollTo(0, 0);
+  if (window.location.hash) apriPerAncora();
+  else {
+    window.scrollTo(0, 0);
+    // Dentro una cornice (l'anteprima privata) a scorrere è la pagina che la contiene: chiediamo anche a lei di salire.
+    if (window.self !== window.top) {
+      try { document.documentElement.scrollIntoView({ block: "start" }); } catch (e) { /* niente */ }
+    }
+  }
 })();
