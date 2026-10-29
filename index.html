@@ -7,10 +7,11 @@
 <meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
 <script>
   (function () {
-    try {
-      var t = localStorage.getItem("contrappunto-tema");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    var t = null;
+    try { t = localStorage.getItem("contrappunto-tema"); } catch (e) {}
+    // Dove la memoria del browser è bloccata (anteprime, frame), la scelta viaggia nel nome della finestra.
+    if (!t) { var m = /(?:^|;)contrappunto-tema=(light|dark)/.exec(window.name || ""); if (m) t = m[1]; }
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
   })();
 </script>
 <link rel="stylesheet" href="static/style.css">
@@ -35,7 +36,8 @@
   <div class="contenitore">
     <ul id="menu">
       <li><a href="index.html" aria-current="page">Edizione</a></li>
-      <li><a href="promessometro/index.html">Promessometro</a></li>
+      <li><a href="parola-data/index.html">Parola data</a></li>
+      <li><a href="partiti/index.html">Partiti</a></li>
       <li><a href="storia/index.html">Accadde davvero?</a></li>
       <li><a href="fonti/index.html">Fonti</a></li>
       <li><a href="metodo.html">Metodo</a></li>
@@ -47,23 +49,76 @@
 <div class="riga-edizione">
   <span>29.10.2026</span>
   <span>EDIZIONE</span>
-  <span>0 STORIE</span>
+  <span>3 STORIE</span>
 </div>
 
-  <p class="vuoto">La redazione non ha ancora pubblicato le notizie di questa edizione. I primi turni partono con il collegamento delle fonti.</p>
+  <article class="storia-principale">
+    <div class="riga-meta"><span>01 / Europa</span><span class="bollino-consenso consenso-forte" title="Quanto concordano le testate che abbiamo confrontato">Le testate concordano</span></div>
+<a href="articoli/2026-10-29-lagarde-lascia-bce-bilancio.html"><img class="foto-home" src="immagini/2026-10-29-lagarde.jpg" alt="Christine Lagarde al microfono davanti alla bandiera dell&#39;Unione europea"></a>
+    <span class="credito-home">Foto: European Parliament from EU, CC BY 2.0</span>    <h2><a href="articoli/2026-10-29-lagarde-lascia-bce-bilancio.html">Lagarde lascia la BCE nove mesi prima: lo scudo per i BTP e l&#39;errore ammesso sull&#39;inflazione</a></h2>
+<p>Brava a spegnere gli incendi dello spread, in ritardo sui prezzi: e quel ritardo l&#39;hanno pagato stipendi e risparmi, non lo Stato.</p>    <div class="spettro" role="img" aria-label="Le testate che abbiamo confrontato, da sinistra a destra: Open, France 24">
+  <span class="titolo-spettro">Le testate che abbiamo confrontato, da sinistra a destra</span>
+  <div class="barra"><span class="punto" style="left: 50%" title="Open"></span><span class="punto" style="left: 50%" title="France 24"></span></div>
+  <div class="estremi"><span><span class="zona">Sinistra</span></span><span><span class="zona">Centro</span><span class="testata">Open</span><span class="testata">France 24</span></span><span><span class="zona">Destra</span></span></div>
+</div>
 
+  </article>
+  <article class="storia">
+    <span class="numero">02</span>
+    <div>
+      <div class="riga-meta"><span>Italia</span></div>
+      <h3><a href="articoli/2026-10-29-scarcerazione-milano-gip-meloni.html">Milano, la gip non convalida un fermo per istigazione: scontro tra Meloni e tribunale</a></h3>
+    </div>
+<a href="articoli/2026-10-29-scarcerazione-milano-gip-meloni.html"><img class="miniatura" src="immagini/2026-10-29-milano-giustizia.jpg" alt="" title="Foto: Paolobon140, CC BY-SA 4.0" loading="lazy"></a>  </article>
+  <article class="storia">
+    <span class="numero">03</span>
+    <div>
+      <div class="riga-meta"><span>Italia</span><span class="bollino-consenso consenso-diviso" title="Quanto concordano le testate che abbiamo confrontato">Le testate si dividono</span></div>
+      <h3><a href="articoli/2026-10-29-manovra-due-versioni.html">Manovra 2027: in Italia si parla di Irpef e bollo, all&#39;estero di tasse alle banche e deficit al 3,4%</a></h3>
+    </div>
+<a href="articoli/2026-10-29-manovra-due-versioni.html"><img class="miniatura" src="immagini/2026-10-29-manovra.jpg" alt="" title="Foto: DellaGherardesca, CC BY 4.0" loading="lazy"></a>  </article>
 
+<section class="scheda">
+  <span class="etichetta-sezione">In breve · le altre notizie del giorno</span>
+  <ul class="elenco-brevi">
+    <li>
+<a href="articoli/2026-10-29-israele-voto-senza-maggioranza.html" tabindex="-1" aria-hidden="true"><img class="miniatura" src="immagini/2026-10-29-israele.jpg" alt="" title="Foto: Clema12, CC BY-SA 4.0" loading="lazy"></a>      <div>
+        <a class="titolo-breve" href="articoli/2026-10-29-israele-voto-senza-maggioranza.html">Israele, nessuno schieramento arriva a 61 seggi e lo spoglio non è finito</a>
+<p>Mancano centinaia di migliaia di schede e c&#39;è già chi grida al furto. Prima si conta, poi si accusa.</p>      </div>
+    </li>
+    <li>
+<a href="articoli/2026-10-29-fed-bce-tassi-mutui.html" tabindex="-1" aria-hidden="true"><img class="miniatura" src="immagini/2026-10-29-fed.jpg" alt="" title="Foto: Federalreserve, Public domain" loading="lazy"></a>      <div>
+        <a class="titolo-breve" href="articoli/2026-10-29-fed-bce-tassi-mutui.html">La Fed e la BCE lasciano i tassi fermi: cosa cambia per i mutui</a>
+<p>La BCE si ferma con l&#39;inflazione quasi al doppio dell&#39;obiettivo. Nel 2021 l&#39;energia era «temporanea» e l&#39;hanno pagata i più poveri: stavolta meglio alzare presto che tardi.</p>      </div>
+    </li>
+    <li>
+<a href="articoli/2026-10-29-dnipro-abu-dhabi-europa-divisa.html" tabindex="-1" aria-hidden="true"><img class="miniatura" src="immagini/2026-10-29-dnipro.jpg" alt="" title="Foto: VKras, CC BY-SA 4.0" loading="lazy"></a>      <div>
+        <a class="titolo-breve" href="articoli/2026-10-29-dnipro-abu-dhabi-europa-divisa.html">Dnipro, 13 morti alla stazione. Il Cremlino: colloqui a tre ad Abu Dhabi dopo il 4 novembre</a>
+<p>Mosca decide quando si tratta. L&#39;Europa non è al tavolo e litiga su chi ha chiamato Putin.</p>      </div>
+    </li>
+    <li>
+<a href="articoli/2026-10-29-bolsonaro-passaporto-italiano.html" tabindex="-1" aria-hidden="true"><img class="miniatura" src="immagini/2026-10-29-bolsonaro.jpg" alt="" title="Foto: Agência Senado from Brasilia, Brazil, CC BY 2.0" loading="lazy"></a>      <div>
+        <a class="titolo-breve" href="articoli/2026-10-29-bolsonaro-passaporto-italiano.html">Flávio Bolsonaro si dice «vero presidente» dagli Stati Uniti. Per Tajani ha il passaporto italiano</a>
+<p>Conta se le carte erano in regola, non da che parte sta chi le ha presentate.</p>      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="scheda">
+  <span class="etichetta-sezione">Osservatorio politico</span>
+  <h3><a href="articoli/2026-10-29-pensioni-eta-durigon.html">Pensioni, Durigon: «nessun aumento dell&#39;età nel 2027». La legge: un mese in più dal 2027</a></h3>
+</section>
 
 
 
 <section class="scheda">
-  <span class="etichetta-sezione">Promessometro</span>
-  <h3><a href="promessometro/index.html">Le promesse di undici governi, verificate sugli atti</a></h3>
+  <span class="etichetta-sezione">Parola data</span>
+  <h3><a href="parola-data/index.html">Undici governi: cosa avevano promesso, cosa hanno fatto</a></h3>
 </section>
 
 <form class="modulo" action="#" method="post" onsubmit="return false">
   <h3>Il contrappunto delle 7</h3>
-  <p>Ogni mattina, in tre minuti, le notizie del giorno con la pagella delle fonti.</p>
+  <p>Ogni mattina, in tre minuti, le notizie del giorno con il punteggio delle fonti.</p>
   <label for="email">Email</label>
   <div class="riga">
     <input id="email" name="email" type="email" autocomplete="email" placeholder="nome@esempio.it" required>

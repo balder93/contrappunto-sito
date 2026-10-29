@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Promessometro: Governo Draghi · Contrappunto</title>
+<title>Parola data: Governo Draghi · Contrappunto</title>
 <meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
 <script>
   (function () {
-    try {
-      var t = localStorage.getItem("contrappunto-tema");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    var t = null;
+    try { t = localStorage.getItem("contrappunto-tema"); } catch (e) {}
+    // Dove la memoria del browser è bloccata (anteprime, frame), la scelta viaggia nel nome della finestra.
+    if (!t) { var m = /(?:^|;)contrappunto-tema=(light|dark)/.exec(window.name || ""); if (m) t = m[1]; }
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
   })();
 </script>
 <link rel="stylesheet" href="../static/style.css">
@@ -35,7 +36,8 @@
   <div class="contenitore">
     <ul id="menu">
       <li><a href="../index.html">Edizione</a></li>
-      <li><a href="index.html" aria-current="page">Promessometro</a></li>
+      <li><a href="index.html" aria-current="page">Parola data</a></li>
+      <li><a href="../partiti/index.html">Partiti</a></li>
       <li><a href="../storia/index.html">Accadde davvero?</a></li>
       <li><a href="../fonti/index.html">Fonti</a></li>
       <li><a href="../metodo.html">Metodo</a></li>
@@ -45,7 +47,7 @@
 <main id="contenuto">
   <div class="contenitore">
 <div class="prosa">
-  <span class="etichetta-sezione">Osservatorio politico · Promessometro</span>
+  <span class="etichetta-sezione">Osservatorio politico · Parola data</span>
   <h1>Governo Draghi</h1>
   <p>Unità nazionale · XVIII legislatura · 13.02.2021–22.10.2022</p>
 </div>
@@ -69,20 +71,20 @@
   <pattern id="motivo-ribaltata" width="5" height="5" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="5" class="motivo-linea"></line><line x1="0" y1="0" x2="5" y2="0" class="motivo-linea"></line></pattern>
   <pattern id="motivo-respinta" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" class="motivo-punto"></circle></pattern>
 </defs></svg>
-  <svg viewBox="0 0 42 42" role="img" aria-label="Promesse per stato: 1 mantenute, 1 in parte, 0 in corso, 0 ferme, 0 infrante, 0 ribaltate, 0 respinte">
+  <svg viewBox="0 0 42 42" role="img" aria-label="Promesse per stato: 1 fatto, 1 fatto a metà, 0 in cantiere, 0 nel cassetto, 0 non fatto, 0 fatto il contrario, 0 bocciato">
     <circle cx="21" cy="21" r="15.9155" fill="none" class="svg-traccia" stroke-width="6"></circle>
     <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-mantenuta" stroke-width="6" stroke-dasharray="50.0 50.0" stroke-dashoffset="25.0"></circle>
     <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-parziale" stroke-width="6" stroke-dasharray="50.0 50.0" stroke-dashoffset="-25.0"></circle>
     <text x="21" y="21" text-anchor="middle" dominant-baseline="central" class="svg-totale">2</text>
   </svg>
   <ul class="legenda-stati">
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-mantenuta" stroke-width="1.5"></rect></svg><strong>1</strong> Mantenute</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-parziale" stroke-width="1.5"></rect></svg><strong>1</strong> In parte</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-in_corso" stroke-width="1.5"></rect></svg><strong>0</strong> In corso</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ferma" stroke-width="1.5"></rect></svg><strong>0</strong> Ferme</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-infranta" stroke-width="1.5"></rect></svg><strong>0</strong> Infrante</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ribaltata" stroke-width="1.5"></rect></svg><strong>0</strong> Ribaltate</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-respinta" stroke-width="1.5"></rect></svg><strong>0</strong> Respinte</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-mantenuta" stroke-width="1.5"></rect></svg><strong>1</strong> Fatto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-parziale" stroke-width="1.5"></rect></svg><strong>1</strong> Fatto a metà</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-in_corso" stroke-width="1.5"></rect></svg><strong>0</strong> In cantiere</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ferma" stroke-width="1.5"></rect></svg><strong>0</strong> Nel cassetto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-infranta" stroke-width="1.5"></rect></svg><strong>0</strong> Non fatto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ribaltata" stroke-width="1.5"></rect></svg><strong>0</strong> Fatto il contrario</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-respinta" stroke-width="1.5"></rect></svg><strong>0</strong> Bocciato</li>
   </ul>
 </div>
 <div class="filtri">
@@ -92,8 +94,8 @@
 <option value="giustizia">Giustizia</option><option value="infrastrutture">Infrastrutture</option>  </select>
   <span class="tenue mono" id="conteggio-promesse" aria-live="polite">2 promesse</span>
 </div>
-<article class="promessa" data-tema="infrastrutture">
-  <div class="riga-meta"><span>Infrastrutture</span><span class="bollino">Mantenuta</span></div>
+<article class="promessa" id="esempio-draghi-1" data-tema="infrastrutture">
+  <div class="riga-meta"><span>Infrastrutture</span><span class="bollino">Fatto</span></div>
   <h3>[Testo della promessa, dalle dichiarazioni programmatiche 2021]</h3>
   <div class="dettagli">
     <span>Fonte: [Discorso per la fiducia, Senato, febbraio 2021]</span>
@@ -101,8 +103,8 @@
     <span>Aggiornata il 29.10.2026</span>
   </div>
 </article>
-<article class="promessa" data-tema="giustizia">
-  <div class="riga-meta"><span>Giustizia</span><span class="bollino">In parte</span></div>
+<article class="promessa" id="esempio-draghi-2" data-tema="giustizia">
+  <div class="riga-meta"><span>Giustizia</span><span class="bollino">Fatto a metà</span></div>
   <h3>[Testo della promessa, dalle dichiarazioni programmatiche 2021]</h3>
   <div class="dettagli">
     <span>Fonte: [Discorso per la fiducia, Senato, febbraio 2021]</span>

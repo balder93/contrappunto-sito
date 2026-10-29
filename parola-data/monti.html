@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Promessometro: Governo Gentiloni · Contrappunto</title>
+<title>Parola data: Governo Monti · Contrappunto</title>
 <meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
 <script>
   (function () {
-    try {
-      var t = localStorage.getItem("contrappunto-tema");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    var t = null;
+    try { t = localStorage.getItem("contrappunto-tema"); } catch (e) {}
+    // Dove la memoria del browser è bloccata (anteprime, frame), la scelta viaggia nel nome della finestra.
+    if (!t) { var m = /(?:^|;)contrappunto-tema=(light|dark)/.exec(window.name || ""); if (m) t = m[1]; }
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
   })();
 </script>
 <link rel="stylesheet" href="../static/style.css">
@@ -35,7 +36,8 @@
   <div class="contenitore">
     <ul id="menu">
       <li><a href="../index.html">Edizione</a></li>
-      <li><a href="index.html" aria-current="page">Promessometro</a></li>
+      <li><a href="index.html" aria-current="page">Parola data</a></li>
+      <li><a href="../partiti/index.html">Partiti</a></li>
       <li><a href="../storia/index.html">Accadde davvero?</a></li>
       <li><a href="../fonti/index.html">Fonti</a></li>
       <li><a href="../metodo.html">Metodo</a></li>
@@ -45,19 +47,19 @@
 <main id="contenuto">
   <div class="contenitore">
 <div class="prosa">
-  <span class="etichetta-sezione">Osservatorio politico · Promessometro</span>
-  <h1>Governo Gentiloni</h1>
-  <p>Centrosinistra con alleati di centro · XVII legislatura · 12.12.2016–01.06.2018</p>
+  <span class="etichetta-sezione">Osservatorio politico · Parola data</span>
+  <h1>Governo Monti</h1>
+  <p>Tecnico · XVI legislatura · 16.11.2011–28.04.2013</p>
 </div>
 <nav class="selettore-governi" aria-label="Scegli il governo">
   <a href="meloni.html">Meloni</a>
   <a href="draghi.html">Draghi</a>
   <a href="conte-2.html">Conte II</a>
   <a href="conte-1.html">Conte I</a>
-  <a href="gentiloni.html" aria-current="page">Gentiloni</a>
+  <a href="gentiloni.html">Gentiloni</a>
   <a href="renzi.html">Renzi</a>
   <a href="letta.html">Letta</a>
-  <a href="monti.html">Monti</a>
+  <a href="monti.html" aria-current="page">Monti</a>
   <a href="berlusconi-4.html">Berlusconi IV</a>
   <a href="prodi-2.html">Prodi II</a>
 </nav>

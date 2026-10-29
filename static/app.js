@@ -1,4 +1,4 @@
-/* Contrappunto: tema chiaro/scuro, "solo i fatti", filtri del promessometro.
+/* Contrappunto: tema chiaro/scuro, "solo i fatti", filtri di «Parola data».
    Il sito funziona anche senza JavaScript: questo file aggiunge solo comodità. */
 (function () {
   "use strict";
@@ -8,6 +8,10 @@
   }
   function scrivi(chiave, valore) {
     try { window.localStorage.setItem(chiave, valore); } catch (e) { /* navigazione privata */ }
+    // Copia nel nome della finestra: sopravvive al cambio di pagina anche dove la memoria è bloccata.
+    var resto = (window.name || "").split(";").filter(function (v) { return v && v.indexOf(chiave + "=") !== 0; });
+    resto.push(chiave + "=" + valore);
+    window.name = resto.join(";");
   }
 
   // Tema: l'attributo è già impostato dallo script in <head>; qui solo il pulsante.
@@ -50,7 +54,7 @@
     });
   }
 
-  // Promessometro: filtro per tema.
+  // Parola data: filtro per tema.
   var filtro = document.getElementById("filtro-tema");
   if (filtro) {
     var conteggio = document.getElementById("conteggio-promesse");
@@ -76,4 +80,18 @@
       menu.hidden = aperto;
     });
   }
+  // Un rimando a una fonte o a un passaggio chiuso negli «ulteriori dettagli»: apri prima la tendina.
+  function apriPerAncora() {
+    var id = decodeURIComponent(window.location.hash.slice(1));
+    var bersaglio = id && document.getElementById(id);
+    if (!bersaglio) return;
+    for (var el = bersaglio; el; el = el.parentElement) {
+      if (el.tagName === "DETAILS") el.open = true;
+    }
+    bersaglio.scrollIntoView();
+  }
+  window.addEventListener("hashchange", apriPerAncora);
+  // Senza ancora l'articolo si apre dall'inizio, anche se il browser ricorda la posizione della pagina precedente.
+  if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
+  if (window.location.hash) apriPerAncora(); else window.scrollTo(0, 0);
 })();

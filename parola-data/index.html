@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Promessometro · Contrappunto</title>
+<title>Parola data · Contrappunto</title>
 <meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
 <script>
   (function () {
-    try {
-      var t = localStorage.getItem("contrappunto-tema");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    var t = null;
+    try { t = localStorage.getItem("contrappunto-tema"); } catch (e) {}
+    // Dove la memoria del browser è bloccata (anteprime, frame), la scelta viaggia nel nome della finestra.
+    if (!t) { var m = /(?:^|;)contrappunto-tema=(light|dark)/.exec(window.name || ""); if (m) t = m[1]; }
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
   })();
 </script>
 <link rel="stylesheet" href="../static/style.css">
@@ -35,7 +36,8 @@
   <div class="contenitore">
     <ul id="menu">
       <li><a href="../index.html">Edizione</a></li>
-      <li><a href="index.html" aria-current="page">Promessometro</a></li>
+      <li><a href="index.html" aria-current="page">Parola data</a></li>
+      <li><a href="../partiti/index.html">Partiti</a></li>
       <li><a href="../storia/index.html">Accadde davvero?</a></li>
       <li><a href="../fonti/index.html">Fonti</a></li>
       <li><a href="../metodo.html">Metodo</a></li>
@@ -46,8 +48,8 @@
   <div class="contenitore">
 <div class="prosa">
   <span class="etichetta-sezione">Osservatorio politico · 2006–oggi</span>
-  <h1>Promessometro</h1>
-  <p>Le promesse di undici governi, dalla XV legislatura a oggi, verificate sugli atti ufficiali: Gazzetta Ufficiale, iter parlamentari, decreti attuativi. Stesso metro per tutti.</p>
+  <h1>Parola data</h1>
+  <p>Quello che undici governi hanno promesso e quello che hanno fatto davvero, dalla XV legislatura a oggi. Lo controlliamo sugli atti ufficiali: Gazzetta Ufficiale, iter parlamentari, decreti attuativi. Stesso metro per tutti.</p>
 </div>
 <p class="avviso"><strong>Archivio in costruzione</strong>Il governo Meloni ha una prima estrazione di promesse vere, ancora da verificare sugli atti; gli altri governi mostrano segnaposto o sono vuoti.</p>
 <nav class="riassunto-governi" aria-label="Governi">

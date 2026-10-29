@@ -125,7 +125,7 @@ main { padding-bottom: 48px; }
 .storia-principale h2 { font-family: var(--titoli); font-size: clamp(28px, 7vw, 40px); line-height: 1.06; letter-spacing: -0.02em; margin: 10px 0; }
 .storia-principale h2 a, .storia h3 a { text-decoration: none; }
 .storia-principale p { margin: 0; color: var(--testo-2); }
-.storia { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 0 10px; padding: 18px 0; border-bottom: 1px solid var(--linea); }
+.storia { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; gap: 0 10px; padding: 18px 0; border-bottom: 1px solid var(--linea); }
 .storia .numero { font-family: var(--mono); font-size: 13px; color: var(--tenue); padding-top: 2px; }
 .storia h3 { margin: 4px 0 0; font-family: var(--titoli); font-size: 21px; line-height: 1.2; }
 .riga-meta { display: flex; justify-content: space-between; gap: 8px; font-family: var(--mono); font-size: 12px; color: var(--tenue); text-transform: uppercase; }
@@ -197,7 +197,7 @@ main { padding-bottom: 48px; }
 /* Modalità "solo i fatti" */
 body.solo-fatti .solo-opinione { display: none; }
 
-/* Promessometro */
+/* Parola data */
 .selettore-governi { display: flex; gap: 6px; overflow-x: auto; padding: 4px 0 8px; margin: 12px 0; }
 .selettore-governi a { flex: none; display: inline-flex; align-items: center; min-height: 40px; padding: 0 12px; border: 1px solid var(--linea-forte); font-family: var(--mono); font-size: 13px; text-decoration: none; text-transform: uppercase; }
 .selettore-governi a[aria-current="page"] { background: var(--inverso-sfondo); color: var(--inverso-testo); border-color: var(--inverso-sfondo); }
@@ -293,3 +293,80 @@ body.solo-fatti .solo-opinione { display: none; }
 
 mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 ::selection { background: var(--accento); color: var(--su-accento); }
+
+/* Il pezzo da leggere in cima: foto, articolo, tabella, partiti. La verifica sta negli ulteriori dettagli. */
+.firma-breve { margin: 8px 0 0; font-family: var(--mono); font-size: 12px; color: var(--tenue); }
+.foto-apertura { margin: 18px 0 0; }
+.foto-apertura img { display: block; width: 100%; max-height: 520px; object-fit: cover; object-position: center 25%; background: var(--superficie); }
+.foto-apertura figcaption { margin-top: 6px; font-size: 13px; color: var(--testo-2); }
+.foto-apertura .credito { display: block; font-family: var(--mono); font-size: 11px; color: var(--tenue); }
+.pezzo { margin: 22px 0 0; font-size: 18px; line-height: 1.6; }
+.pezzo p { margin: 0 0 14px; }
+.pezzo p:first-child { font-size: 20px; }
+.rimando { font-family: var(--mono); font-size: 11px; color: var(--tenue); text-decoration: none; }
+.sintesi, .partiti { margin-top: 22px; border: 1px solid var(--linea); }
+.sintesi .titolo-tabella, .partiti .titolo-tabella { padding: 10px 12px; border-bottom: 1px solid var(--linea); }
+.riga-sintesi { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 12px; border-bottom: 1px solid var(--linea); border-left: 4px solid var(--linea); }
+.riga-sintesi:last-child { border-bottom: 0; }
+.riga-sintesi .voce { font-weight: 700; }
+.riga-sintesi .giudizio { font-family: var(--mono); font-size: 12px; text-transform: uppercase; padding: 2px 6px; align-self: start; border: 1px solid var(--testo); }
+.riga-sintesi .perche { grid-column: 1 / -1; color: var(--testo-2); font-size: 15px; }
+.riga-sintesi.segno-positivo { border-left-color: var(--accento-linea); }
+.riga-sintesi.segno-positivo .giudizio { background: var(--accento); color: var(--su-accento); border-color: var(--accento); }
+.riga-sintesi.segno-negativo { border-left-color: var(--testo); }
+.riga-sintesi.segno-negativo .giudizio { background: var(--testo); color: var(--sfondo); }
+.riga-sintesi.segno-misto .giudizio { border-style: dashed; }
+.riga-sintesi.segno-aperto .giudizio { border-style: dotted; color: var(--tenue); }
+.nota-partiti { margin: 0; padding: 12px; border-bottom: 1px solid var(--linea); color: var(--testo-2); }
+.riga-partito { display: grid; grid-template-columns: 9.5em minmax(0, 1fr); gap: 12px; padding: 12px; border-bottom: 1px solid var(--linea); }
+.riga-partito:last-child { border-bottom: 0; }
+.riga-partito .partito { font-weight: 700; }
+.riga-partito p { margin: 0 0 6px; }
+.riga-partito .tenue { font-family: var(--mono); font-size: 11px; text-transform: uppercase; margin-right: 4px; }
+.riga-partito a.tenue { margin-left: 8px; }
+@media (max-width: 520px) { .riga-partito { grid-template-columns: 1fr; gap: 4px; } }
+.dettagli { margin-top: 28px; border-top: 2px solid var(--testo); }
+.dettagli > summary { cursor: pointer; display: flex; align-items: baseline; gap: 10px; padding: 14px 0; font-family: var(--mono); font-size: 13px; text-transform: uppercase; list-style: none; }
+.dettagli > summary::-webkit-details-marker { display: none; }
+.dettagli > summary::after { content: "+"; font-size: 18px; line-height: 1; }
+.dettagli[open] > summary::after { content: "−"; }
+.dettagli > summary .tenue { text-transform: none; flex: 1 1 auto; }
+.dettagli > summary::after { flex: none; }
+.elenco-fonti .dettagli { margin-top: 0; border-top: 1px solid var(--linea); }
+.foto-home { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin: 10px 0 12px; background: var(--superficie); }
+.storia .miniatura { width: 88px; height: 88px; object-fit: cover; flex: none; }
+.foto-home + .credito-home, .credito-home { display: block; font-family: var(--mono); font-size: 10px; color: var(--tenue); margin: -8px 0 10px; }
+.vedi-di-piu > summary { cursor: pointer; font-family: var(--mono); font-size: 12px; text-transform: uppercase; color: var(--testo-2); }
+.vedi-di-piu[open] > summary { margin-bottom: 10px; }
+.vedi-di-piu { display: flex; flex-direction: column; gap: 10px; }
+.in-breve ul { margin: 6px 0 0; }
+.pezzo .etichetta-sezione { display: block; margin-bottom: 8px; }
+.guida-verifica { margin: 0 0 12px; font-size: 14px; color: var(--testo-2); }
+.capitolo { margin: 26px 0 0; font-family: var(--titoli); font-size: 22px; line-height: 1.15; }
+.elenco-partiti, .elenco-promesse { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.elenco-partiti li { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: baseline; }
+.elenco-partiti .mono { width: 100%; font-size: 12px; }
+.posizione { padding: 12px 0; border-bottom: 1px solid var(--linea); }
+.posizione p { margin: 6px 0 0; }
+.posizione .collegamenti { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; font-size: 13px; }
+/* Le etichette delle parti da leggere: una lineetta sottile nel colore d'accento. */
+.contesto > .etichetta-sezione, .in-breve > .etichetta-sezione, .pezzo > .etichetta-sezione { display: inline-block; align-self: flex-start; padding-bottom: 3px; border-bottom: 2px solid var(--accento-linea); }
+/* In breve, in home: foto piccola, titolo, una riga di spiegazione. Tutte uguali. */
+.elenco-brevi { list-style: none; margin: 12px 0 0; padding: 0; }
+.elenco-brevi li { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 12px; align-items: start; padding: 12px 0; border-top: 1px solid var(--linea); }
+.elenco-brevi li:first-child { border-top: 0; padding-top: 4px; }
+.elenco-brevi .miniatura { display: block; width: 72px; height: 72px; object-fit: cover; }
+.elenco-brevi .miniatura.vuota { background: var(--linea); }
+.elenco-brevi .titolo-breve { font-weight: 700; line-height: 1.3; text-decoration: none; }
+.elenco-brevi .titolo-breve:hover { text-decoration: underline; }
+.elenco-brevi p { margin: 4px 0 0; font-size: 14px; color: var(--testo-2); line-height: 1.45; }
+.spettro .titolo-spettro { display: block; margin-bottom: 4px; font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--tenue); }
+.spettro .estremi > span { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.spettro .estremi > span:nth-child(2) { align-items: center; text-align: center; }
+.spettro .estremi > span:nth-child(3) { align-items: flex-end; text-align: right; }
+.spettro .zona { text-transform: uppercase; }
+.spettro .testata { font-family: var(--testo-font, inherit); font-size: 12px; color: var(--testo-2); }
+.bollino-consenso { display: inline-block; padding: 2px 8px; font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.02em; background: var(--accento); color: var(--su-accento); white-space: nowrap; }
+.bollino-consenso.consenso-forte { background: transparent; color: var(--testo); box-shadow: inset 0 0 0 1px var(--accento-linea); }
+.riga-consenso { margin: 8px 0 0; }
+.tesi-in-cima { margin: 22px 0 0; font-size: 18px; }

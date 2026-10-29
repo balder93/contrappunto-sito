@@ -7,10 +7,11 @@
 <meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
 <script>
   (function () {
-    try {
-      var t = localStorage.getItem("contrappunto-tema");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    var t = null;
+    try { t = localStorage.getItem("contrappunto-tema"); } catch (e) {}
+    // Dove la memoria del browser è bloccata (anteprime, frame), la scelta viaggia nel nome della finestra.
+    if (!t) { var m = /(?:^|;)contrappunto-tema=(light|dark)/.exec(window.name || ""); if (m) t = m[1]; }
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
   })();
 </script>
 <link rel="stylesheet" href="../static/style.css">
@@ -35,7 +36,8 @@
   <div class="contenitore">
     <ul id="menu">
       <li><a href="../index.html">Edizione</a></li>
-      <li><a href="../promessometro/index.html">Promessometro</a></li>
+      <li><a href="../parola-data/index.html">Parola data</a></li>
+      <li><a href="../partiti/index.html">Partiti</a></li>
       <li><a href="../storia/index.html">Accadde davvero?</a></li>
       <li><a href="index.html" aria-current="page">Fonti</a></li>
       <li><a href="../metodo.html">Metodo</a></li>
@@ -56,7 +58,7 @@
   <div><span>Controllo statale</span><span>No</span></div>
   <div><span>Paywall</span><span>No</span></div>
   <div><span>Punteggio medio</span><span>n/d</span></div>
-  <div><span>Articoli analizzati</span><span>0</span></div>
+  <div><span>Articoli analizzati</span><span>2</span></div>
 </div>
 <p class="tenue">Il punteggio compare dopo i primi articoli analizzati con il <a href="../metodo.html">metodo</a>. Il tasso di rettifica è mostrato a parte: correggersi è un merito.</p>
 <p><a href="https://www.ansa.it" rel="noopener">Sito della testata</a></p>  </div>

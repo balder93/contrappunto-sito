@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Promessometro: Governo Meloni · Contrappunto</title>
+<title>Parola data: Governo Meloni · Contrappunto</title>
 <meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
 <script>
   (function () {
-    try {
-      var t = localStorage.getItem("contrappunto-tema");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
+    var t = null;
+    try { t = localStorage.getItem("contrappunto-tema"); } catch (e) {}
+    // Dove la memoria del browser è bloccata (anteprime, frame), la scelta viaggia nel nome della finestra.
+    if (!t) { var m = /(?:^|;)contrappunto-tema=(light|dark)/.exec(window.name || ""); if (m) t = m[1]; }
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
   })();
 </script>
 <link rel="stylesheet" href="../static/style.css">
@@ -35,7 +36,8 @@
   <div class="contenitore">
     <ul id="menu">
       <li><a href="../index.html">Edizione</a></li>
-      <li><a href="index.html" aria-current="page">Promessometro</a></li>
+      <li><a href="index.html" aria-current="page">Parola data</a></li>
+      <li><a href="../partiti/index.html">Partiti</a></li>
       <li><a href="../storia/index.html">Accadde davvero?</a></li>
       <li><a href="../fonti/index.html">Fonti</a></li>
       <li><a href="../metodo.html">Metodo</a></li>
@@ -45,7 +47,7 @@
 <main id="contenuto">
   <div class="contenitore">
 <div class="prosa">
-  <span class="etichetta-sezione">Osservatorio politico · Promessometro</span>
+  <span class="etichetta-sezione">Osservatorio politico · Parola data</span>
   <h1>Governo Meloni</h1>
   <p>Centrodestra (FdI, Lega, FI, Noi Moderati) · XIX legislatura · 22.10.2022–in carica</p>
 </div>
@@ -64,7 +66,7 @@
 <p class="avviso"><strong>Prima estrazione, da verificare</strong>14 promesse ricostruite da fonti giornalistiche: il Notaio deve ancora confrontarle con il programma depositato e con la Gazzetta Ufficiale.</p>
 <div class="avviso copertura">
   <strong>Elenco incompleto</strong>
-<p>Qui ci sono 14 promesse; <a href="https://pagellapolitica.it/articoli/promessometro-promesse-quattro-anni-governo-meloni" rel="noopener">Promessometro di Pagella Politica</a> ne censisce 100. Finché l'inventario non è chiuso, il grafico racconta solo una parte del governo.</p><p>Sappiamo che mancano ancora:</p>
+<p>Qui ci sono 14 promesse; <a href="https://pagellapolitica.it/articoli/«Parola data»-promesse-quattro-anni-governo-meloni" rel="noopener">Parola data di Pagella Politica</a> ne censisce 100. Finché l'inventario non è chiuso, il grafico racconta solo una parte del governo.</p><p>Sappiamo che mancano ancora:</p>
   <ul><li>Riduzione automatica di IVA e accise su energia e carburanti quando aumentano le entrate dello Stato</li><li>Riduzione della pressione fiscale</li><li>Estensione della flat tax a famiglie e imprese</li><li>Abbattimento delle liste d&#39;attesa nella sanità</li></ul><p>Il programma depositato non è ancora stato letto per intero.</p></div>
 <div class="grafico-promesse">
   <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false"><defs>
@@ -73,7 +75,7 @@
   <pattern id="motivo-ribaltata" width="5" height="5" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="5" class="motivo-linea"></line><line x1="0" y1="0" x2="5" y2="0" class="motivo-linea"></line></pattern>
   <pattern id="motivo-respinta" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" class="motivo-punto"></circle></pattern>
 </defs></svg>
-  <svg viewBox="0 0 42 42" role="img" aria-label="Promesse per stato: 3 mantenute, 3 in parte, 3 in corso, 3 ferme, 1 infrante, 0 ribaltate, 1 respinte">
+  <svg viewBox="0 0 42 42" role="img" aria-label="Promesse per stato: 3 fatto, 3 fatto a metà, 3 in cantiere, 3 nel cassetto, 1 non fatto, 0 fatto il contrario, 1 bocciato">
     <circle cx="21" cy="21" r="15.9155" fill="none" class="svg-traccia" stroke-width="6"></circle>
     <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-mantenuta" stroke-width="6" stroke-dasharray="21.429 78.571" stroke-dashoffset="25.0"></circle>
     <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-parziale" stroke-width="6" stroke-dasharray="21.429 78.571" stroke-dashoffset="3.571"></circle>
@@ -84,13 +86,13 @@
     <text x="21" y="21" text-anchor="middle" dominant-baseline="central" class="svg-totale">14</text>
   </svg>
   <ul class="legenda-stati">
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-mantenuta" stroke-width="1.5"></rect></svg><strong>3</strong> Mantenute</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-parziale" stroke-width="1.5"></rect></svg><strong>3</strong> In parte</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-in_corso" stroke-width="1.5"></rect></svg><strong>3</strong> In corso</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ferma" stroke-width="1.5"></rect></svg><strong>3</strong> Ferme</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-infranta" stroke-width="1.5"></rect></svg><strong>1</strong> Infrante</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ribaltata" stroke-width="1.5"></rect></svg><strong>0</strong> Ribaltate</li>
-    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-respinta" stroke-width="1.5"></rect></svg><strong>1</strong> Respinte</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-mantenuta" stroke-width="1.5"></rect></svg><strong>3</strong> Fatto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-parziale" stroke-width="1.5"></rect></svg><strong>3</strong> Fatto a metà</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-in_corso" stroke-width="1.5"></rect></svg><strong>3</strong> In cantiere</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ferma" stroke-width="1.5"></rect></svg><strong>3</strong> Nel cassetto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-infranta" stroke-width="1.5"></rect></svg><strong>1</strong> Non fatto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ribaltata" stroke-width="1.5"></rect></svg><strong>0</strong> Fatto il contrario</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-respinta" stroke-width="1.5"></rect></svg><strong>1</strong> Bocciato</li>
   </ul>
 </div>
 <div class="filtri">
@@ -100,8 +102,8 @@
 <option value="energia">Energia</option><option value="esteri_difesa">Esteri e difesa</option><option value="fisco">Fisco</option><option value="giustizia">Giustizia</option><option value="immigrazione">Immigrazione</option><option value="infrastrutture">Infrastrutture</option><option value="pensioni">Pensioni</option><option value="riforme_istituzionali">Riforme istituzionali</option><option value="welfare">Welfare</option>  </select>
   <span class="tenue mono" id="conteggio-promesse" aria-live="polite">14 promesse</span>
 </div>
-<article class="promessa" data-tema="fisco">
-  <div class="riga-meta"><span>Fisco · da verificare</span><span class="bollino">In parte</span></div>
+<article class="promessa" id="meloni-flat-tax-partite-iva" data-tema="fisco">
+  <div class="riga-meta"><span>Fisco · da verificare</span><span class="bollino">Fatto a metà</span></div>
   <h3>Estendere la flat tax per le partite IVA fino a 100.000 euro di fatturato.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, capitolo sul fisco</span>
@@ -109,8 +111,8 @@
 <span>Atto: Legge di bilancio 2023: soglia del regime forfettario portata da 65.000 a 85.000 euro</span><span>Atto: Manovra 2027: il progetto approvato dal Consiglio dei ministri prevede l&#39;estensione a 100.000 euro (non ancora legge)</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <div class="collegamenti"><a href="https://www.quotidiano.net/elezioni/centrodestra-programma-elettorale-2022-1.7973186" rel="noopener">Il programma del centrodestra in 15 punti (Quotidiano.net)</a><a href="https://www.fiscoetasse.com/rassegna-stampa/33230-forfettari-lue-autorizza-la-soglia-di-accesso-a-85000-euro.html" rel="noopener">Forfettari: l&#39;UE autorizza la soglia a 85.000 euro (FiscoeTasse)</a><a href="https://www.informazionefiscale.it/flat-tax-100000-partite-iva-novita-regime-forfettario-manovra-2027" rel="noopener">Flat tax fino a 100.000 euro nella Manovra 2027 (InformazioneFiscale)</a></div></article>
-<article class="promessa" data-tema="pensioni">
-  <div class="riga-meta"><span>Pensioni · Lega · da verificare</span><span class="bollino tenue">Ferma</span></div>
+<article class="promessa" id="meloni-quota-41" data-tema="pensioni">
+  <div class="riga-meta"><span>Pensioni · Lega · da verificare</span><span class="bollino tenue">Nel cassetto</span></div>
   <h3>Come primo intervento in Parlamento, superare la legge Fornero e introdurre Quota 41 per tutti.</h3>
   <div class="dettagli">
     <span>Fonte: Campagna elettorale 2022 della Lega: annuncio di Matteo Salvini del 31 agosto 2022 (riportato da Money.it); Quota 41 per tutti era anche nel programma elettorale della Lega (Pmi.it). Non è nel programma comune del centrodestra, che parla solo di «flessibilità in uscita».</span>
@@ -118,8 +120,8 @@
 <span>Atto: Legge 11 dicembre 2016 n. 232, art. 1 c. 199: Quota 41 esiste dal 2017 solo per i lavoratori precoci in condizioni di tutela, non per tutti</span><span>Atto: Legge 30 dicembre 2025 n. 199 (bilancio 2026): Quota 103 e Opzione donna non prorogate</span><span>Atto: Legge 30 dicembre 2025 n. 199, art. 1 c. 185: i requisiti di pensionamento salgono di un mese dal 1° gennaio 2027 e di tre mesi complessivi dal 2028 (adeguamento alla speranza di vita, decreto direttoriale MEF-Lavoro del 19 dicembre 2025); istruzioni nella circolare INPS n. 28 del 16 marzo 2026</span><span>Atto: Disegno di legge di bilancio 2027 approvato dal Consiglio dei ministri il 28 ottobre 2026: fondo da 850 milioni per l&#39;uscita anticipata, con requisiti e platea rinviati a un decreto atteso a gennaio; nessuna Quota 41 per tutti (non ancora legge, testo da leggere quando sarà depositato in Parlamento)</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Attribuzione corretta il 29 ottobre 2026: prima la promessa era attribuita al programma comune del centrodestra, ma è della Lega (segnalazione dell&#39;Ispettore). Meloni, nelle dichiarazioni programmatiche alla Camera del 25 ottobre 2022, non si impegnò su Quota 41 e parlò di flessibilità in uscita «compatibile con la tenuta del sistema». La legislatura non è finita: la promessa è ferma, non formalmente abbandonata; la manovra 2027 può ancora cambiare in Parlamento. Le parole esatte di Salvini del 31 agosto 2022 vanno ancora riscontrate su una fonte primaria (agenzia o video).</p><div class="collegamenti"><a href="https://www.money.it/pensioni-addio-fornero-avvio-quota-41-difficolta-passare-promesse-fatti" rel="noopener">Pensioni: addio Fornero e avvio di Quota 41, la difficoltà di passare dalle promesse ai fatti (Money.it)</a><a href="https://www.pmi.it/economia/mercati/390337/riforma-pensioni-i-programmi-elettorali-a-confronto.html" rel="noopener">Riforma pensioni, i programmi elettorali a confronto (Pmi.it)</a><a href="https://pagellapolitica.it/articoli/pensioni-confronto-programmi-elezioni-2022" rel="noopener">Pensioni: i programmi dei partiti a confronto (Pagella Politica)</a><a href="https://www.ipsoa.it/documents/quotidiano/2026/03/17/adeguamento-speranza-vita-biennio-2027-2028" rel="noopener">Adeguamento della speranza di vita, biennio 2027-2028: la circolare INPS (Ipsoa)</a><a href="https://borsaefinanza.it/pensioni-2027-manovra-fondo-uscita-64-anni-rivalutazione/" rel="noopener">Pensioni, cosa cambia con la manovra 2027 (Borsa&amp;Finanza)</a><a href="https://www.businessonline.it/news/pensioni-nuova-quota-100-e-uscita-a-64-anni-rimandate-confermato-voucher-di-300-euro-per-cure-mediche-in-manovra_n88411.html" rel="noopener">Pensioni, nuova quota 100 e uscita a 64 anni rimandate (Businessonline)</a><a href="https://www.pmi.it/economia/lavoro/498653/riforma-pensioni-manovra.html" rel="noopener">Riforma pensioni 2027: cosa prevede la Manovra (Pmi.it)</a></div></article>
-<article class="promessa" data-tema="welfare">
-  <div class="riga-meta"><span>Welfare · da verificare</span><span class="bollino">Mantenuta</span></div>
+<article class="promessa" id="meloni-reddito-di-cittadinanza" data-tema="welfare">
+  <div class="riga-meta"><span>Welfare · da verificare</span><span class="bollino">Fatto</span></div>
   <h3>Sostituire il reddito di cittadinanza con misure più efficaci di inclusione sociale e di politiche attive di formazione e inserimento nel lavoro.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022</span>
@@ -127,8 +129,8 @@
 <span>Atto: Legge di bilancio 2023: fine del reddito di cittadinanza dal 1° gennaio 2024</span><span>Atto: Decreto-legge 4 maggio 2023 n. 48, convertito dalla legge 3 luglio 2023 n. 85: Assegno di inclusione e Supporto per la formazione e il lavoro</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Mantenuta nella forma. Se le nuove misure siano «più efficaci» è un&#39;altra domanda, che riguarda il conto economico.</p><div class="collegamenti"><a href="https://tg24.sky.it/economia/2023/12/19/reddito-cittadinanza-assegno-inclusione-supporto-formazione-lavoro" rel="noopener">Stop al Rdc, quanto costeranno Assegno d&#39;inclusione e Supporto (Sky TG24)</a><a href="https://www.cgil.it/ci-occupiamo-di/poverta/abolito-il-reddito-di-cittadinanza-il-governo-ha-introdotto-lassegno-di-inclusione-vieni-in-cgil-per-conoscere-i-tuoi-diritti-ckfxdrpf" rel="noopener">Abolito il reddito di cittadinanza (CGIL)</a></div></article>
-<article class="promessa" data-tema="riforme_istituzionali">
-  <div class="riga-meta"><span>Riforme istituzionali · da verificare</span><span class="bollino tenue">Ferma</span></div>
+<article class="promessa" id="meloni-elezione-diretta-capo-dello-stato" data-tema="riforme_istituzionali">
+  <div class="riga-meta"><span>Riforme istituzionali · da verificare</span><span class="bollino tenue">Nel cassetto</span></div>
   <h3>Riforma della Costituzione con l&#39;elezione diretta del Presidente della Repubblica.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, capitolo sulle riforme istituzionali</span>
@@ -136,8 +138,8 @@
 <span>Atto: Il governo ha presentato invece il premierato, l&#39;elezione diretta del presidente del Consiglio: approvato dal Senato in prima lettura, esame non concluso alla Camera</span><span>Atto: Legge elettorale approvata l&#39;8 ottobre 2026: le coalizioni indicano il candidato premier, che però non compare sulla scheda</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Le fonti datano il voto del Senato sul premierato al 18 giugno 2024 o al 18 giugno 2025: va verificato sul sito del Senato.</p><div class="collegamenti"><a href="https://pagellapolitica.it/articoli/contenuto-riforma-costituzione-premierato-elezione-diretta-presidente-consiglio" rel="noopener">Che cosa prevede la riforma del premierato (Pagella Politica)</a><a href="https://www.ilpost.it/2026/10/08/approvata-riforma-elettorale-camera/" rel="noopener">Approvata la nuova legge elettorale (Il Post)</a></div></article>
-<article class="promessa" data-tema="riforme_istituzionali">
-  <div class="riga-meta"><span>Riforme istituzionali · da verificare</span><span class="bollino tratteggiato">In corso</span></div>
+<article class="promessa" id="meloni-autonomie" data-tema="riforme_istituzionali">
+  <div class="riga-meta"><span>Riforme istituzionali · da verificare</span><span class="bollino tratteggiato">In cantiere</span></div>
   <h3>Accrescere le autonomie territoriali.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, capitolo sulle riforme istituzionali</span>
@@ -145,8 +147,8 @@
 <span>Atto: Legge n. 86 del 2024 sull&#39;autonomia differenziata</span><span>Atto: Corte costituzionale, sentenza n. 192 del 2024: legge non illegittima nel complesso, ma alcune disposizioni sì</span><span>Atto: Corte costituzionale, sentenza n. 10 del 2025: inammissibile il referendum abrogativo</span><span>Atto: 28 ottobre 2026: il governo approva i disegni di legge di intesa con Liguria, Lombardia, Piemonte e Veneto</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <div class="collegamenti"><a href="https://www.cortecostituzionale.it/scheda-pronuncia/2024/192" rel="noopener">Sentenza n. 192 del 2024 (Corte costituzionale)</a><a href="https://www.altalex.com/documents/news/2026/10/28/autonomia-differenziata-il-governo-approva-i-disegni-di-legge-per-quattro-regioni" rel="noopener">Il Governo approva i disegni di legge per quattro regioni (Altalex)</a></div></article>
-<article class="promessa" data-tema="giustizia">
-  <div class="riga-meta"><span>Giustizia · da verificare</span><span class="bollino tratteggiato">Respinta</span></div>
+<article class="promessa" id="meloni-riforma-giustizia" data-tema="giustizia">
+  <div class="riga-meta"><span>Giustizia · da verificare</span><span class="bollino tratteggiato">Bocciato</span></div>
   <h3>Riforma della giustizia.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022</span>
@@ -154,8 +156,8 @@
 <span>Atto: Referendum costituzionale del 22-23 marzo 2026: vince il No, la riforma non entra in vigore</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Gli interventi minori in materia di giustizia non sono conteggiati qui. Le fonti danno percentuali leggermente diverse del No (53-54%), tutte sopra la metà.</p><div class="collegamenti"><a href="https://www.youtrend.it/2026/03/23/referendum-giustizia-2026-risultati/" rel="noopener">Referendum giustizia 2026, vince il No (YouTrend)</a><a href="https://pagellapolitica.it/articoli/vittoria-no-referendum-giustizia" rel="noopener">Il No ha vinto il referendum sulla giustizia (Pagella Politica)</a></div></article>
-<article class="promessa" data-tema="infrastrutture">
-  <div class="riga-meta"><span>Infrastrutture · da verificare</span><span class="bollino tratteggiato">In corso</span></div>
+<article class="promessa" id="meloni-ponte-stretto" data-tema="infrastrutture">
+  <div class="riga-meta"><span>Infrastrutture · da verificare</span><span class="bollino tratteggiato">In cantiere</span></div>
   <h3>Realizzare il Ponte sullo Stretto di Messina.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, capitolo sulle infrastrutture</span>
@@ -163,8 +165,8 @@
 <span>Atto: Delibera CIPESS n. 41 del 6 agosto 2025 di approvazione del progetto</span><span>Atto: Corte dei conti: visto negato tra ottobre e novembre 2025 (deliberazione n. 19/2025/PREV)</span><span>Atto: Autunno 2026: nuovo passaggio al CIPESS; cantieri non ancora avviati</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Le fonti non concordano sulla data esatta del diniego della Corte dei conti.</p><div class="collegamenti"><a href="https://www.ingenio-web.it/articoli/ponte-sullo-stretto-la-corte-dei-conti-nega-il-visto-e-ora/" rel="noopener">Ponte sullo Stretto, la Corte dei conti nega il visto (Ingenio)</a><a href="https://www.strettoweb.com/2026/10/ponte-sullo-stretto-vertice-al-mit-con-salvini-e-giorgetti-il-progetto-verso-il-nuovo-passaggio-al-cipess/2153450/" rel="noopener">Vertice al MIT: il progetto verso il nuovo passaggio al CIPESS (StrettoWeb)</a></div></article>
-<article class="promessa" data-tema="energia">
-  <div class="riga-meta"><span>Energia · da verificare</span><span class="bollino tratteggiato">In corso</span></div>
+<article class="promessa" id="meloni-nucleare" data-tema="energia">
+  <div class="riga-meta"><span>Energia · da verificare</span><span class="bollino tratteggiato">In cantiere</span></div>
   <h3>Ricorrere all&#39;energia nucleare.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, capitolo sull&#39;energia</span>
@@ -172,8 +174,8 @@
 <span>Atto: Legge delega sul nucleare sostenibile: approvata dalla Camera il 4 giugno 2026 e in via definitiva dal Senato il 23 settembre 2026</span><span>Atto: Il governo ha 12 mesi per i decreti legislativi; la legge non autorizza di per sé nuove centrali</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <div class="collegamenti"><a href="https://www.open.online/2026/09/23/legge-nucleare-voto-definitivo-senato-cosa-prevede/" rel="noopener">Via libera definitivo alla legge sul ritorno del nucleare (Open)</a></div></article>
-<article class="promessa" data-tema="pensioni">
-  <div class="riga-meta"><span>Pensioni · Forza Italia · da verificare</span><span class="bollino pieno">Infranta</span></div>
+<article class="promessa" id="meloni-pensioni-minime-1000" data-tema="pensioni">
+  <div class="riga-meta"><span>Pensioni · Forza Italia · da verificare</span><span class="bollino pieno">Non fatto</span></div>
   <h3>Portare le pensioni minime a 1.000 euro al mese.</h3>
   <div class="dettagli">
     <span>Fonte: Campagna elettorale 2022 di Forza Italia (Silvio Berlusconi); rilanciata da Antonio Tajani per il 2025</span>
@@ -181,8 +183,8 @@
 <span>Atto: Manovra 2026: aumento della maggiorazione di circa 20 euro al mese</span><span>Atto: Forza Italia chiede ora di portare le minime a 800-850 euro con la manovra 2027</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Non è nel programma unitario della coalizione: è una promessa di un partito della maggioranza.</p><div class="collegamenti"><a href="https://lespresso.it/c/politica/2025/10/22/meloni-3-anni-governo-promesse-non-mantenute/57778" rel="noopener">Tre anni di governo Meloni, tre anni di promesse non mantenute (L&#39;Espresso)</a><a href="https://www.brocardi.it/notizie-giuridiche/pensione-arrivo-aumento-della-minima-fino-euro-invece-euro-ecco-nuova/7447.html" rel="noopener">Pensione minima fino a 850 euro: la nuova proposta (Brocardi)</a></div></article>
-<article class="promessa" data-tema="immigrazione">
-  <div class="riga-meta"><span>Immigrazione · Fratelli d&#39;Italia · da verificare</span><span class="bollino tenue">Ferma</span></div>
+<article class="promessa" id="meloni-blocco-navale" data-tema="immigrazione">
+  <div class="riga-meta"><span>Immigrazione · Fratelli d&#39;Italia · da verificare</span><span class="bollino tenue">Nel cassetto</span></div>
   <h3>Blocco navale: una missione militare europea, in accordo con le autorità libiche, per impedire la partenza dei barconi verso l&#39;Italia.</h3>
   <div class="dettagli">
     <span>Fonte: Campagna elettorale 2022 di Fratelli d&#39;Italia (Giorgia Meloni)</span>
@@ -190,8 +192,8 @@
 <span>Atto: Nessuna missione di blocco delle partenze avviata dal 2022</span><span>Atto: 11 febbraio 2026: il Consiglio dei ministri approva un disegno di legge sull&#39;immigrazione che chiama «blocco navale» il divieto temporaneo di entrare nelle acque territoriali italiane (fino a 30 giorni, prorogabili fino a sei mesi; multe da 10.000 a 50.000 euro)</span><span>Atto: Maggio 2026: il disegno di legge inizia l&#39;esame al Senato, in commissione Affari costituzionali; non è ancora legge</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Il governo presenta il disegno di legge come «promessa mantenuta», ma lo strumento è un altro: la promessa era fermare le partenze dall&#39;Africa, il testo vieta l&#39;ingresso nelle acque italiane, soprattutto alle navi delle ONG. Se diventerà legge non cambierà questo giudizio, salvo una missione davvero sulle partenze. Il programma unitario della coalizione non usava le parole «blocco navale», ma «blocco degli sbarchi» (voce a parte). Lo stato dell&#39;esame parlamentare a ottobre 2026 va verificato sul sito del Senato.</p><div class="collegamenti"><a href="https://pagellapolitica.it/articoli/promessa-fdi-blocco-navale" rel="noopener">I fatti dietro la promessa: il blocco navale di Fratelli d&#39;Italia (Pagella Politica)</a><a href="https://www.agi.it/politica/news/2022-08-28/migranti-meloni-contro-sbarchi-blocco-navale-con-missione-ue-17881463/" rel="noopener">Meloni rilancia il blocco navale con missione Ue (AGI, 2022)</a><a href="https://www.ilpost.it/2026/02/11/governo-approva-ddl-accoglienza-migranti/" rel="noopener">Il governo ha approvato un disegno di legge che limita l&#39;accoglienza dei migranti (Il Post)</a><a href="https://www.altalex.com/documents/news/2026/02/18/disegno-legge-blocco-navale" rel="noopener">Il disegno di legge sul c.d. blocco navale (Altalex)</a><a href="https://ilmanifesto.it/al-via-in-senato-il-ddl-immigrazione" rel="noopener">Al via in Senato il ddl Immigrazione (il manifesto)</a></div></article>
-<article class="promessa" data-tema="immigrazione">
-  <div class="riga-meta"><span>Immigrazione · da verificare</span><span class="bollino">In parte</span></div>
+<article class="promessa" id="meloni-blocco-sbarchi" data-tema="immigrazione">
+  <div class="riga-meta"><span>Immigrazione · da verificare</span><span class="bollino">Fatto a metà</span></div>
   <h3>Difesa dei confini nazionali ed europei, con controllo delle frontiere e blocco degli sbarchi per fermare, in accordo con le autorità del Nord Africa, la tratta degli esseri umani.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, capitolo sull&#39;immigrazione</span>
@@ -199,8 +201,8 @@
 <span>Atto: 2023, primo anno intero del governo: circa 158 mila sbarchi, il picco della legislatura</span><span>Atto: 2024: 66.617 sbarchi; 2025: 66.316</span><span>Atto: 2026, al 17 agosto: circa 17.800 sbarchi, contro 39.116 nello stesso periodo del 2025 (dati del cruscotto del Viminale, provvisori)</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Gli sbarchi sono calati molto, ma dopo un primo anno da record e senza essere «bloccati». Quanto del calo dipenda dagli accordi con Tunisia e Libia e quanto da altri fattori è discusso: qui si registra il dato, non la causa. Le cifre dello stesso periodo degli anni precedenti cambiano leggermente da fonte a fonte; il riferimento è il cruscotto statistico del ministero dell&#39;Interno.</p><div class="collegamenti"><a href="https://pagellapolitica.it/articoli/immigrazione-confronto-programmi-elezioni-2022" rel="noopener">Immigrazione: i programmi dei partiti a confronto (Pagella Politica, 2022)</a><a href="https://www.dire.it/22-08-2022/778749-immigrazione-programmi-partiti-confronto/" rel="noopener">Niente blocco navale nel programma, ma «blocco degli sbarchi» (Dire)</a><a href="https://gds.it/articoli/cronaca/2026/08/10/migranti-crollano-gli-sbarchi-in-italia-17-mila-nel-2026-meno-della-meta-rispetto-al-2025-7a4dc6a0-edeb-4845-9c62-57617f22ed02/" rel="noopener">Crollano gli sbarchi: 17 mila nel 2026 (Giornale di Sicilia)</a><a href="https://www.umbertobertonelli.it/macro/sbarchi-rimpatri/" rel="noopener">Sbarchi e rimpatri: i numeri del ministero dell&#39;Interno</a></div></article>
-<article class="promessa" data-tema="immigrazione">
-  <div class="riga-meta"><span>Immigrazione · da verificare</span><span class="bollino">In parte</span></div>
+<article class="promessa" id="meloni-hotspot-extra-ue" data-tema="immigrazione">
+  <div class="riga-meta"><span>Immigrazione · da verificare</span><span class="bollino">Fatto a metà</span></div>
   <h3>Creazione di hotspot nei territori extra-europei, gestiti dall&#39;Unione europea, per valutare le richieste d&#39;asilo e distribuire in modo equo solo gli aventi diritto nei 27 paesi membri.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, capitolo sull&#39;immigrazione</span>
@@ -208,8 +210,8 @@
 <span>Atto: Protocollo Italia-Albania: centri di Shëngjin e Gjader, gestiti dall&#39;Italia e non dall&#39;UE</span><span>Atto: I trasferimenti dei richiedenti asilo sono stati bloccati dai giudici; Gjader è usato come centro per il rimpatrio (CPR) di persone già trattenute in Italia</span><span>Atto: Agosto 2025: la Corte di giustizia UE stabilisce che la designazione dei «paesi sicuri» deve poter essere controllata dai giudici</span><span>Atto: Aprile e giugno 2026: due avvocati generali della Corte UE giudicano i centri compatibili in linea di principio con il diritto europeo, a condizione che siano rispettate le garanzie; la sentenza non è ancora arrivata</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">Dei tre elementi promessi (fuori dall&#39;Europa, gestiti dall&#39;UE, redistribuzione tra i 27) se ne è realizzato uno. Ad aprile 2026 diversi titoli hanno scritto che la «Corte UE conferma» i centri: era il parere di un avvocato generale, non vincolante. Le nuove regole europee su asilo e rimpatri potrebbero cambiare il quadro.</p><div class="collegamenti"><a href="https://www.eunews.it/2022/08/30/creazione-hotspot-extra-ue-richieste-asilo-diritto-accesso-territorio-rifugiati/" rel="noopener">Hotspot extra-Ue e richieste d&#39;asilo nel programma del centrodestra (Eunews)</a><a href="https://www.ilpost.it/2026/06/11/centri-migranti-albania-nuove-regole-europee/" rel="noopener">I centri per migranti in Albania, fino a qui e d&#39;ora in poi (Il Post)</a><a href="https://www.ilfoglio.it/politica/2026/04/23/news/il-protocollo-italia-albania-e-compatibile-con-il-diritto-ue-dice-lavvocato-generale-della-corte-europea--286028" rel="noopener">Il protocollo Italia-Albania è compatibile con il diritto Ue, dice l&#39;avvocato generale (Il Foglio)</a><a href="https://pagellapolitica.it/articoli/corte-giustizia-conferma-legittimita-centri-albania" rel="noopener">È vero che la Corte di giustizia ha confermato la legittimità dei centri in Albania? (Pagella Politica)</a><a href="https://www.editorialedomani.it/fatti/centri-albania-cassazione-ribalta-sua-decisione-rinvia-corte-giustizia-ue-gtltcj7b" rel="noopener">La Cassazione rinvia alla Corte Ue: in bilico l&#39;operazione Albania (Domani)</a></div></article>
-<article class="promessa" data-tema="esteri_difesa">
-  <div class="riga-meta"><span>Esteri e difesa · da verificare</span><span class="bollino">Mantenuta</span></div>
+<article class="promessa" id="meloni-spesa-difesa-nato" data-tema="esteri_difesa">
+  <div class="riga-meta"><span>Esteri e difesa · da verificare</span><span class="bollino">Fatto</span></div>
   <h3>Rispetto degli impegni assunti nell&#39;Alleanza Atlantica, anche in merito all&#39;adeguamento degli stanziamenti per la difesa.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, punto 1 («Italia, a pieno titolo parte dell&#39;Europa, dell&#39;Alleanza Atlantica e dell&#39;Occidente»); pagina da verificare sul testo depositato</span>
@@ -217,8 +219,8 @@
 <span>Atto: Relazione annuale del Segretario generale della NATO (marzo 2026): stima preliminare per l&#39;Italia del 2,01% del PIL nel 2025, contro circa l&#39;1,5% del 2024</span><span>Atto: Documento programmatico di bilancio 2027 (ottobre 2026): attivazione della clausola di salvaguardia nazionale europea per maggiori spese per difesa ed energia; la manovra non è ancora legge</span>    <span>Aggiornata il 29.10.2026</span>
   </div>
 <p class="nota">I numeri non coincidono. Per la NATO l&#39;Italia è al 2,01% nel 2025 (stima preliminare); per il SIPRI, che usa un&#39;altra definizione, la spesa militare italiana è cresciuta di circa il 20% ma resta intorno all&#39;1,9% del PIL. L&#39;Osservatorio sui conti pubblici italiani (Università Cattolica) rileva che il salto dall&#39;1,5% al 2% in un anno trova poco riscontro in provvedimenti di spesa e dipende probabilmente in gran parte dalla riclassificazione di spese prima non contate come difesa. Il criterio è quindi soddisfatto sulla carta della NATO, mentre la quota di aumento reale è discussa. Dal vertice dell&#39;Aia del giugno 2025 l&#39;obiettivo NATO è cambiato (5% entro il 2035, di cui 3,5% per la difesa in senso stretto): è un impegno successivo al programma e non entra in questo criterio. Le cifre della manovra 2027 per la difesa variano da fonte a fonte e non si riportano finché non c&#39;è il testo.</p><div class="collegamenti"><a href="https://pagellapolitica.it/articoli/programmi-partiti-aumento-spese-militari-elezioni-2022" rel="noopener">Quali partiti vogliono aumentare le spese militari e quali no (Pagella Politica, 2022)</a><a href="https://www.money.it/programma-elettorale-centrodestra-elezioni-politiche-2022" rel="noopener">Programma centrodestra elezioni 2022 (Money.it)</a><a href="https://www.ansa.it/nuova_europa/en/news/sections/politics/2026/03/26/nato-estimates-that-italy-will-spend-2.01-of-its-gdp-on-defence_35affe63-9767-4ea3-8d35-5170a486f419.html" rel="noopener">NATO estimates that Italy will spend 2.01% of its GDP on defence (ANSA)</a><a href="https://osservatoriocpi.unicatt.it/ocpi-pubblicazioni-maggiori-spese-nato-dell-italia-e-riclassificazioni-un-aggiornamento" rel="noopener">Maggiori spese NATO dell&#39;Italia e riclassificazioni: un aggiornamento (OCPI)</a><a href="https://en.ilsole24ore.com/art/in-2025-military-expenditure-in-italy-grows-20-per-cent-but-is-below-2-per-cent-gdp-AIurgqkC" rel="noopener">In 2025 military expenditure in Italy grows 20 per cent but is below 2 per cent GDP (Il Sole 24 Ore)</a><a href="https://ilfoglio.it/economia/2026/03/27/news/l-italia-supera-il-2-per-cento-nato-riclassificando-spese-gia-esistenti-8838393/" rel="noopener">L&#39;Italia supera il 2 per cento Nato «riclassificando» spese già esistenti (Il Foglio)</a><a href="https://lespresso.it/c/economia/2026/10/15/dpb-manovra-cosa-prevede-quanti-soldi-difesa-sanita-rapporto-deficit-pil/65330" rel="noopener">Dpb e manovra: quanti soldi a difesa e sanità (L&#39;Espresso)</a></div></article>
-<article class="promessa" data-tema="esteri_difesa">
-  <div class="riga-meta"><span>Esteri e difesa · da verificare</span><span class="bollino">Mantenuta</span></div>
+<article class="promessa" id="meloni-sostegno-ucraina" data-tema="esteri_difesa">
+  <div class="riga-meta"><span>Esteri e difesa · da verificare</span><span class="bollino">Fatto</span></div>
   <h3>Sostegno all&#39;Ucraina di fronte all&#39;invasione della Federazione Russa.</h3>
   <div class="dettagli">
     <span>Fonte: Programma del centrodestra 2022, punto 1 («Italia, a pieno titolo parte dell&#39;Europa, dell&#39;Alleanza Atlantica e dell&#39;Occidente»); pagina da verificare sul testo depositato</span>
