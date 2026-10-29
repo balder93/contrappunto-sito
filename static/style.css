@@ -444,3 +444,4 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .tre-parti p { margin: 6px 0 0; }
 .indicatori { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 6px; }
 .indicatori td { padding: 5px 4px; border-bottom: 1px solid var(--linea); vertical-align: top; }
+.fonti-domanda { margin: -4px 0 10px; font-size: 12px; color: var(--tenue); }
