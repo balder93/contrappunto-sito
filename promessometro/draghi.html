@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Promessometro: Governo Draghi · Contrappunto</title>
+<meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("contrappunto-tema");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="../static/style.css">
+<script src="../static/app.js" defer></script>
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="../index.html" aria-label="Contrappunto, vai alla prima pagina">
+      <svg width="30" height="20" viewBox="0 0 30 20" aria-hidden="true"><path class="voce-1" d="M1 14 C 8 2, 14 2, 21 10 S 27 16, 29 6" fill="none" stroke-width="2"></path><path class="voce-2" d="M1 6 C 8 18, 14 18, 21 10 S 27 4, 29 14" fill="none" stroke-width="2"></path></svg>
+      <span>CONTRAPPUNTO</span>
+    </a>
+    <div class="strumenti">
+      <button class="pulsante-icona" id="cambia-tema" type="button" aria-label="Cambia tema" aria-pressed="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><path d="M11 3a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="menu" aria-label="Sezioni">
+  <div class="contenitore">
+    <ul id="menu">
+      <li><a href="../index.html">Edizione</a></li>
+      <li><a href="index.html" aria-current="page">Promessometro</a></li>
+      <li><a href="../storia/index.html">Accadde davvero?</a></li>
+      <li><a href="../fonti/index.html">Fonti</a></li>
+      <li><a href="../metodo.html">Metodo</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="contenuto">
+  <div class="contenitore">
+<div class="prosa">
+  <span class="etichetta-sezione">Osservatorio politico · Promessometro</span>
+  <h1>Governo Draghi</h1>
+  <p>Unità nazionale · XVIII legislatura · 13.02.2021–22.10.2022</p>
+</div>
+<nav class="selettore-governi" aria-label="Scegli il governo">
+  <a href="meloni.html">Meloni</a>
+  <a href="draghi.html" aria-current="page">Draghi</a>
+  <a href="conte-2.html">Conte II</a>
+  <a href="conte-1.html">Conte I</a>
+  <a href="gentiloni.html">Gentiloni</a>
+  <a href="renzi.html">Renzi</a>
+  <a href="letta.html">Letta</a>
+  <a href="monti.html">Monti</a>
+  <a href="berlusconi-4.html">Berlusconi IV</a>
+  <a href="prodi-2.html">Prodi II</a>
+</nav>
+<p class="avviso"><strong>Dati di esempio</strong>Queste promesse sono segnaposto per provare la pagina: nessuno stato è ancora verificato.</p>
+<div class="grafico-promesse">
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false"><defs>
+  <pattern id="motivo-in-corso" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" class="motivo-linea-tenue"></line></pattern>
+  <pattern id="motivo-infranta" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="5" class="motivo-linea"></line></pattern>
+  <pattern id="motivo-ribaltata" width="5" height="5" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="5" class="motivo-linea"></line><line x1="0" y1="0" x2="5" y2="0" class="motivo-linea"></line></pattern>
+  <pattern id="motivo-respinta" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" class="motivo-punto"></circle></pattern>
+</defs></svg>
+  <svg viewBox="0 0 42 42" role="img" aria-label="Promesse per stato: 1 mantenute, 1 in parte, 0 in corso, 0 ferme, 0 infrante, 0 ribaltate, 0 respinte">
+    <circle cx="21" cy="21" r="15.9155" fill="none" class="svg-traccia" stroke-width="6"></circle>
+    <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-mantenuta" stroke-width="6" stroke-dasharray="50.0 50.0" stroke-dashoffset="25.0"></circle>
+    <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-parziale" stroke-width="6" stroke-dasharray="50.0 50.0" stroke-dashoffset="-25.0"></circle>
+    <text x="21" y="21" text-anchor="middle" dominant-baseline="central" class="svg-totale">2</text>
+  </svg>
+  <ul class="legenda-stati">
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-mantenuta" stroke-width="1.5"></rect></svg><strong>1</strong> Mantenute</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-parziale" stroke-width="1.5"></rect></svg><strong>1</strong> In parte</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-in_corso" stroke-width="1.5"></rect></svg><strong>0</strong> In corso</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ferma" stroke-width="1.5"></rect></svg><strong>0</strong> Ferme</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-infranta" stroke-width="1.5"></rect></svg><strong>0</strong> Infrante</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ribaltata" stroke-width="1.5"></rect></svg><strong>0</strong> Ribaltate</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-respinta" stroke-width="1.5"></rect></svg><strong>0</strong> Respinte</li>
+  </ul>
+</div>
+<div class="filtri">
+  <label for="filtro-tema">Tema</label>
+  <select id="filtro-tema">
+    <option value="">Tutti i temi</option>
+<option value="giustizia">Giustizia</option><option value="infrastrutture">Infrastrutture</option>  </select>
+  <span class="tenue mono" id="conteggio-promesse" aria-live="polite">2 promesse</span>
+</div>
+<article class="promessa" data-tema="infrastrutture">
+  <div class="riga-meta"><span>Infrastrutture</span><span class="bollino">Mantenuta</span></div>
+  <h3>[Testo della promessa, dalle dichiarazioni programmatiche 2021]</h3>
+  <div class="dettagli">
+    <span>Fonte: [Discorso per la fiducia, Senato, febbraio 2021]</span>
+    <span>Criterio: [Criterio]</span>
+    <span>Aggiornata il 29.10.2026</span>
+  </div>
+</article>
+<article class="promessa" data-tema="giustizia">
+  <div class="riga-meta"><span>Giustizia</span><span class="bollino">In parte</span></div>
+  <h3>[Testo della promessa, dalle dichiarazioni programmatiche 2021]</h3>
+  <div class="dettagli">
+    <span>Fonte: [Discorso per la fiducia, Senato, febbraio 2021]</span>
+    <span>Criterio: [Criterio]</span>
+    <span>Aggiornata il 29.10.2026</span>
+  </div>
+</article>
+<form class="modulo" action="#" method="post" onsubmit="return false">
+  <h3>Allerta promesse</h3>
+  <p>Segui un partito, un politico o un tema: ti scriviamo quando una promessa cambia stato.</p>
+  <label for="email-allerta">Email</label>
+  <div class="riga">
+    <input id="email-allerta" name="email" type="email" autocomplete="email" placeholder="nome@esempio.it" required>
+    <button class="pulsante" type="submit">Attiva l'allerta</button>
+  </div>
+</form>
+  </div>
+</main>
+<footer class="piede">
+  <div class="contenitore">
+    <p>Niente pubblicità, niente partiti, niente soldi pubblici. Esistiamo solo se ci sostieni.</p>
+    <nav aria-label="Pagine di servizio">
+      <a href="../metodo.html">Il metodo</a>
+      <a href="../metodo.html#redazione">Come lavoriamo</a>
+      <a href="../sostieni.html">Sostieni</a>
+      <a href="../fonti/index.html">Le fonti</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

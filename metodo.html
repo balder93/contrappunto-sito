@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il metodo · Contrappunto</title>
+<meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("contrappunto-tema");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="static/style.css">
+<script src="static/app.js" defer></script>
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="index.html" aria-label="Contrappunto, vai alla prima pagina">
+      <svg width="30" height="20" viewBox="0 0 30 20" aria-hidden="true"><path class="voce-1" d="M1 14 C 8 2, 14 2, 21 10 S 27 16, 29 6" fill="none" stroke-width="2"></path><path class="voce-2" d="M1 6 C 8 18, 14 18, 21 10 S 27 4, 29 14" fill="none" stroke-width="2"></path></svg>
+      <span>CONTRAPPUNTO</span>
+    </a>
+    <div class="strumenti">
+      <button class="pulsante-icona" id="cambia-tema" type="button" aria-label="Cambia tema" aria-pressed="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><path d="M11 3a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="menu" aria-label="Sezioni">
+  <div class="contenitore">
+    <ul id="menu">
+      <li><a href="index.html">Edizione</a></li>
+      <li><a href="promessometro/index.html">Promessometro</a></li>
+      <li><a href="storia/index.html">Accadde davvero?</a></li>
+      <li><a href="fonti/index.html">Fonti</a></li>
+      <li><a href="metodo.html" aria-current="page">Metodo</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="contenuto">
+  <div class="contenitore">
+<article class="prosa">
+  <h1>Il metodo</h1>
+  <p>Contrappunto fa analisi comparata delle fonti. Per ogni notizia raccogliamo le testate di tutti i fronti, le confrontiamo, mettiamo sotto stress il consenso e scriviamo un articolo che pesa le prove. Poi diamo un voto agli articoli che abbiamo letto, con criteri pubblici.</p>
+
+  <h2>Fatti, ipotesi, opinioni</h2>
+  <p>Ogni passaggio di un articolo appartiene a un livello, segnato con un simbolo che si legge anche in bianco e nero. Con il pulsante <strong>Solo i fatti</strong> puoi nascondere le ipotesi e le nostre opinioni.</p>
+  <div class="tabella-scorrevole">
+  <table>
+    <thead><tr><th>Livello</th><th>Cosa contiene</th><th>Regola</th></tr></thead>
+    <tbody>
+      <tr><td><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><rect class="pieno" x="1" y="1" width="10" height="10"></rect></svg>
+ Fatto</td><td>Ciò che è verificato da più fonti indipendenti o da documenti primari</td><td>Sempre con la fonte</td></tr>
+      <tr><td><svg width="13" height="12" viewBox="0 0 13 12" aria-hidden="true"><path d="M6.5 1.5L12 10.5H1z" fill="none" stroke-width="1.5"></path></svg>
+ Ipotesi</td><td>Letture tra le righe, inferenze, collegamenti</td><td>Sempre con grado di fiducia e ragionamento</td></tr>
+      <tr><td><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4.8" fill="none" stroke-width="1.6"></circle></svg>
+ Opinione</td><td>Il nostro giudizio, secondo la linea editoriale</td><td>Sempre dichiarata come opinione</td></tr>
+      <tr><td><svg width="15" height="12" viewBox="0 0 15 12" aria-hidden="true"><path d="M1 4h11M9.5 1.5L12.5 4 9.5 6.5M14 8H3M5.5 5.5L2.5 8l3 2.5" fill="none" stroke-width="1.4"></path></svg>
+ Discordante</td><td>Esperti e fonti autorevoli danno versioni diverse</td><td>Mostriamo la forbice e chi sostiene cosa; una stima senza fonte non si pubblica</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>La regola del contrappunto</h2>
+  <p>Quando le fonti principali sono tutte allineate, siamo obbligati a costruire la versione più forte della tesi opposta, cercare le voci dissenzienti e leggere tra le righe. Se dopo questa prova il consenso regge, lo diciamo e spieghiamo perché. Non andiamo contro per partito preso.</p>
+
+  <h2>Come diamo i voti</h2>
+  <p>Ogni articolo che analizziamo viene scomposto in affermazioni verificabili. Il punteggio, da 0 a 100, si calcola sempre allo stesso modo:</p>
+  <div class="tabella-scorrevole">
+  <table>
+    <thead><tr><th>Criterio</th><th>Peso</th><th>Cosa misura</th></tr></thead>
+    <tbody>
+      <tr><td>Accuratezza</td><td>30%</td><td>Affermazioni confermate o plausibili rispetto a quelle smentite (le smentite pesano doppio)</td></tr>
+      <tr><td>Qualità delle fonti</td><td>20%</td><td>Fonti primarie e verificabili rispetto ad anonime o assenti</td></tr>
+      <tr><td>Completezza</td><td>20%</td><td>Omissioni rilevanti: cosa riportano gli altri e questa testata tace</td></tr>
+      <tr><td>Linguaggio</td><td>15%</td><td>Termini carichi, aggettivi al posto delle prove, titolo coerente col testo</td></tr>
+      <tr><td>Separazione</td><td>15%</td><td>L'opinione è dichiarata o travestita da cronaca?</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>L'orientamento politico di una testata è mostrato a parte e non entra nel voto: una fonte può essere schierata e accurata, o neutra e sciatta. Diamo voti agli articoli, mai ai singoli giornalisti. I politici si valutano solo sull'operato pubblico: promesse, dichiarazioni, voti.</p>
+  <p>Le affermazioni vengono riverificate a 7, 30 e 180 giorni, anche le nostre. Ogni tre mesi pubblichiamo un'autoanalisi: i nostri voti pendono da una parte?</p>
+
+  <h2 id="redazione">La redazione: agenti AI e controllo umano</h2>
+  <p>Contrappunto ha un fondatore, che decide la linea, risponde di ciò che pubblichiamo e rivede i pezzi più delicati. Il lavoro quotidiano lo fa una redazione di agenti di intelligenza artificiale, ognuno con un compito: raccogliere, confrontare, verificare, fare l'avvocato del diavolo, dare i voti, scrivere, controllare. Un Garante ferma la pubblicazione automatica dei pezzi a rischio, che passano dalle mani del fondatore. In fondo a ogni articolo c'è scritto se la revisione umana c'è stata.</p>
+
+  <h2>Rettifiche</h2>
+  <p>Se sbagliamo, correggiamo in chiaro: la rettifica resta visibile in fondo all'articolo, con la data. Non cancelliamo mai di nascosto.</p>
+</article>
+  </div>
+</main>
+<footer class="piede">
+  <div class="contenitore">
+    <p>Niente pubblicità, niente partiti, niente soldi pubblici. Esistiamo solo se ci sostieni.</p>
+    <nav aria-label="Pagine di servizio">
+      <a href="metodo.html">Il metodo</a>
+      <a href="metodo.html#redazione">Come lavoriamo</a>
+      <a href="sostieni.html">Sostieni</a>
+      <a href="fonti/index.html">Le fonti</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

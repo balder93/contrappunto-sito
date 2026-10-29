@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fox News · Le fonti · Contrappunto</title>
+<meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("contrappunto-tema");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="../static/style.css">
+<script src="../static/app.js" defer></script>
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="../index.html" aria-label="Contrappunto, vai alla prima pagina">
+      <svg width="30" height="20" viewBox="0 0 30 20" aria-hidden="true"><path class="voce-1" d="M1 14 C 8 2, 14 2, 21 10 S 27 16, 29 6" fill="none" stroke-width="2"></path><path class="voce-2" d="M1 6 C 8 18, 14 18, 21 10 S 27 4, 29 14" fill="none" stroke-width="2"></path></svg>
+      <span>CONTRAPPUNTO</span>
+    </a>
+    <div class="strumenti">
+      <button class="pulsante-icona" id="cambia-tema" type="button" aria-label="Cambia tema" aria-pressed="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><path d="M11 3a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="menu" aria-label="Sezioni">
+  <div class="contenitore">
+    <ul id="menu">
+      <li><a href="../index.html">Edizione</a></li>
+      <li><a href="../promessometro/index.html">Promessometro</a></li>
+      <li><a href="../storia/index.html">Accadde davvero?</a></li>
+      <li><a href="index.html" aria-current="page">Fonti</a></li>
+      <li><a href="../metodo.html">Metodo</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="contenuto">
+  <div class="contenitore">
+<div class="prosa">
+  <span class="etichetta-sezione">Scheda fonte · Stati Uniti ed Europa</span>
+  <h1>Fox News</h1>
+</div>
+<div class="scheda-dati">
+  <div><span>Paese</span><span>US</span></div>
+  <div><span>Lingua</span><span>en</span></div>
+  <div><span>Tipo</span><span>tv</span></div>
+  <div><span>Orientamento</span><span>destra</span></div>
+  <div><span>Controllo statale</span><span>No</span></div>
+  <div><span>Paywall</span><span>No</span></div>
+  <div><span>Punteggio medio</span><span>n/d</span></div>
+  <div><span>Articoli analizzati</span><span>0</span></div>
+</div>
+<p class="tenue">Il punteggio compare dopo i primi articoli analizzati con il <a href="../metodo.html">metodo</a>. Il tasso di rettifica è mostrato a parte: correggersi è un merito.</p>
+<p><a href="https://www.foxnews.com" rel="noopener">Sito della testata</a></p>  </div>
+</main>
+<footer class="piede">
+  <div class="contenitore">
+    <p>Niente pubblicità, niente partiti, niente soldi pubblici. Esistiamo solo se ci sostieni.</p>
+    <nav aria-label="Pagine di servizio">
+      <a href="../metodo.html">Il metodo</a>
+      <a href="../metodo.html#redazione">Come lavoriamo</a>
+      <a href="../sostieni.html">Sostieni</a>
+      <a href="index.html">Le fonti</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

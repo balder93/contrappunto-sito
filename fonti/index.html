@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le fonti · Contrappunto</title>
+<meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("contrappunto-tema");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="../static/style.css">
+<script src="../static/app.js" defer></script>
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="../index.html" aria-label="Contrappunto, vai alla prima pagina">
+      <svg width="30" height="20" viewBox="0 0 30 20" aria-hidden="true"><path class="voce-1" d="M1 14 C 8 2, 14 2, 21 10 S 27 16, 29 6" fill="none" stroke-width="2"></path><path class="voce-2" d="M1 6 C 8 18, 14 18, 21 10 S 27 4, 29 14" fill="none" stroke-width="2"></path></svg>
+      <span>CONTRAPPUNTO</span>
+    </a>
+    <div class="strumenti">
+      <button class="pulsante-icona" id="cambia-tema" type="button" aria-label="Cambia tema" aria-pressed="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><path d="M11 3a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="menu" aria-label="Sezioni">
+  <div class="contenitore">
+    <ul id="menu">
+      <li><a href="../index.html">Edizione</a></li>
+      <li><a href="../promessometro/index.html">Promessometro</a></li>
+      <li><a href="../storia/index.html">Accadde davvero?</a></li>
+      <li><a href="index.html" aria-current="page">Fonti</a></li>
+      <li><a href="../metodo.html">Metodo</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="contenuto">
+  <div class="contenitore">
+<div class="prosa">
+  <h1>Le fonti</h1>
+  <p>Le testate e le fonti istituzionali che la redazione legge ogni giorno, raggruppate per fronte. Per ogni scenario internazionale si leggono sempre entrambi i fronti più almeno una fonte terza.</p>
+  <p>L'orientamento è una valutazione iniziale della redazione, rivista ogni mese: serve a disporre le testate nello spettro, <strong>non</strong> entra nel punteggio di qualità.</p>
+</div>
+<section class="gruppo-fonti">
+  <h2>Italia</h2>
+  <div class="griglia-fonti">
+    <a href="ansa.html"><span>ANSA</span><span class="info">IT · agenzia</span></a>
+    <a href="agi.html"><span>AGI</span><span class="info">IT · agenzia</span></a>
+    <a href="rainews.html"><span>RaiNews</span><span class="info">IT · tv</span></a>
+    <a href="corriere.html"><span>Corriere della Sera</span><span class="info">IT · quotidiano · centro</span></a>
+    <a href="repubblica.html"><span>la Repubblica</span><span class="info">IT · quotidiano · centro-sinistra</span></a>
+    <a href="lastampa.html"><span>La Stampa</span><span class="info">IT · quotidiano · centro</span></a>
+    <a href="sole24ore.html"><span>Il Sole 24 Ore</span><span class="info">IT · quotidiano · centro</span></a>
+    <a href="fatto.html"><span>Il Fatto Quotidiano</span><span class="info">IT · quotidiano · centro-sinistra</span></a>
+    <a href="giornale.html"><span>il Giornale</span><span class="info">IT · quotidiano · centro-destra</span></a>
+    <a href="libero.html"><span>Libero</span><span class="info">IT · quotidiano · destra</span></a>
+    <a href="byoblu.html"><span>Byoblu</span><span class="info">IT · tv</span></a>
+    <a href="laverita.html"><span>La Verità</span><span class="info">IT · quotidiano · destra</span></a>
+    <a href="tempo.html"><span>Il Tempo</span><span class="info">IT · quotidiano · centro-destra</span></a>
+    <a href="messaggero.html"><span>Il Messaggero</span><span class="info">IT · quotidiano · centro</span></a>
+    <a href="avvenire.html"><span>Avvenire</span><span class="info">IT · quotidiano · centro</span></a>
+    <a href="domani.html"><span>Domani</span><span class="info">IT · quotidiano · centro-sinistra</span></a>
+    <a href="manifesto.html"><span>il manifesto</span><span class="info">IT · quotidiano · sinistra</span></a>
+    <a href="foglio.html"><span>Il Foglio</span><span class="info">IT · quotidiano · centro</span></a>
+    <a href="ilpost.html"><span>Il Post</span><span class="info">IT · online · centro-sinistra</span></a>
+    <a href="open.html"><span>Open</span><span class="info">IT · online · centro</span></a>
+    <a href="fanpage.html"><span>Fanpage</span><span class="info">IT · online · centro-sinistra</span></a>
+    <a href="huffpost-it.html"><span>HuffPost Italia</span><span class="info">IT · online · centro-sinistra</span></a>
+    <a href="tgcom24.html"><span>TgCom24</span><span class="info">IT · tv · centro-destra</span></a>
+    <a href="governo.html"><span>Governo italiano</span><span class="info">IT · istituzionale · governativo</span></a>
+    <a href="istat.html"><span>ISTAT</span><span class="info">IT · istituzionale</span></a>
+    <a href="bancaditalia.html"><span>Banca d&#39;Italia</span><span class="info">IT · istituzionale</span></a>
+    <a href="upb.html"><span>Ufficio parlamentare di bilancio</span><span class="info">IT · istituzionale</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Stati Uniti ed Europa</h2>
+  <div class="griglia-fonti">
+    <a href="nyt.html"><span>The New York Times</span><span class="info">US · quotidiano · centro-sinistra</span></a>
+    <a href="wapo.html"><span>The Washington Post</span><span class="info">US · quotidiano · centro-sinistra</span></a>
+    <a href="wsj.html"><span>The Wall Street Journal</span><span class="info">US · quotidiano · centro-destra</span></a>
+    <a href="fox.html"><span>Fox News</span><span class="info">US · tv · destra</span></a>
+    <a href="npr.html"><span>NPR</span><span class="info">US · online · centro-sinistra</span></a>
+    <a href="politico.html"><span>Politico</span><span class="info">US · online · centro</span></a>
+    <a href="nationalreview.html"><span>National Review</span><span class="info">US · periodico · destra</span></a>
+    <a href="breitbart.html"><span>Breitbart</span><span class="info">US · online · destra</span></a>
+    <a href="bbc.html"><span>BBC News</span><span class="info">GB · tv · centro</span></a>
+    <a href="guardian.html"><span>The Guardian</span><span class="info">GB · quotidiano · centro-sinistra</span></a>
+    <a href="lemonde.html"><span>Le Monde</span><span class="info">FR · quotidiano · centro-sinistra</span></a>
+    <a href="figaro.html"><span>Le Figaro</span><span class="info">FR · quotidiano · centro-destra</span></a>
+    <a href="france24.html"><span>France 24</span><span class="info">FR · tv · centro</span></a>
+    <a href="spiegel.html"><span>Der Spiegel</span><span class="info">DE · periodico · centro-sinistra</span></a>
+    <a href="faz.html"><span>Frankfurter Allgemeine Zeitung</span><span class="info">DE · quotidiano · centro-destra</span></a>
+    <a href="dw.html"><span>Deutsche Welle</span><span class="info">DE · tv · centro</span></a>
+    <a href="elpais.html"><span>El País</span><span class="info">ES · quotidiano · centro-sinistra</span></a>
+    <a href="politico-eu.html"><span>Politico Europe</span><span class="info">BE · online · centro</span></a>
+    <a href="euractiv.html"><span>Euractiv</span><span class="info">BE · online · centro</span></a>
+    <a href="euronews.html"><span>Euronews</span><span class="info">FR · tv · centro</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Russia (voce ufficiale)</h2>
+  <div class="griglia-fonti">
+    <a href="rt.html"><span>RT (Russia Today)</span><span class="info">RU · tv · governativo</span></a>
+    <a href="sputnik.html"><span>Sputnik</span><span class="info">RU · agenzia · governativo</span></a>
+    <a href="tass.html"><span>TASS</span><span class="info">RU · agenzia · governativo</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Russia (voci indipendenti)</h2>
+  <div class="griglia-fonti">
+    <a href="meduza.html"><span>Meduza</span><span class="info">LV · online</span></a>
+    <a href="moscowtimes.html"><span>The Moscow Times</span><span class="info">NL · online</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Ucraina</h2>
+  <div class="griglia-fonti">
+    <a href="kyivindependent.html"><span>The Kyiv Independent</span><span class="info">UA · online</span></a>
+    <a href="pravda-ua.html"><span>Ukrainska Pravda</span><span class="info">UA · online</span></a>
+    <a href="ukrinform.html"><span>Ukrinform</span><span class="info">UA · agenzia · governativo</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Israele</h2>
+  <div class="griglia-fonti">
+    <a href="timesofisrael.html"><span>The Times of Israel</span><span class="info">IL · online · centro</span></a>
+    <a href="jpost.html"><span>The Jerusalem Post</span><span class="info">IL · quotidiano · centro-destra</span></a>
+    <a href="haaretz.html"><span>Haaretz</span><span class="info">IL · quotidiano · centro-sinistra</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Mondo arabo</h2>
+  <div class="griglia-fonti">
+    <a href="aljazeera.html"><span>Al Jazeera</span><span class="info">QA · tv</span></a>
+    <a href="alarabiya.html"><span>Al Arabiya</span><span class="info">AE · tv · governativo</span></a>
+    <a href="middleeasteye.html"><span>Middle East Eye</span><span class="info">GB · online</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Iran</h2>
+  <div class="griglia-fonti">
+    <a href="tehrantimes.html"><span>Tehran Times</span><span class="info">IR · quotidiano · governativo</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Cina</h2>
+  <div class="griglia-fonti">
+    <a href="xinhua.html"><span>Xinhua</span><span class="info">CN · agenzia · governativo</span></a>
+    <a href="globaltimes.html"><span>Global Times</span><span class="info">CN · quotidiano · governativo</span></a>
+    <a href="scmp.html"><span>South China Morning Post</span><span class="info">HK · quotidiano</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Taiwan</h2>
+  <div class="griglia-fonti">
+    <a href="taipeitimes.html"><span>Taipei Times</span><span class="info">TW · quotidiano</span></a>
+  </div>
+</section>
+<section class="gruppo-fonti">
+  <h2>Fonti terze</h2>
+  <div class="griglia-fonti">
+    <a href="japantimes.html"><span>The Japan Times</span><span class="info">JP · quotidiano</span></a>
+    <a href="thehindu.html"><span>The Hindu</span><span class="info">IN · quotidiano</span></a>
+    <a href="anadolu.html"><span>Anadolu Agency</span><span class="info">TR · agenzia · governativo</span></a>
+    <a href="dawn.html"><span>Dawn</span><span class="info">PK · quotidiano</span></a>
+  </div>
+</section>
+  </div>
+</main>
+<footer class="piede">
+  <div class="contenitore">
+    <p>Niente pubblicità, niente partiti, niente soldi pubblici. Esistiamo solo se ci sostieni.</p>
+    <nav aria-label="Pagine di servizio">
+      <a href="../metodo.html">Il metodo</a>
+      <a href="../metodo.html#redazione">Come lavoriamo</a>
+      <a href="../sostieni.html">Sostieni</a>
+      <a href="index.html">Le fonti</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
