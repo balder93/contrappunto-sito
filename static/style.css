@@ -437,3 +437,10 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .foto-scheda { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin: 10px 0 6px; }
 .miniatura-piccola { width: 44px; height: 44px; object-fit: cover; flex: none; }
 .legenda-stati li:has(.miniatura-piccola) { display: flex; gap: 10px; align-items: center; }
+.motivazione-giudizio { font-size: 17px; margin: 8px 0 0; }
+.tre-parti { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; margin: 16px 0; }
+@media (min-width: 900px) { .tre-parti { grid-template-columns: 1fr 1.6fr 1.2fr; } }
+.tre-parti > div { border-top: 2px solid var(--linea); padding-top: 8px; }
+.tre-parti p { margin: 6px 0 0; }
+.indicatori { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 6px; }
+.indicatori td { padding: 5px 4px; border-bottom: 1px solid var(--linea); vertical-align: top; }
