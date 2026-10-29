@@ -393,3 +393,8 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .riga-meta { flex-wrap: wrap; gap: 4px 10px; }
 .storia > div { min-width: 0; }
 @media (max-width: 600px) { .storia .miniatura { width: 72px; height: 72px; } .bollino-consenso { font-size: 10px; padding: 2px 6px; } }
+.ricerca { display: flex; flex-direction: column; gap: 6px; margin: 8px 0 12px; }
+.ricerca input { font: inherit; font-size: 18px; padding: 12px 14px; border: 1px solid var(--linea-forte, var(--linea)); background: var(--superficie); color: var(--testo); border-radius: 0; }
+.ricerca input:focus { outline: 2px solid var(--accento-linea); outline-offset: 0; }
+.elenco-brevi .mono { display: block; font-size: 11px; margin-bottom: 2px; }
+.menu ul { flex-wrap: wrap; }

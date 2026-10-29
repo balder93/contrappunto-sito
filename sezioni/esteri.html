@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esteri · Contrappunto</title>
+<meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("contrappunto-tema"); } catch (e) {}
+    // Dove la memoria del browser è bloccata (anteprime, frame), la scelta viaggia nel nome della finestra.
+    if (!t) { var m = /(?:^|;)contrappunto-tema=(light|dark)/.exec(window.name || ""); if (m) t = m[1]; }
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+<link rel="stylesheet" href="../static/style.css">
+<script src="../static/app.js" defer></script>
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="../index.html" aria-label="Contrappunto, vai alla prima pagina">
+      <svg width="30" height="20" viewBox="0 0 30 20" aria-hidden="true"><path class="voce-1" d="M1 14 C 8 2, 14 2, 21 10 S 27 16, 29 6" fill="none" stroke-width="2"></path><path class="voce-2" d="M1 6 C 8 18, 14 18, 21 10 S 27 4, 29 14" fill="none" stroke-width="2"></path></svg>
+      <span>CONTRAPPUNTO</span>
+    </a>
+    <div class="strumenti">
+      <button class="pulsante-icona" id="cambia-tema" type="button" aria-label="Cambia tema" aria-pressed="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><path d="M11 3a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="menu" aria-label="Sezioni">
+  <div class="contenitore">
+    <ul id="menu">
+      <li><a href="../index.html">Edizione</a></li>
+<li><a href="politica.html">Politica</a></li>
+<li><a href="economia.html">Economia</a></li>
+<li><a href="esteri.html" aria-current="page">Esteri</a></li>
+<li><a href="giustizia.html">Giustizia</a></li>
+<li><a href="../storia/index.html">Accadde davvero?</a></li>
+      <li><a href="../partiti/index.html">Partiti</a></li>
+      <li><a href="../parola-data/index.html">Parola data</a></li>
+      <li><a href="../cerca.html" aria-label="Cerca"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align:-2px"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M11 11l4 4" stroke="currentColor" stroke-width="2"></path></svg> Cerca</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="contenuto">
+  <div class="contenitore">
+<div class="prosa">
+  <span class="etichetta-sezione">Sezione</span>
+  <h1>Esteri</h1>
+</div>
+<ul class="elenco-brevi elenco-sezione">
+  <li>
+<a href="../articoli/2026-10-29-bolsonaro-passaporto-italiano.html" tabindex="-1" aria-hidden="true"><img class="miniatura" src="../immagini/2026-10-29-bolsonaro.jpg" alt="" loading="lazy"></a>    <div>
+      <span class="mono tenue">29.10.2026</span>
+      <a class="titolo-breve" href="../articoli/2026-10-29-bolsonaro-passaporto-italiano.html">Lula contro Flávio Bolsonaro: quattro anni di numeri, due programmi e nessuna prova di brogli</a>
+<p>Hanno fatto bene a non sceglierlo: Lula lascia più debito, ma chi vuole il potere sopra i giudici per salvare il padre non offre più libertà.</p>    </div>
+  </li>
+  <li>
+<a href="../articoli/2026-10-29-israele-voto-senza-maggioranza.html" tabindex="-1" aria-hidden="true"><img class="miniatura" src="../immagini/2026-10-29-israele.jpg" alt="" loading="lazy"></a>    <div>
+      <span class="mono tenue">29.10.2026 · in breve</span>
+      <a class="titolo-breve" href="../articoli/2026-10-29-israele-voto-senza-maggioranza.html">Israele, nessuno schieramento arriva a 61 seggi e lo spoglio non è finito</a>
+<p>Mancano centinaia di migliaia di schede e c&#39;è già chi grida al furto. Prima si conta, poi si accusa.</p>    </div>
+  </li>
+  <li>
+<a href="../articoli/2026-10-29-dnipro-abu-dhabi-europa-divisa.html" tabindex="-1" aria-hidden="true"><img class="miniatura" src="../immagini/2026-10-29-dnipro.jpg" alt="" loading="lazy"></a>    <div>
+      <span class="mono tenue">29.10.2026 · in breve</span>
+      <a class="titolo-breve" href="../articoli/2026-10-29-dnipro-abu-dhabi-europa-divisa.html">Dnipro, 13 morti alla stazione. Il Cremlino: colloqui a tre ad Abu Dhabi dopo il 4 novembre</a>
+<p>Mosca decide quando si tratta. L&#39;Europa non è al tavolo e litiga su chi ha chiamato Putin.</p>    </div>
+  </li>
+</ul>
+  </div>
+</main>
+<footer class="piede">
+  <div class="contenitore">
+    <p>Niente pubblicità, niente partiti, niente soldi pubblici. Esistiamo solo se ci sostieni.</p>
+    <nav aria-label="Pagine di servizio">
+      <a href="../metodo.html">Il metodo</a>
+      <a href="../metodo.html#redazione">Come lavoriamo</a>
+      <a href="../sostieni.html">Sostieni</a>
+      <a href="../fonti/index.html">Le fonti</a>
+      <a href="../cerca.html">Cerca</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

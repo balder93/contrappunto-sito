@@ -101,4 +101,64 @@
       try { document.documentElement.scrollIntoView({ block: "start" }); } catch (e) { /* niente */ }
     }
   }
+  // Ricerca: il sito è statico, quindi cerca in cerca.json direttamente nel browser.
+  var risultati = document.getElementById("risultati-ricerca");
+  var campo = document.getElementById("campo-ricerca");
+  if (risultati && campo) {
+    var esito = document.getElementById("esito-ricerca");
+    var radice = risultati.getAttribute("data-radice") || "";
+    var indice = null;
+    var piano = function (s) {
+      return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    };
+    var testo = function (tag, classe, contenuto) {
+      var el = document.createElement(tag);
+      if (classe) el.className = classe;
+      el.textContent = contenuto;
+      return el;
+    };
+    var mostra = function () {
+      var parole = piano(campo.value).split(/\s+/).filter(function (p) { return p.length > 1; });
+      risultati.textContent = "";
+      if (!indice || !parole.length) { esito.textContent = ""; return; }
+      var trovati = indice.map(function (v) {
+        var t = piano(v.t), s = piano(v.s), c = piano(v.c), a = piano(v.a), punti = 0;
+        for (var k = 0; k < parole.length; k++) {
+          var p = parole[k];
+          if (t.indexOf(p) >= 0) punti += 5;
+          else if (s.indexOf(p) >= 0 || a.indexOf(p) >= 0) punti += 3;
+          else if (c.indexOf(p) >= 0) punti += 1;
+          else return null; // tutte le parole devono esserci
+        }
+        return { v: v, punti: punti };
+      }).filter(Boolean).sort(function (x, y) { return y.punti - x.punti || (x.v.d < y.v.d ? 1 : -1); });
+      esito.textContent = trovati.length ? trovati.length + (trovati.length === 1 ? " risultato" : " risultati") : "Nessun risultato";
+      trovati.slice(0, 30).forEach(function (r) {
+        var v = r.v, li = document.createElement("li");
+        if (v.i) {
+          var img = document.createElement("img");
+          img.className = "miniatura"; img.src = radice + v.i; img.alt = ""; img.loading = "lazy";
+          li.appendChild(img);
+        } else {
+          li.appendChild(testo("span", "miniatura vuota", ""));
+        }
+        var div = document.createElement("div");
+        div.appendChild(testo("span", "mono tenue", v.a + " · " + v.d.split("-").reverse().join(".")));
+        var link = testo("a", "titolo-breve", v.t);
+        link.href = radice + v.u;
+        div.appendChild(link);
+        if (v.s) div.appendChild(testo("p", "", v.s));
+        li.appendChild(div);
+        risultati.appendChild(li);
+      });
+    };
+    fetch(risultati.getAttribute("data-indice")).then(function (r) { return r.json(); }).then(function (dati) {
+      indice = dati;
+      var q = new URLSearchParams(window.location.search).get("q");
+      if (q) campo.value = q;
+      mostra();
+    }).catch(function () { esito.textContent = "La ricerca non è disponibile in questo momento."; });
+    campo.addEventListener("input", mostra);
+    campo.focus();
+  }
 })();
