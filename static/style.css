@@ -389,3 +389,7 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
   .articolo > .nota-redazione, .articolo > .modulo, .articolo > .avviso { max-width: 700px; }
   .prosa { max-width: 760px; }
 }
+/* Le righe sopra i titoli vanno a capo invece di finire sotto la foto, sui telefoni stretti. */
+.riga-meta { flex-wrap: wrap; gap: 4px 10px; }
+.storia > div { min-width: 0; }
+@media (max-width: 600px) { .storia .miniatura { width: 72px; height: 72px; } .bollino-consenso { font-size: 10px; padding: 2px 6px; } }
