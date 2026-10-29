@@ -161,4 +161,48 @@
     campo.addEventListener("input", mostra);
     campo.focus();
   }
+  // Test di affinità: tutto nel browser, niente viene salvato o inviato.
+  var calcola = document.getElementById("calcola");
+  var datiTest = document.getElementById("dati-test");
+  if (calcola && datiTest) {
+    var dati = JSON.parse(datiTest.textContent);
+    calcola.addEventListener("click", function () {
+      var mie = {};
+      dati.domande.forEach(function (d) {
+        var scelta = document.querySelector('input[name="' + d.id + '"]:checked');
+        if (scelta) mie[d.id] = parseInt(scelta.value, 10);
+      });
+      var risposte = Object.keys(mie).length;
+      var lista = document.getElementById("classifica");
+      lista.textContent = "";
+      if (!risposte) { lista.textContent = "Rispondi ad almeno una domanda."; }
+      var classifica = dati.partiti.map(function (p) {
+        var punti = 0, contate = 0;
+        Object.keys(mie).forEach(function (id) {
+          if (p.risposte[id] === undefined) return;
+          punti += 4 - Math.abs(mie[id] - p.risposte[id]);
+          contate += 1;
+        });
+        return { p: p, quota: contate ? Math.round(100 * punti / (4 * contate)) : null };
+      }).filter(function (r) { return r.quota !== null && risposte; })
+        .sort(function (a, b) { return b.quota - a.quota; });
+      classifica.forEach(function (r) {
+        var li = document.createElement("li");
+        var nome = document.createElement("a");
+        nome.href = r.p.url; nome.textContent = r.p.nome;
+        var barra = document.createElement("span");
+        barra.className = "barra-affinita";
+        var pieno = document.createElement("span");
+        pieno.style.width = r.quota + "%";
+        barra.appendChild(pieno);
+        var numero = document.createElement("span");
+        numero.className = "mono"; numero.textContent = r.quota + "%";
+        li.appendChild(nome); li.appendChild(barra); li.appendChild(numero);
+        lista.appendChild(li);
+      });
+      var sezione = document.getElementById("risultato-test");
+      sezione.hidden = false;
+      sezione.scrollIntoView({ behavior: "smooth" });
+    });
+  }
 })();

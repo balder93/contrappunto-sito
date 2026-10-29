@@ -398,3 +398,31 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .ricerca input:focus { outline: 2px solid var(--accento-linea); outline-offset: 0; }
 .elenco-brevi .mono { display: block; font-size: 11px; margin-bottom: 2px; }
 .menu ul { flex-wrap: wrap; }
+/* Test di affinità */
+.test { display: flex; flex-direction: column; gap: 14px; max-width: 760px; }
+.domanda { border: 1px solid var(--linea); padding: 14px 16px; margin: 0; }
+.domanda legend { display: contents; }
+.domanda .mono { display: block; font-size: 11px; text-transform: uppercase; }
+.testo-domanda { display: block; font-weight: 700; font-size: 18px; margin: 6px 0 4px; }
+.spiegazione { margin: 0 0 10px; color: var(--testo-2); font-size: 14px; }
+.scala { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+.scala label { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; font-size: 12px; cursor: pointer; padding: 6px 2px; border: 1px solid var(--linea); }
+.scala label:has(input:checked) { border-color: var(--accento-linea); background: var(--superficie); }
+@media (max-width: 520px) { .scala { grid-template-columns: 1fr; } .scala label { flex-direction: row; justify-content: flex-start; padding: 8px; } }
+.risultato-test { max-width: 760px; margin-top: 24px; }
+.risultato-test ol { padding-left: 1.4em; display: flex; flex-direction: column; gap: 10px; }
+.risultato-test li { display: grid; grid-template-columns: 10em minmax(0, 1fr) 3.5em; gap: 10px; align-items: center; }
+.barra-affinita { height: 10px; background: var(--linea); display: block; }
+.barra-affinita span { display: block; height: 100%; background: var(--accento); }
+/* Scheda partito: il programma */
+.programma-punti { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-direction: column; gap: 12px; }
+.programma-punti li { border-left: 3px solid var(--linea); padding-left: 12px; }
+.programma-punti .fatto { color: var(--testo-2); font-size: 14px; margin: 4px 0 0; }
+.risposte-test { width: 100%; border-collapse: collapse; font-size: 14px; }
+.risposte-test td { padding: 8px 6px; border-top: 1px solid var(--linea); vertical-align: top; }
+.giudizio-governo { display: inline-block; margin-left: 6px; padding: 1px 7px; font-family: var(--mono); font-size: 11px; text-transform: uppercase; border: 1px solid var(--testo); vertical-align: middle; }
+.giudizio-governo.g-promosso { background: var(--accento); color: var(--su-accento); border-color: var(--accento); }
+.giudizio-governo.g-bocciato { background: var(--testo); color: var(--sfondo); }
+.giudizio-governo.g-giudizio-sospeso { border-style: dotted; color: var(--tenue); border-color: var(--tenue); }
+.riga-giudizio { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.riga-giudizio .giudizio-governo { margin-left: 0; font-size: 14px; padding: 3px 10px; }
