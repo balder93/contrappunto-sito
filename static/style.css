@@ -426,3 +426,14 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .giudizio-governo.g-giudizio-sospeso { border-style: dotted; color: var(--tenue); border-color: var(--tenue); }
 .riga-giudizio { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
 .riga-giudizio .giudizio-governo { margin-left: 0; font-size: 14px; padding: 3px 10px; }
+/* Sezioni e rubrica storica: gerarchia come in prima pagina */
+.griglia-sezione { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--linea); }
+@media (min-width: 640px) { .griglia-sezione { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.scheda-sezione img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 8px; background: var(--superficie); }
+.scheda-sezione .mono { display: block; font-size: 11px; text-transform: uppercase; }
+.scheda-sezione h3 { margin: 4px 0 6px; font-family: var(--titoli); font-size: 22px; line-height: 1.15; }
+.scheda-sezione h3 a { text-decoration: none; }
+.scheda-sezione p { margin: 0; color: var(--testo-2); font-size: 15px; }
+.foto-scheda { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin: 10px 0 6px; }
+.miniatura-piccola { width: 44px; height: 44px; object-fit: cover; flex: none; }
+.legenda-stati li:has(.miniatura-piccola) { display: flex; gap: 10px; align-items: center; }
