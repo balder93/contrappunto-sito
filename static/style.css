@@ -460,3 +460,25 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .condividi .avviso-copia { font-family: var(--mono); font-size: 12px; color: var(--tenue); }
 .condividi a:hover, .condividi button:hover { border-color: var(--testo); }
 .fine-articolo { margin: 32px 0 0; padding-top: 16px; border-top: 1px solid var(--linea); }
+
+/* Parola data: i governi a confronto */
+.confronto-governi { max-width: 1100px; margin: 32px auto; padding: 0 16px; }
+.confronto-governi h2 { font-family: var(--titoli); margin: 6px 0 8px; }
+.tabella-confronto { margin: 24px 0; }
+.tabella-confronto h3 { font-family: var(--titoli); margin: 0 0 4px; font-size: 20px; }
+.tabella-confronto p { margin: 0 0 8px; font-size: 14px; }
+.tabella-confronto table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tabella-confronto th, .tabella-confronto td { padding: 7px 10px; border-bottom: 1px solid var(--linea); text-align: right; white-space: nowrap; }
+.tabella-confronto th:first-child, .tabella-confronto thead th:first-child { text-align: left; }
+.tabella-confronto thead th { font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--tenue); font-weight: 500; }
+.tabella-confronto tr.questo { background: var(--superficie); }
+.tabella-confronto tr.questo th { box-shadow: inset 4px 0 0 var(--accento-linea); }
+.tabella-confronto .col-barra { text-align: left; min-width: 160px; }
+.tabella-confronto .col-barra .mono { font-size: 12px; margin-left: 6px; }
+.barra-confronto { display: inline-block; vertical-align: middle; height: 10px; max-width: 100px; background: var(--linea-forte); }
+.barra-confronto.buona { background: #2E9E5B; }
+.barra-confronto.cattiva { background: #D2483B; }
+.col-barra { width: 1%; }
+.fonti-confronto { font-size: 12px; }
+.tabella-confronto tbody th { position: sticky; left: 0; background: var(--sfondo); z-index: 1; }
+.tabella-confronto tr.questo th { background: var(--superficie); }
