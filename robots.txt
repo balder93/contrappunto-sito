@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /social/
+
+Sitemap: https://contrappunto.news/sitemap.xml
+Sitemap: https://contrappunto.news/sitemap-news.xml
