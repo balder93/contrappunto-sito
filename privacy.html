@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy e cookie · Contrappunto</title>
+<meta name="description" content="Ogni notizia, soppesata: le fonti di tutti i fronti a confronto, i fatti separati dalle opinioni.">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("contrappunto-tema"); } catch (e) {}
+    // Dove la memoria del browser è bloccata (anteprime, frame), la scelta viaggia nel nome della finestra.
+    if (!t) { var m = /(?:^|;)contrappunto-tema=(light|dark)/.exec(window.name || ""); if (m) t = m[1]; }
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="static/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+<link rel="manifest" href="static/manifest.webmanifest">
+<meta name="theme-color" content="#111214">
+<link rel="stylesheet" href="static/style.css">
+<script src="static/app.js" defer></script>
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="index.html" aria-label="Contrappunto, vai alla prima pagina">
+      <svg width="30" height="20" viewBox="0 0 30 20" aria-hidden="true"><path class="voce-1" d="M1 14 C 8 2, 14 2, 21 10 S 27 16, 29 6" fill="none" stroke-width="2"></path><path class="voce-2" d="M1 6 C 8 18, 14 18, 21 10 S 27 4, 29 14" fill="none" stroke-width="2"></path></svg>
+      <span>CONTRAPPUNTO</span>
+    </a>
+    <div class="strumenti">
+      <button class="pulsante-icona" id="cambia-tema" type="button" aria-label="Cambia tema" aria-pressed="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke-width="2"></circle><path d="M11 3a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="menu" aria-label="Sezioni">
+  <div class="contenitore">
+    <ul id="menu">
+      <li><a href="index.html">Edizione</a></li>
+<li><a href="sezioni/politica.html">Politica</a></li>
+<li><a href="sezioni/economia.html">Economia</a></li>
+<li><a href="sezioni/esteri.html">Esteri</a></li>
+<li><a href="sezioni/giustizia.html">Giustizia</a></li>
+<li><a href="storia/index.html">Accadde davvero?</a></li>
+      <li><a href="partiti/index.html">Partiti</a></li>
+      <li><a href="parola-data/index.html">Parola data</a></li>
+      <li><a href="cerca.html" aria-label="Cerca"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align:-2px"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M11 11l4 4" stroke="currentColor" stroke-width="2"></path></svg> Cerca</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="contenuto">
+  <div class="contenitore">
+<article class="prosa">
+  <h1>Privacy e cookie</h1>
+  <p>In breve: non ti chiediamo dati, non usiamo cookie, non ti tracciamo, non mostriamo pubblicità. Qui sotto i dettagli, come chiede il Regolamento europeo sulla protezione dei dati (GDPR, art. 13).</p>
+
+  <h2>Chi tratta i dati</h2>
+  <p>Titolare del trattamento: Federico Barbuto. Per qualsiasi domanda o richiesta: <a href="mailto:federicobarbuto@outlook.com">federicobarbuto@outlook.com</a>.</p>
+
+  <h2>Cosa raccogliamo</h2>
+  <p>Niente. Il sito non ha account, commenti, moduli o strumenti di statistica, e non carica nulla da altri siti: caratteri, immagini e ricerca stanno tutti su contrappunto.news.</p>
+  <ul>
+    <li><strong>Ricerca e test di affinità</strong> funzionano solo nel tuo browser: le domande che cerchi e le risposte che dai non ci arrivano.</li>
+    <li><strong>Tema chiaro o scuro e «solo i fatti»</strong>: le tue scelte restano salvate nel tuo browser (nella sua memoria locale), così valgono anche nelle altre pagine. Non sono cookie, non contengono dati su di te e non vengono mandate a nessuno. Sono strumenti tecnici richiesto da te, per cui non serve il consenso (art. 122 del Codice privacy e linee guida del Garante sui cookie del 10 giugno 2021). Le cancelli dalle impostazioni del browser.</li>
+  </ul>
+
+  <h2>Chi ospita il sito</h2>
+  <p>Il sito è ospitato da GitHub Pages, un servizio di GitHub, Inc. (Stati Uniti). Come ogni server, quando visiti una pagina GitHub riceve l'indirizzo IP del tuo dispositivo e lo registra per motivi di sicurezza. Noi quei registri non li vediamo e non li usiamo. Per sapere come GitHub tratta questi dati, anche fuori dall'Unione europea, vedi la sua <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">informativa sulla privacy</a>.</p>
+
+  <h2>Cookie</h2>
+  <p>Il sito non installa cookie, né nostri né di altri. Per questo non trovi il banner per il consenso.</p>
+
+  <h2>Link ad altri siti e social</h2>
+  <p>Gli articoli rimandano alle testate che citiamo; nel sito ci sono anche i link al nostro canale Telegram e al profilo Instagram. Quando apri quei link vale l'informativa di chi li gestisce.</p>
+
+  <h2>Newsletter</h2>
+  <p>La newsletter non è ancora attiva e non raccogliamo indirizzi email. Prima di aprirla aggiorneremo questa pagina: quali dati, a cosa servono, chi li gestisce per noi, per quanto li teniamo e come cancellarsi.</p>
+
+  <h2>I tuoi diritti</h2>
+  <p>Puoi chiedere di accedere ai dati che ti riguardano, di correggerli o cancellarli, di limitarne l'uso o di opporti (art. 15-22 GDPR), scrivendo a <a href="mailto:federicobarbuto@outlook.com">federicobarbuto@outlook.com</a>. Puoi anche fare reclamo al <a href="https://www.garanteprivacy.it/" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+
+  <p class="nota-redazione">Aggiornata il venerdì 30 ottobre 2026.</p>
+</article>
+  </div>
+</main>
+<footer class="piede">
+  <div class="contenitore">
+    <p>Niente pubblicità, niente partiti, niente soldi pubblici. Esistiamo solo se ci sostieni.</p>
+    <nav aria-label="Pagine di servizio">
+      <a href="metodo.html">Il metodo</a>
+      <a href="metodo.html#redazione">Come lavoriamo</a>
+      <a href="sostieni.html">Sostieni</a>
+      <a href="fonti/index.html">Le fonti</a>
+      <a href="cerca.html">Cerca</a>
+      <a href="privacy.html">Privacy e cookie</a>
+      <a href="note-legali.html">Note legali</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
