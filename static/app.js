@@ -212,4 +212,19 @@
       sezione.scrollIntoView({ behavior: "smooth" });
     });
   }
+
+  // Condividi: sul telefono apre il menu del sistema (WhatsApp, Instagram, messaggi…); altrove copia il link.
+  document.querySelectorAll("[data-condividi]").forEach(function (b) {
+    var url = b.getAttribute("data-condividi");
+    if (navigator.share) b.textContent = "Condividi…";
+    b.addEventListener("click", function () {
+      if (navigator.share) {
+        navigator.share({ title: b.getAttribute("data-titolo"), url: url }).catch(function () {});
+        return;
+      }
+      var fatto = function () { b.textContent = "Link copiato"; };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(fatto, function () { window.prompt("Copia il link:", url); });
+      else window.prompt("Copia il link:", url);
+    });
+  });
 })();
