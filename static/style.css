@@ -161,6 +161,7 @@ main { padding-bottom: 48px; }
 .trasparenza div { background: var(--sfondo); padding: 8px 10px; font-family: var(--mono); font-size: 12px; display: flex; flex-direction: column; }
 .trasparenza span:first-child { color: var(--tenue); text-transform: uppercase; font-size: 11px; }
 .interruttore { width: 100%; display: flex; align-items: center; justify-content: space-between; min-height: 48px; padding: 0 14px; border: 1px solid var(--testo); background: var(--sfondo); color: var(--testo); font: 500 14px var(--mono); cursor: pointer; text-transform: uppercase; }
+#solo-fatti { justify-content: center; text-align: center; text-transform: none; font-family: var(--testo-font); font-size: 15px; padding: 8px 14px; }
 .interruttore[aria-pressed="true"] { background: var(--inverso-sfondo); color: var(--inverso-testo); }
 .verdetto { margin: 18px 0; padding: 18px 16px; background: var(--inverso-sfondo); color: var(--inverso-testo); }
 .verdetto .titolo-verdetto { font-family: var(--titoli); font-weight: 700; font-size: 28px; line-height: 1.05; text-transform: uppercase; display: inline-block; margin: 6px 0 10px; padding: 2px 8px; background: var(--accento); color: var(--su-accento); }
@@ -453,7 +454,9 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 
 /* Condividi: link semplici, nessuno script di terze parti che tracci chi legge. */
 .condividi { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 0; }
-.condividi a, .condividi button { font-family: var(--mono); font-size: 13px; color: var(--testo); background: none; border: 1px solid var(--linea);
-  padding: 8px 12px; text-decoration: none; cursor: pointer; min-height: 40px; display: inline-flex; align-items: center; }
+.condividi a, .condividi button { color: var(--testo); background: none; border: 1px solid var(--linea); border-radius: 50%;
+  width: 44px; height: 44px; padding: 0; text-decoration: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.condividi .etichetta-sezione { margin-right: 4px; }
+.condividi .avviso-copia { font-family: var(--mono); font-size: 12px; color: var(--tenue); }
 .condividi a:hover, .condividi button:hover { border-color: var(--testo); }
 .fine-articolo { margin: 32px 0 0; padding-top: 16px; border-top: 1px solid var(--linea); }

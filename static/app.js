@@ -44,7 +44,7 @@
     var imposta = function (attivo) {
       document.body.classList.toggle("solo-fatti", attivo);
       interruttore.setAttribute("aria-pressed", attivo ? "true" : "false");
-      if (stato) stato.textContent = attivo ? "[ON]" : "[OFF]";
+      if (stato) stato.textContent = attivo ? "Stai vedendo solo i fatti: mostra tutto" : "Nascondi ipotesi e opinioni: lascia solo i fatti";
     };
     imposta(leggi("contrappunto-solo-fatti") === "1");
     interruttore.addEventListener("click", function () {
@@ -216,13 +216,18 @@
   // Condividi: sul telefono apre il menu del sistema (WhatsApp, Instagram, messaggi…); altrove copia il link.
   document.querySelectorAll("[data-condividi]").forEach(function (b) {
     var url = b.getAttribute("data-condividi");
-    if (navigator.share) b.textContent = "Condividi…";
+    // Sul telefono l'icona del link apre il menu del sistema: lo dice l'etichetta.
+    if (navigator.share) { b.setAttribute("aria-label", "Condividi…"); b.title = "Condividi…"; }
     b.addEventListener("click", function () {
       if (navigator.share) {
         navigator.share({ title: b.getAttribute("data-titolo"), url: url }).catch(function () {});
         return;
       }
-      var fatto = function () { b.textContent = "Link copiato"; };
+      var fatto = function () {
+        var avviso = b.parentNode.querySelector(".avviso-copia") || document.createElement("span");
+        avviso.className = "avviso-copia"; avviso.textContent = "Link copiato";
+        b.parentNode.appendChild(avviso);
+      };
       if (navigator.clipboard) navigator.clipboard.writeText(url).then(fatto, function () { window.prompt("Copia il link:", url); });
       else window.prompt("Copia il link:", url);
     });
