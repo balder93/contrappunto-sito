@@ -447,9 +447,11 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .indicatori td { padding: 5px 4px; border-bottom: 1px solid var(--linea); vertical-align: top; }
 .fonti-domanda { margin: -4px 0 10px; font-size: 12px; color: var(--tenue); }
 .bollino-coro { display: inline-block; padding: 2px 8px; font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.02em; white-space: nowrap; border: 1px solid var(--testo); }
-.bollino-coro.coro-non_regge { background: var(--accento); color: var(--su-accento); border-color: var(--accento); }
-.bollino-coro.coro-a_meta { box-shadow: inset 0 0 0 1px var(--accento-linea); border-color: var(--accento-linea); }
-.bollino-coro.coro-regge { color: var(--testo-2); border-color: var(--linea-forte, var(--linea)); }
+/* Il bollino come un semaforo (indicazione del proprietario, 31 ottobre 2026) */
+.bollino-coro::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 0; background: currentColor; }
+.bollino-coro.coro-regge { background: #1E9E50; color: #fff; border-color: #1E9E50; }
+.bollino-coro.coro-a_meta { background: #FFB800; color: #111214; border-color: #FFB800; }
+.bollino-coro.coro-non_regge { background: #E5383B; color: #fff; border-color: #E5383B; }
 @media (max-width: 600px) { .bollino-coro { font-size: 10px; padding: 2px 6px; } }
 
 /* Condividi: link semplici, nessuno script di terze parti che tracci chi legge. */
