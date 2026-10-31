@@ -488,5 +488,6 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 .barra-confronto.cattiva { background: #D2483B; }
 .col-barra { width: 1%; }
 .fonti-confronto { font-size: 12px; }
+.tabella-confronto .limiti-confronto { margin: 0 0 8px; font-size: 13px; padding: 6px 10px; border-left: 3px solid var(--linea-forte); background: var(--superficie); }
 .tabella-confronto tbody th { position: sticky; left: 0; background: var(--sfondo); z-index: 1; }
 .tabella-confronto tr.questo th { background: var(--superficie); }
