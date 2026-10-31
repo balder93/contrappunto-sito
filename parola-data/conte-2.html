@@ -61,10 +61,10 @@
   <span class="etichetta-sezione">Osservatorio politico · Parola data</span>
   <h1>Governo Conte II</h1>
   <p class="riga-giudizio"><span class="giudizio-governo g-giudizio-sospeso">Giudizio sospeso</span>
-<span class="tenue">Non diamo un voto finché l&#39;elenco delle promesse non è ancora completo.</span>    <a class="tenue" href="../metodo.html#parola-data">Come diamo il giudizio</a></p>
+<span class="tenue">Non diamo un voto finché alcune promesse non sono ancora verificate sugli atti.</span>    <a class="tenue" href="../metodo.html#parola-data">Come diamo il giudizio</a></p>
   <div class="tre-parti">
     <div><span class="etichetta-sezione">1 · La parola data</span>
-<p class="tenue">Nessuna promessa ancora decisa.</p></div>
+<p><b>54%</b> mantenuta, su 49 promesse già decise.</p></div>
     <div><span class="etichetta-sezione">2 · Come ha lasciato l'Italia</span>
 <p class="tenue">In preparazione.</p></div>
     <div><span class="etichetta-sezione">3 · Il periodo storico</span>
@@ -949,7 +949,479 @@
   <a href="berlusconi-4.html">Berlusconi IV</a>
   <a href="prodi-2.html">Prodi II</a>
 </nav>
-<p class="vuoto">L'archivio delle promesse di questo governo è in costruzione.</p>
+<p class="avviso"><strong>Prima estrazione, da verificare</strong>4 promesse ricostruite da fonti giornalistiche: il Notaio deve ancora confrontarle con il programma depositato e con la Gazzetta Ufficiale.</p>
+<div class="grafico-promesse">
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false"><defs>
+  <pattern id="motivo-in-corso" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" class="motivo-linea-tenue"></line></pattern>
+  <pattern id="motivo-infranta" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="5" class="motivo-linea"></line></pattern>
+  <pattern id="motivo-ribaltata" width="5" height="5" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="5" class="motivo-linea"></line><line x1="0" y1="0" x2="5" y2="0" class="motivo-linea"></line></pattern>
+  <pattern id="motivo-respinta" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" class="motivo-punto"></circle></pattern>
+</defs></svg>
+  <svg viewBox="0 0 42 42" role="img" aria-label="Promesse per stato: 23 fatto, 7 fatto a metà, 0 in cantiere, 0 nel cassetto, 19 non fatto, 0 fatto il contrario, 0 bocciato">
+    <circle cx="21" cy="21" r="15.9155" fill="none" class="svg-traccia" stroke-width="6"></circle>
+    <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-mantenuta" stroke-width="6" stroke-dasharray="46.939 53.061" stroke-dashoffset="25.0"></circle>
+    <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-parziale" stroke-width="6" stroke-dasharray="14.286 85.714" stroke-dashoffset="-21.939"></circle>
+    <circle cx="21" cy="21" r="15.9155" fill="none" class="arco-infranta" stroke-width="6" stroke-dasharray="38.776 61.224" stroke-dashoffset="-36.224"></circle>
+    <text x="21" y="21" text-anchor="middle" dominant-baseline="central" class="svg-totale">49</text>
+  </svg>
+  <ul class="legenda-stati">
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-mantenuta" stroke-width="1.5"></rect></svg><strong>23</strong> Fatto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-parziale" stroke-width="1.5"></rect></svg><strong>7</strong> Fatto a metà</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-in_corso" stroke-width="1.5"></rect></svg><strong>0</strong> In cantiere</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ferma" stroke-width="1.5"></rect></svg><strong>0</strong> Nel cassetto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-infranta" stroke-width="1.5"></rect></svg><strong>19</strong> Non fatto</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-ribaltata" stroke-width="1.5"></rect></svg><strong>0</strong> Fatto il contrario</li>
+    <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" class="stato-respinta" stroke-width="1.5"></rect></svg><strong>0</strong> Bocciato</li>
+  </ul>
+</div>
+<div class="filtri">
+  <label for="filtro-tema">Tema</label>
+  <select id="filtro-tema">
+    <option value="">Tutti i temi</option>
+<option value="altro">Altro</option><option value="energia">Energia</option><option value="esteri_difesa">Esteri e difesa</option><option value="fisco">Fisco</option><option value="giustizia">Giustizia</option><option value="immigrazione">Immigrazione</option><option value="infrastrutture">Infrastrutture</option><option value="istruzione">Istruzione</option><option value="lavoro">Lavoro</option><option value="pensioni">Pensioni</option><option value="riforme_istituzionali">Riforme istituzionali</option><option value="sanita">Sanità</option><option value="welfare">Welfare</option>  </select>
+  <span class="tenue mono" id="conteggio-promesse" aria-live="polite">49 promesse</span>
+</div>
+<article class="promessa" id="conte2-iva-2020" data-tema="fisco">
+  <div class="riga-meta"><span>Fisco</span><span class="bollino">Fatto</span></div>
+  <h3>Evitare l&#39;aumento dell&#39;IVA previsto per il 2020 dalle clausole di salvaguardia.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 1: «Con riferimento alla legge di bilancio per il 2020 sono prioritari: la neutralizzazione dell&#39;aumento dell&#39;IVA, […]». Dichiarazioni programmatiche alla Camera, 9 settembre 2019 (resoconto n. 222), capoverso «Siamo consapevoli che questa prossima manovra…»: «La sfida più rilevante per quest&#39;anno sarà evitare l&#39;aumento automatico dell&#39;IVA».</span>
+    <span>Criterio: Mantenuta se la legge di bilancio 2020 cancella gli aumenti delle aliquote IVA previsti dal 1° gennaio 2020.</span>
+<span>Atto: Legge 27 dicembre 2019 n. 160 (bilancio 2020, GU n. 304 del 30 dicembre 2019), art. 1 c. 3: sostituisce l&#39;art. 1 c. 2 della legge 145/2018; per il 2020 l&#39;aliquota ridotta e l&#39;aliquota ordinaria sono «ridotte» di 3 e 2,9 punti rispetto agli aumenti previsti, cioè gli aumenti per il 2020 sono annullati; l&#39;aumento dell&#39;aliquota ordinaria resta scritto (+1,5 punti) dal 2022</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo originario). La clausola per gli anni successivi resta in legge: il governo ha disinnescato il 2020, non tutte le clausole.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a><a href="https://www.ilpost.it/2019/09/05/programma-governo-pd-m5s/" rel="noopener">Programma di governo M5S-PD-LeU (testo integrale, Il Post)</a></div></article>
+<article class="promessa" id="conte2-cuneo-fiscale" data-tema="fisco">
+  <div class="riga-meta"><span>Fisco</span><span class="bollino">Fatto</span></div>
+  <h3>Ridurre le tasse sul lavoro (cuneo fiscale) a totale vantaggio dei lavoratori.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. a): «ridurre le tasse sul lavoro (cosiddetto &#34;cuneo fiscale&#34;), a totale vantaggio dei lavoratori». Dichiarazioni programmatiche alla Camera, 9 settembre 2019, capoverso «Nella prospettiva di una graduale rimodulazione…»: «il nostro obiettivo prioritario è ridurre le tasse sul lavoro, il cosiddetto cuneo fiscale».</span>
+    <span>Criterio: Mantenuta se entra in vigore una riduzione delle imposte o dei contributi a carico dei lavoratori dipendenti, non dei datori di lavoro.</span>
+<span>Atto: Legge 160/2019, art. 1 c. 7: «Fondo per la riduzione del carico fiscale sui lavoratori dipendenti», 3 miliardi nel 2020 e 5 miliardi annui dal 2021</span><span>Atto: Decreto-legge 5 febbraio 2020 n. 3 (GU n. 29 del 5 febbraio 2020), convertito dalla legge 2 aprile 2020 n. 21: art. 1, «trattamento integrativo» per i lavoratori dipendenti dal 1° luglio 2020; art. 2, «ulteriore detrazione» per i redditi tra 28.000 e 40.000 euro, dal 1° luglio al 31 dicembre 2020</span><span>Atto: Legge 30 dicembre 2020 n. 178 (bilancio 2021), art. 1 c. 8: l&#39;ulteriore detrazione spetta «a decorrere dal 1° luglio 2020», senza più scadenza</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testi originari). La misura riguarda l&#39;imposta sul reddito dei lavoratori dipendenti, non i contributi: «a totale vantaggio dei lavoratori» è rispettato.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3" rel="noopener">Decreto-legge 5 febbraio 2020, n. 3 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-web-tax" data-tema="fisco">
+  <div class="riga-meta"><span>Fisco</span><span class="bollino">Fatto</span></div>
+  <h3>Introdurre la web tax per le multinazionali del digitale che spostano i profitti in altri Paesi.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 25: «Occorre introdurre la web tax per le multinazionali del settore che spostano i profitti e le informazioni in Paesi differenti da quelli in cui vendono i loro prodotti».</span>
+    <span>Criterio: Mantenuta se un&#39;imposta sui servizi digitali delle grandi imprese diventa applicabile durante il mandato.</span>
+<span>Atto: Legge 160/2019, art. 1 c. 678: modifica l&#39;imposta sui servizi digitali della legge 145/2018, abroga il comma 45 (che ne rinviava l&#39;applicazione a un decreto) e stabilisce che «le disposizioni relative all&#39;imposta sui servizi digitali si applicano a decorrere dal 1° gennaio 2020»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. L&#39;imposta era stata istituita nel 2018 ma non era mai diventata applicabile; la stessa legge ne prevede l&#39;abrogazione quando entreranno in vigore accordi internazionali sulla tassazione dell&#39;economia digitale (c. 49-bis).</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-pene-grandi-evasori" data-tema="fisco">
+  <div class="riga-meta"><span>Fisco</span><span class="bollino">Fatto</span></div>
+  <h3>Inasprire le pene, anche detentive, per i grandi evasori.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 16: «potenziare la lotta alle organizzazioni mafiose e all&#39;evasione fiscale, anche prevedendo l&#39;inasprimento delle pene, incluse quelle detentive, per i grandi evasori». Ripreso nelle dichiarazioni programmatiche, capoverso «Il nostro Paese necessita, poi, di una riforma della giustizia…».</span>
+    <span>Criterio: Mantenuta se una legge aumenta le pene detentive per i principali reati tributari.</span>
+<span>Atto: Decreto-legge 26 ottobre 2019 n. 124 (GU n. 252 del 26 ottobre 2019), convertito dalla legge 19 dicembre 2019 n. 157, art. 39: per la dichiarazione fraudolenta con fatture false la reclusione passa da «un anno e sei mesi a sei» a «quattro a otto» anni; per la dichiarazione infedele da «uno a tre» a «due a cinque»; per l&#39;omessa dichiarazione da «un anno e sei mesi a quattro» a «due a sei»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo originario del decreto; la conversione ha modificato alcune parti dell&#39;articolo, non lette qui).</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-10-26;124~art39" rel="noopener">Decreto-legge 26 ottobre 2019, n. 124, art. 39 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-pagamenti-elettronici" data-tema="fisco">
+  <div class="riga-meta"><span>Fisco</span><span class="bollino">Fatto</span></div>
+  <h3>Agevolare ed estendere i pagamenti elettronici per rendere tracciabili le transazioni commerciali.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 16: «rendendo quanto più possibile trasparenti le transazioni commerciali, agevolando, estendendo e potenziando i pagamenti elettronici obbligatori e riducendo drasticamente i costi di transazione».</span>
+    <span>Criterio: Mantenuta se entrano in vigore misure che spingono i pagamenti elettronici (limiti al contante, incentivi a chi paga con carta). La riduzione dei costi di transazione non è stata verificata e non entra nel giudizio.</span>
+<span>Atto: Decreto-legge 124/2019, art. 18: il limite all&#39;uso del contante scende a 2.000 euro dal 1° luglio 2020 e a 1.000 euro dal 1° gennaio 2022</span><span>Atto: Legge 160/2019, art. 1 cc. 288-290: rimborso in denaro a chi paga abitualmente con strumenti elettronici (il «cashback»), con 3 miliardi l&#39;anno per il 2021 e il 2022</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testi originari). Il limite di 1.000 euro dal 2022 è stato poi cambiato da leggi successive, che qui non contano.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-10-26;124~art18" rel="noopener">Decreto-legge 26 ottobre 2019, n. 124, art. 18 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-riforma-irpef" data-tema="fisco">
+  <div class="riga-meta"><span>Fisco</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Fare una riforma fiscale che semplifichi le regole e rimoduli le aliquote IRPEF secondo il principio di progressività, alleggerendo la pressione fiscale.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 17: «Occorre porre in essere una riforma fiscale, che contempli la semplificazione della disciplina, una più efficace alleanza tra contribuenti e Amministrazione finanziaria e la rimodulazione delle aliquote, in linea con il principio costituzionale della progressività della tassazione, con il risultato di alleggerire la pressione fiscale». Dichiarazioni programmatiche, capoverso «In primo luogo, va riconosciuto che gli italiani…».</span>
+    <span>Criterio: Mantenuta se entro il mandato una legge cambia le aliquote IRPEF (art. 11 del testo unico delle imposte sui redditi) o approva una delega per la riforma fiscale.</span>
+<span>Atto: Leggi di bilancio 2020 (legge 160/2019) e 2021 (legge 178/2020): nessuna modifica delle aliquote dell&#39;art. 11 del testo unico (ricerca nostra nei due testi)</span><span>Atto: Legge 30 dicembre 2021 n. 234 (bilancio 2022, governo Draghi), art. 1 c. 2: sostituisce l&#39;art. 1 c. 1 dell&#39;art. 11 del testo unico e porta gli scaglioni da cinque a quattro (23, 25, 35, 43 per cento): è la prima rimodulazione dopo il mandato</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Il taglio del cuneo fiscale (conte2-cuneo-fiscale) è una detrazione, non una rimodulazione delle aliquote. Dal marzo 2020 la pandemia ha cambiato le priorità del bilancio: lo annotiamo, ma la promessa non è stata mantenuta.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2021-12-30;234" rel="noopener">Legge 30 dicembre 2021, n. 234 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-tax-expenditures" data-tema="fisco">
+  <div class="riga-meta"><span>Fisco</span><span class="bollino">Fatto</span></div>
+  <h3>Riordinare le agevolazioni fiscali (tax expenditures) salvaguardandone la funzione sociale e redistributiva.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 17: «Analogamente si procederà a una revisione delle tax expenditures». Dichiarazioni programmatiche, capoverso «Siamo consapevoli che questa prossima manovra…»: «un attento riordino del sistema delle agevolazioni fiscali, delle tax expenditures, che salvaguardi, però, l&#39;importante funzione sociale e redistributiva di questo strumento».</span>
+    <span>Criterio: Mantenuta se una legge riduce o riordina le detrazioni e agevolazioni fiscali secondo il reddito.</span>
+<span>Atto: Legge 160/2019, art. 1 c. 629: le detrazioni al 19% dell&#39;art. 15 del testo unico spettano per intero fino a 120.000 euro di reddito e decrescono fino ad azzerarsi a 240.000 euro (c. 3-quater: restano piene, a ogni reddito, le detrazioni per le spese sanitarie e per gli interessi passivi delle lettere a e b)</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. È un riordino limitato ai redditi alti; un riordino generale delle agevolazioni non c&#39;è stato.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-salario-minimo" data-tema="lavoro">
+  <div class="riga-meta"><span>Lavoro</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Introdurre un salario minimo («retribuzione giusta»), anche dando efficacia erga omnes ai contratti collettivi dei sindacati più rappresentativi.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. b): «individuare una retribuzione giusta (cosiddetto &#34;salario minimo&#34;), garantendo le tutele massime a beneficio dei lavoratori, anche attraverso il meccanismo dell&#39;efficacia erga omnes dei contratti collettivi sottoscritti dalle organizzazioni sindacali maggiormente rappresentative». Ripreso nelle dichiarazioni programmatiche, capoverso «Nella prospettiva di una graduale rimodulazione…».</span>
+    <span>Criterio: Mantenuta se entra in vigore una legge sul salario minimo o sull&#39;efficacia generale dei minimi contrattuali; parziale se un testo è approvato da almeno una Camera.</span>
+<span>Atto: Senato, fascicolo iter del DDL S. 1132 (esaminato insieme ai DDL S. 310 e S. 658 «Disposizioni per l&#39;istituzione del salario minimo orario»), 11ª Commissione Lavoro: sedute il 16 luglio 2019 e poi il 10 novembre 2021; nessuna seduta durante il governo Conte II e nessun voto d&#39;aula nella legislatura</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sul fascicolo del Senato (copia su parlamento.it; senato.it non è stato consultato). Nel 2019 la relatrice aveva proposto come testo base il DDL S. 658 di Nunzia Catalfo, che dal 5 settembre 2019 era ministra del Lavoro dello stesso governo Conte II.</p><div class="collegamenti"><a href="https://www.parlamento.it/leg/18/BGT/Schede/FascicoloSchedeDDL/ebook/51436.pdf" rel="noopener">Fascicolo iter DDL S. 1132 (Senato, XVIII legislatura)</a></div></article>
+<article class="promessa" id="conte2-rappresentanza-sindacale" data-tema="lavoro">
+  <div class="riga-meta"><span>Lavoro</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Approvare una legge sulla rappresentanza sindacale basata su indici rigorosi.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. c): «approvare una legge sulla rappresentanza sindacale, sulla base di indici rigorosi». Dichiarazioni programmatiche, capoverso «Nella prospettiva di una graduale rimodulazione…»: «Occorre procedere finalmente all&#39;approvazione di una legge sulla rappresentanza sindacale».</span>
+    <span>Criterio: Mantenuta se entra in vigore una legge sulla misura della rappresentanza sindacale; parziale se un testo è approvato da almeno una Camera.</span>
+<span>Atto: Senato, fascicolo iter del DDL S. 1132 «Norme in materia di giusta retribuzione, salario minimo e rappresentanza sindacale»: nessuna seduta di commissione tra il 16 luglio 2019 e il 10 novembre 2021, nessun voto d&#39;aula</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sul fascicolo del Senato. Non abbiamo cercato altri disegni di legge sulla sola rappresentanza alla Camera: nessuna legge sulla materia risulta in vigore.</p><div class="collegamenti"><a href="https://www.parlamento.it/leg/18/BGT/Schede/FascicoloSchedeDDL/ebook/51436.pdf" rel="noopener">Fascicolo iter DDL S. 1132 (Senato, XVIII legislatura)</a></div></article>
+<article class="promessa" id="conte2-equo-compenso" data-tema="lavoro">
+  <div class="riga-meta"><span>Lavoro · da verificare</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Stabilire un giusto compenso per i lavoratori non dipendenti, contro abusi e sfruttamento dei giovani professionisti.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. d): «individuare il giusto compenso per i lavoratori non dipendenti, al fine di evitare forme di abuso e di sfruttamento in particolare a danno dei giovani professionisti». Dichiarazioni programmatiche, capoverso «Nella prospettiva di una graduale rimodulazione…».</span>
+    <span>Criterio: Mantenuta se entra in vigore una legge sull&#39;equo compenso dei lavoratori autonomi e professionisti; parziale se un testo è approvato da almeno una Camera durante il mandato.</span>
+<span>Atto: Legge 21 aprile 2023 n. 49, «Disposizioni in materia di equo compenso delle prestazioni professionali» (GU n. 104 del 5 maggio 2023): la legge arriva con il governo Meloni</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Non abbiamo ricostruito l&#39;iter dei disegni di legge sull&#39;equo compenso durante il governo Conte II: lo stato si basa sul fatto che la legge è del 2023. Da ricontrollare sull&#39;iter parlamentare se un testo sia passato in un&#39;aula prima del 13 febbraio 2021 (in quel caso diventerebbe «parziale»).</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2023-04-21;49" rel="noopener">Legge 21 aprile 2023, n. 49 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-parita-salariale" data-tema="lavoro">
+  <div class="riga-meta"><span>Lavoro</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Approvare una legge sulla parità di genere nelle retribuzioni, «al più presto».</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. f): «introdurre una legge sulla parità di genere nelle retribuzioni». Dichiarazioni programmatiche, capoverso «Nella prospettiva di una graduale rimodulazione…»: «Ci prefiggiamo di introdurre una legge sulla parità di genere nelle retribuzioni. È una battaglia che intendiamo portare a termine al più presto in omaggio a tutte le donne».</span>
+    <span>Criterio: Mantenuta se la legge entra in vigore entro il 13 febbraio 2021; parziale se un testo è approvato da almeno una Camera entro quella data.</span>
+<span>Atto: Camera, scheda della proposta di legge C. 522 (parità salariale): in commissione con audizioni dal febbraio 2020; approvata dalla Camera il 13 ottobre 2021, dopo la fine del governo</span><span>Atto: Legge 5 novembre 2021 n. 162, modifiche al codice delle pari opportunità in ambito lavorativo (GU n. 275 del 18 novembre 2021): approvata durante il governo Draghi</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sulla scheda della Camera e su Normattiva. La legge c&#39;è, ma arriva otto mesi dopo la fine del governo che l&#39;aveva promessa «al più presto»: il completamento si annota e non si conta.</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=522&amp;sede=&amp;tipo=" rel="noopener">Proposta di legge C. 522, scheda dei lavori (Camera)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2021-11-05;162" rel="noopener">Legge 5 novembre 2021, n. 162 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-piano-infortuni" data-tema="lavoro">
+  <div class="riga-meta"><span>Lavoro · da verificare</span><span class="bollino">Fatto a metà</span></div>
+  <h3>Realizzare un piano strategico di prevenzione degli infortuni sul lavoro e delle malattie professionali, con una vigilanza efficiente e sanzioni adeguate.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. e): «realizzare un piano strategico di prevenzione degli infortuni sul lavoro e delle malattie professionali, assicurando livelli elevati di sicurezza e di tutela della salute nei luoghi di lavoro, nonché un sistema di efficiente vigilanza, corredato da un adeguato apparato sanzionatorio». Dichiarazioni programmatiche, capoverso «Nella prospettiva di una graduale rimodulazione…»: «Intendiamo realizzare un piano strategico di prevenzione degli infortuni sul lavoro e delle malattie professionali».</span>
+    <span>Criterio: Mantenuta se entro il mandato è adottato un piano nazionale di prevenzione degli infortuni e sono rafforzate per legge vigilanza e sanzioni; parziale se c&#39;è solo il piano o solo la parte su vigilanza e sanzioni.</span>
+<span>Atto: Intesa in Conferenza Stato-Regioni del 6 agosto 2020, rep. n. 127/CSR, sul «Piano Nazionale della Prevenzione (PNP) 2020-2025» (letta nel recepimento della Regione Emilia-Romagna, delibera di giunta 14 dicembre 2020 n. 1855): secondo fonti regionali e di settore il piano ha un macro-obiettivo dedicato a infortuni e malattie professionali</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Da verificare: non abbiamo letto il testo del Piano Nazionale della Prevenzione (sul sito del Ministero della Salute non trovato in questa sessione), né cercato norme del periodo su vigilanza e sanzioni. Il piano è del Ministero della Salute con le Regioni, non il «piano strategico» del Ministero del Lavoro annunciato nel 2019: per questo al più «parziale». Lo stato può cambiare dopo la lettura del piano e delle norme sugli ispettorati.</p><div class="collegamenti"><a href="https://www.farmindustria.it/app/uploads/2021/01/Rec.to-Intesa-Stato-Regioni-PNP-2020-2025.pdf" rel="noopener">Recepimento dell&#39;intesa sul PNP 2020-2025, Regione Emilia-Romagna (copia Farmindustria)</a></div></article>
+<article class="promessa" id="conte2-impresa-femminile" data-tema="lavoro">
+  <div class="riga-meta"><span>Lavoro</span><span class="bollino">Fatto</span></div>
+  <h3>Sostenere l&#39;imprenditorialità femminile.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. g): «sostenere l&#39;imprenditorialità femminile».</span>
+    <span>Criterio: Mantenuta se una legge istituisce uno strumento dedicato con risorse proprie per le imprese femminili.</span>
+<span>Atto: Legge 178/2020, art. 1 c. 97: istituito presso il Ministero dello sviluppo economico il «Fondo a sostegno dell&#39;impresa femminile», 20 milioni di euro per ciascuno degli anni 2021 e 2022, per «promuovere e sostenere l&#39;avvio e il rafforzamento dell&#39;imprenditoria femminile»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. I decreti attuativi del fondo e il suo utilizzo non sono stati verificati.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-congedo-paternita" data-tema="lavoro">
+  <div class="riga-meta"><span>Lavoro</span><span class="bollino">Fatto a metà</span></div>
+  <h3>Recepire le direttive europee sul congedo di paternità obbligatorio e sulla conciliazione tra lavoro e vita privata.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. i): «recepire le direttive europee sul congedo di paternità obbligatoria e sulla conciliazione tra lavoro e vita privata».</span>
+    <span>Criterio: Mantenuta se entro il mandato è recepita la direttiva (UE) 2019/1158 sull&#39;equilibrio tra attività professionale e vita familiare (che prevede almeno dieci giorni di congedo di paternità); parziale se il congedo obbligatorio è avvicinato ai dieci giorni senza il recepimento.</span>
+<span>Atto: Legge 160/2019, art. 1 c. 342: il congedo obbligatorio del padre sale a sette giorni per il 2020</span><span>Atto: Legge 178/2020, art. 1 c. 363: sale a dieci giorni per il 2021</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Il congedo resta prorogato anno per anno; il recepimento della direttiva arriva con il decreto legislativo 105/2022 del governo Draghi (dato non riletto in questa sessione: da verificare prima di citarlo). Il termine europeo di recepimento era agosto 2022, oltre il mandato.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-riders" data-tema="lavoro">
+  <div class="riga-meta"><span>Lavoro</span><span class="bollino">Fatto</span></div>
+  <h3>Tutelare i diritti dei lavoratori digitali (i riders).</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 25: «sarà decisivo concentrarsi sull&#39;equità fiscale, la portabilità dei dati, i diritti dei lavoratori digitali (cosiddetti riders)».</span>
+    <span>Criterio: Mantenuta se entra in vigore una disciplina di legge con tutele minime per i ciclofattorini delle piattaforme.</span>
+<span>Atto: Legge 2 novembre 2019 n. 128 (GU n. 257 del 2 novembre 2019), di conversione del decreto-legge 3 settembre 2019 n. 101: inserisce nel decreto legislativo 81/2015 il capo V-bis, «livelli minimi di tutela per i lavoratori autonomi che svolgono attività di consegna di beni per conto altrui […] attraverso piattaforme anche digitali» (artt. 47-bis e seguenti: contratto scritto, compenso minimo orario in assenza di contratti collettivi, divieto di pagamento solo a consegna)</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo vigente al 13 febbraio 2021). Il decreto-legge fu adottato dal governo Conte I il 3 settembre 2019; il capo sui riders fu aggiunto e approvato in sede di conversione, sotto il governo Conte II. Per questo la contiamo, con questa avvertenza.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-09-03;101" rel="noopener">Decreto-legge 3 settembre 2019, n. 101, testo coordinato (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-opzione-donna" data-tema="pensioni">
+  <div class="riga-meta"><span>Pensioni</span><span class="bollino">Fatto</span></div>
+  <h3>Rinnovare «opzione donna», la pensione anticipata per le lavoratrici con il calcolo contributivo.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. h): «rinnovare l&#39;istituto di natura previdenziale cosiddetto &#34;opzione donna&#34;».</span>
+    <span>Criterio: Mantenuta se la legge proroga opzione donna ad almeno un&#39;altra annata di requisiti.</span>
+<span>Atto: Legge 160/2019, art. 1 c. 476: all&#39;art. 16 del decreto-legge 4/2019 i requisiti vanno maturati entro il 31 dicembre 2019 (prima 2018)</span><span>Atto: Legge 178/2020, art. 1 c. 336: proroga ai requisiti maturati entro il 31 dicembre 2020</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Rinnovata due volte durante il mandato.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-pensione-garanzia-giovani" data-tema="pensioni">
+  <div class="riga-meta"><span>Pensioni</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Incrementare il fondo previdenziale integrativo pubblico, introducendo la pensione di garanzia per i giovani.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 4, lett. l): «incrementare il Fondo previdenziale integrativo pubblico, includendo la pensione di garanzia per i giovani».</span>
+    <span>Criterio: Mantenuta se una legge introduce una pensione di garanzia (un minimo per chi è interamente nel sistema contributivo) o rafforza un fondo pubblico di previdenza integrativa.</span>
+<span>Atto: Leggi di bilancio 2020 (legge 160/2019) e 2021 (legge 178/2020): nessuna norma su una «pensione di garanzia» né su un «fondo previdenziale integrativo pubblico» (ricerca nostra nei testi integrali)</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sui testi delle due leggi di bilancio su Normattiva. Non abbiamo esaminato tutti i decreti-legge del periodo: lo stato si basa sulle leggi di bilancio, dove una misura del genere avrebbe trovato posto. Da ricontrollare.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-assegno-unico" data-tema="welfare">
+  <div class="riga-meta"><span>Welfare</span><span class="bollino">Fatto a metà</span></div>
+  <h3>Introdurre l&#39;assegno unico per i figli, con attenzione alle famiglie numerose, povere e con persone disabili.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 6: «Occorre intervenire con più efficaci misure di sostegno in favore delle famiglie (assegno unico), con particolare attenzione alle famiglie numerose e prive di adeguate risorse economiche e a quelle con persone con disabilità». Dichiarazioni programmatiche, capoverso «È necessario rafforzare la tutela e i diritti dei minori…»: «penso, ad esempio, all&#39;assegno unico».</span>
+    <span>Criterio: Mantenuta se entro il mandato entra in vigore la legge che istituisce l&#39;assegno unico; parziale se la legge è approvata da una Camera o se sono stanziate le risorse senza la legge.</span>
+<span>Atto: Legge 160/2019, art. 1 c. 339: istituito il «Fondo assegno universale e servizi alla famiglia», 1.044 milioni per il 2021 e 1.244 milioni dal 2022; legge 178/2020, art. 1 c. 7: il fondo è aumentato di 3.012,1 milioni per il 2021</span><span>Atto: Camera, proposta di legge C. 687 (delega per l&#39;assegno unico): approvata dalla Camera il 21 luglio 2020 e trasmessa al Senato</span><span>Atto: Legge 1° aprile 2021 n. 46, delega al governo per l&#39;assegno unico (GU n. 82 del 6 aprile 2021): approvata dopo la fine del mandato</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva e sulla scheda della Camera. Durante il mandato: risorse stanziate e testo approvato da una Camera. L&#39;assegno è stato pagato dal 2022 (decreto legislativo 230/2021, governo Draghi; non riletto qui).</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=687&amp;sede=&amp;tipo=" rel="noopener">Proposta di legge C. 687, scheda dei lavori (Camera)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2021-04-01;46" rel="noopener">Legge 1° aprile 2021, n. 46 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-asili-nido" data-tema="welfare">
+  <div class="riga-meta"><span>Welfare</span><span class="bollino">Fatto a metà</span></div>
+  <h3>Azzerare le rette degli asili nido per le famiglie a reddito basso e medio dall&#39;anno 2020-2021, d&#39;intesa con le regioni, e aumentare i posti, soprattutto al Sud.</h3>
+  <div class="dettagli">
+    <span>Fonte: Dichiarazioni programmatiche alla Camera, 9 settembre 2019, capoverso «Questo Governo, come prima misura di intervento…»: «si adopererà con le regioni per azzerare totalmente le rette per la frequenza di asili nido e micro nidi, a partire dal prossimo anno scolastico 2020-2021 e per ampliare contestualmente l&#39;offerta dei posti disponibili, soprattutto nel Mezzogiorno». Nella replica (capoverso «È stato obiettato che gli asili nido in Lombardia…»): «vogliamo che questa prestazione costituisca oggetto di un diritto e non di un servizio a domanda individuale».</span>
+    <span>Criterio: Mantenuta se dal 2020-2021 le famiglie con reddito basso e medio non pagano la retta (per legge o con un contributo che la copre) e se sono stanziate risorse per nuovi posti; parziale se c&#39;è solo una delle due cose o se la retta è coperta solo in parte.</span>
+<span>Atto: Legge 160/2019, art. 1 c. 343: dal 2020 il «bonus nido» (legge 232/2016, art. 1 c. 355) aumenta di 1.500 euro l&#39;anno per le famiglie con ISEE fino a 25.000 euro e di 1.000 euro con ISEE tra 25.001 e 40.000 euro</span><span>Atto: Legge 160/2019, art. 1 c. 59: fondo «Asili nido e scuole dell&#39;infanzia» per costruire e riqualificare edifici comunali, 100 milioni l&#39;anno dal 2021 al 2023 e 200 milioni dal 2024 al 2034</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. È un contributo, non l&#39;azzeramento della retta né un diritto al posto: se copra la retta dipende dal costo del nido, che non abbiamo verificato. I posti finanziati dal fondo arrivano dopo il mandato.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a><a href="https://documenti.camera.it/leg18/resoconti/assemblea/html/sed0222/stenografico.htm" rel="noopener">Resoconto stenografico della Camera, seduta n. 222 del 9 settembre 2019</a></div></article>
+<article class="promessa" id="conte2-caregiver" data-tema="welfare">
+  <div class="riga-meta"><span>Welfare</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Riconoscere per legge la funzione sociale del caregiver familiare.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 6: «Sarà inoltre valorizzato, a livello normativo, la figura del caregiver, attraverso il riconoscimento della sua funzione sociale».</span>
+    <span>Criterio: Mantenuta se entra in vigore una legge che riconosce e disciplina il caregiver familiare.</span>
+<span>Atto: Legge 178/2020, art. 1 c. 334: istituisce un fondo di 30 milioni l&#39;anno per il 2021-2023 «destinato alla copertura finanziaria di interventi legislativi finalizzati al riconoscimento del valore sociale ed economico dell&#39;attività di cura non professionale del caregiver familiare»: alla fine del 2020 la legge è ancora da fare</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Il fondo prepara la legge ma non la sostituisce.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-codice-disabilita" data-tema="welfare">
+  <div class="riga-meta"><span>Welfare · da verificare</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Riunificare le norme sulla disabilità in un codice, con una legge delega da attuare con un decreto legislativo «quanto prima possibile».</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 6: «Occorre, inoltre, realizzare una razionale riunificazione normativa della disciplina in materia di sostegno alla disabilità». Dichiarazioni programmatiche, capoverso «Massima attenzione sarà riservata al tema…»: «C&#39;è un progetto di codice delle disabilità: dobbiamo coltivare quel progetto». Replica alla Camera, capoverso «Ci hanno richiesto le associazioni…»: «è una legge delega […] Con quella lavoreremo celermente per dare al mondo delle disabilità un decreto legislativo delegato quanto prima possibile».</span>
+    <span>Criterio: Mantenuta se entro il mandato entra in vigore la legge delega sulla disabilità; parziale se è approvata da una Camera.</span>
+<span>Atto: Legge 22 dicembre 2021 n. 227, «Delega al Governo in materia di disabilità» (GU n. 309 del 30 dicembre 2021): approvata dieci mesi dopo la fine del governo, come traguardo del PNRR</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Non abbiamo ricostruito l&#39;iter del disegno di legge delega del governo Conte I durante il mandato: lo stato si basa sul fatto che la delega arriva nel dicembre 2021 con un testo del governo Draghi. Da ricontrollare se un testo fosse passato in un&#39;aula prima del febbraio 2021.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2021-12-22;227" rel="noopener">Legge 22 dicembre 2021, n. 227 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-reddito-cittadinanza" data-tema="welfare">
+  <div class="riga-meta"><span>Welfare</span><span class="bollino">Fatto</span></div>
+  <h3>Mantenere il reddito di cittadinanza come misura di protezione sociale.</h3>
+  <div class="dettagli">
+    <span>Fonte: Replica alla Camera, 9 settembre 2019 (resoconto n. 222), capoverso «Lo dico alla Lega…»: «reddito di cittadinanza […] È una misura di protezione sociale che rimarrà assolutamente in piedi, anzi, la dobbiamo implementare».</span>
+    <span>Criterio: Mantenuta se il reddito di cittadinanza è in vigore e finanziato alla fine del mandato. «Implementare» non ha misura e non entra nel giudizio.</span>
+<span>Atto: Legge 178/2020, art. 1 c. 371: l&#39;autorizzazione di spesa del reddito di cittadinanza (art. 12 c. 1 del decreto-legge 4/2019) è aumentata di 196,3 milioni per il 2021 e di circa 474 milioni l&#39;anno dal 2022</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. La misura è stata poi abolita dal governo Meloni: non conta per questo governo.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a><a href="https://documenti.camera.it/leg18/resoconti/assemblea/html/sed0222/stenografico.htm" rel="noopener">Resoconto stenografico della Camera, seduta n. 222 del 9 settembre 2019</a></div></article>
+<article class="promessa" id="conte2-edilizia-pubblica" data-tema="welfare">
+  <div class="riga-meta"><span>Welfare</span><span class="bollino">Fatto</span></div>
+  <h3>Varare un piano di edilizia residenziale pubblica per ristrutturare il patrimonio esistente e riutilizzare le strutture pubbliche dismesse, a favore di famiglie a basso reddito e giovani.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 8: «Occorre prevedere un piano di edilizia residenziale pubblica volto alla ristrutturazione del patrimonio esistente e al riutilizzo delle strutture pubbliche dismesse, in favore di famiglie a basso reddito e dei giovani».</span>
+    <span>Criterio: Mantenuta se una legge istituisce un programma nazionale con risorse proprie per riqualificare l&#39;edilizia residenziale pubblica e sociale.</span>
+<span>Atto: Legge 160/2019, art. 1 cc. 437-444: «Programma innovativo nazionale per la qualità dell&#39;abitare», per «riqualificare e incrementare il patrimonio destinato all&#39;edilizia residenziale sociale» e rifunzionalizzare spazi e immobili pubblici «senza consumo di nuovo suolo»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Non abbiamo verificato la dotazione complessiva né i progetti finanziati (il programma è poi confluito nel PNRR).</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-fondo-affitti" data-tema="welfare">
+  <div class="riga-meta"><span>Welfare</span><span class="bollino">Fatto</span></div>
+  <h3>Adeguare le risorse del Fondo nazionale di sostegno alle locazioni.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 8: «adeguare le risorse del Fondo nazionale di sostegno alle locazioni».</span>
+    <span>Criterio: Mantenuta se durante il mandato il fondo riceve nuove risorse per legge.</span>
+<span>Atto: Decreto-legge 19 maggio 2020 n. 34 (GU n. 128 del 19 maggio 2020), convertito dalla legge 17 luglio 2020 n. 77, art. 29: il Fondo nazionale per il sostegno all&#39;accesso alle abitazioni in locazione (legge 431/1998, art. 11) è «incrementato di ulteriori 140 milioni di euro per l&#39;anno 2020»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. «Adeguare» non ha una cifra: il criterio chiede solo un aumento. Altri stanziamenti del periodo (decreto-legge 18/2020, art. 65) non sono stati letti.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-05-19;34~art29" rel="noopener">Decreto-legge 19 maggio 2020, n. 34, art. 29 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-assunzioni-sanita" data-tema="sanita">
+  <div class="riga-meta"><span>Sanità</span><span class="bollino">Fatto</span></div>
+  <h3>D&#39;intesa con le regioni, un piano di assunzioni straordinarie di medici e infermieri.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 22: «Occorre inoltre, d&#39;intesa con le Regioni, assicurare un piano di assunzioni straordinarie di medici e infermieri». Dichiarazioni programmatiche, capoverso «La tutela dei beni comuni, infine…»: «predisponendo un piano di assunzioni straordinarie di medici e infermieri».</span>
+    <span>Criterio: Mantenuta se una legge autorizza il Servizio sanitario a reclutare in via straordinaria medici e infermieri; il numero di assunti non è stato verificato e non entra nel giudizio.</span>
+<span>Atto: Decreto-legge 17 marzo 2020 n. 18, convertito dalla legge 24 aprile 2020 n. 27, art. 2-bis «Misure straordinarie per l&#39;assunzione degli specializzandi e per il conferimento di incarichi di lavoro autonomo a personale sanitario»: per la durata dello stato di emergenza le aziende sanitarie possono reclutare personale delle professioni sanitarie e medici specializzandi</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Le assunzioni sono legate all&#39;emergenza Covid e in buona parte a tempo (incarichi di lavoro autonomo): rispondono alla lettera della promessa, nata prima della pandemia, ma non sono il piano stabile annunciato nel 2019. Quante persone siano state assunte, e quante in modo stabile, è da verificare sui dati della Corte dei conti o della Ragioneria.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-03-17;18~art2bis" rel="noopener">Decreto-legge 17 marzo 2020, n. 18, art. 2-bis (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-formazione-medici" data-tema="sanita">
+  <div class="riga-meta"><span>Sanità</span><span class="bollino">Fatto</span></div>
+  <h3>Potenziare i percorsi formativi dei medici.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 22: «potenziare i percorsi formativi medici». Dichiarazioni programmatiche, capoverso «La tutela dei beni comuni, infine…»: «potenziandone i percorsi formativi».</span>
+    <span>Criterio: Mantenuta se una legge aumenta i contratti di formazione specialistica dei medici.</span>
+<span>Atto: Decreto-legge 34/2020, art. 5 «Incremento delle borse di studio degli specializzandi»: ulteriore spesa di 105 milioni per ciascuno degli anni 2020 e 2021 e di 109,2 milioni per ciascuno degli anni 2022-2024 per aumentare i contratti di formazione specialistica</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Il numero di borse in più non è stato verificato sui decreti di riparto.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-05-19;34~art5" rel="noopener">Decreto-legge 19 maggio 2020, n. 34, art. 5 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-agenzia-ricerca" data-tema="istruzione">
+  <div class="riga-meta"><span>Istruzione</span><span class="bollino">Fatto</span></div>
+  <h3>Istituire un&#39;agenzia nazionale per la ricerca, sul modello europeo.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 11: «Il sistema di reclutamento va allineato ai migliori standard internazionali e va potenziato anche attraverso l&#39;istituzione di un&#39;agenzia nazionale, sul modello di quelle istituite in altri Paesi europei, che possa coordinare e accrescere la qualità e l&#39;efficacia delle politiche pubbliche sulla ricerca». Stesse parole nelle dichiarazioni programmatiche, capoverso «Nello stesso tempo, occorre rafforzare e valorizzare il nostro sistema universitario…».</span>
+    <span>Criterio: Mantenuta se una legge istituisce l&#39;agenzia.</span>
+<span>Atto: Legge 160/2019, art. 1 c. 241: «è istituita un&#39;apposita agenzia, denominata Agenzia nazionale per la ricerca (ANR), dotata di autonomia statutaria, organizzativa, tecnico-operativa e gestionale, sottoposta alla vigilanza della Presidenza del Consiglio dei ministri e del Ministero dell&#39;istruzione, dell&#39;università e della ricerca» (cc. 240-252)</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Mantenuta sulla carta: se l&#39;agenzia sia mai diventata operativa non è stato verificato in questa sessione (da ricontrollare: se non lo è diventata entro il mandato, lo stato va riconsiderato).</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-concorsi-docenti" data-tema="istruzione">
+  <div class="riga-meta"><span>Istruzione</span><span class="bollino">Fatto</span></div>
+  <h3>Contrastare il precariato dei docenti con concorsi ordinari e straordinari che riconoscano l&#39;esperienza.</h3>
+  <div class="dettagli">
+    <span>Fonte: Dichiarazioni programmatiche alla Camera, 9 settembre 2019, capoverso «Per quanto riguarda la scuola occorre intervenire…»: «Occorre, anche in questo contesto, contrastare il precariato, attraverso lo strumento di concorsi ordinari e straordinari che riconoscano il valore dell&#39;esperienza e, nello stesso tempo, valorizzino il merito».</span>
+    <span>Criterio: Mantenuta se una legge autorizza un concorso straordinario per i docenti precari insieme al concorso ordinario.</span>
+<span>Atto: Decreto-legge 29 ottobre 2019 n. 126 (GU n. 255 del 30 ottobre 2019), convertito dalla legge 20 dicembre 2019 n. 159, art. 1: autorizza, «contestualmente al concorso ordinario», una «procedura straordinaria per titoli ed esami» per la scuola secondaria, per «complessivi ventiquattromila posti»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Lo svolgimento delle prove (rinviate per la pandemia) e le immissioni in ruolo non sono state verificate.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-10-29;126" rel="noopener">Decreto-legge 29 ottobre 2019, n. 126 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-taglio-parlamentari" data-tema="riforme_istituzionali">
+  <div class="riga-meta"><span>Riforme istituzionali</span><span class="bollino">Fatto</span></div>
+  <h3>Approvare la riduzione del numero dei parlamentari, mettendola nel primo calendario utile della Camera.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 10: «È necessario inserire, nel primo calendario utile della Camera dei deputati, la riduzione del numero dei parlamentari». Dichiarazioni programmatiche, capoverso «Per quanto riguarda il tema delle riforme costituzionali…».</span>
+    <span>Criterio: Mantenuta se la legge costituzionale entra in vigore.</span>
+<span>Atto: Legge costituzionale 19 ottobre 2020 n. 1 (GU n. 261 del 21 ottobre 2020): i deputati passano da 630 a 400 e i senatori elettivi da 315 a 200; nel preambolo: «Il referendum indetto in data 17 luglio 2020 ha dato risultato favorevole»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Il referendum confermativo si è votato il 20 e 21 settembre 2020 (data non riletta qui sugli atti).</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge.costituzionale:2020-10-19;1" rel="noopener">Legge costituzionale 19 ottobre 2020, n. 1 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-legge-elettorale" data-tema="riforme_istituzionali">
+  <div class="riga-meta"><span>Riforme istituzionali</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Riformare la legge elettorale con un percorso il più possibile condiviso in Parlamento, insieme al taglio dei parlamentari.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 10: «occorre avviare un percorso di riforma, quanto più possibile condiviso in sede parlamentare, del sistema elettorale». Dichiarazioni programmatiche, capoverso «Dicevo che questa riforma dovrà essere affiancata…».</span>
+    <span>Criterio: Mantenuta se entra in vigore una nuova legge elettorale; parziale se un testo è approvato da una Camera.</span>
+<span>Atto: Camera, proposta di legge C. 2329 (Brescia), nuova legge elettorale: testo base adottato in commissione Affari costituzionali il 10 settembre 2020; alla fine della legislatura l&#39;iter è «in corso di esame in Commissione»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sulla scheda della Camera. Nel 2022 si è votato senza una nuova legge elettorale.</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=2329&amp;sede=&amp;tipo=" rel="noopener">Proposta di legge C. 2329, scheda dei lavori (Camera)</a></div></article>
+<article class="promessa" id="conte2-elettorato-senato" data-tema="riforme_istituzionali">
+  <div class="riga-meta"><span>Riforme istituzionali</span><span class="bollino">Fatto a metà</span></div>
+  <h3>Riformare i requisiti di elettorato attivo e passivo per il Senato e la Camera, insieme al taglio dei parlamentari.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 10: «Contestualmente, si rende necessario procedere alla riforma dei requisiti di elettorato attivo e passivo per l&#39;elezione del Senato della Repubblica e della Camera dei deputati». Dichiarazioni programmatiche, capoverso «Contestualmente, il nostro obiettivo è procedere…».</span>
+    <span>Criterio: Mantenuta se entro il mandato entra in vigore la legge costituzionale sull&#39;elettorato; parziale se il testo supera almeno una deliberazione d&#39;aula durante il mandato.</span>
+<span>Atto: Camera, scheda della proposta di legge costituzionale C. 1511 e abbinate: prima deliberazione della Camera il 31 luglio 2019 (governo Conte I); prima deliberazione del Senato (S. 1440), trasmessa alla Camera il 22 settembre 2020; seconda deliberazione della Camera conclusa il 9 giugno 2021</span><span>Atto: Legge costituzionale 18 ottobre 2021 n. 1, «Modifica all&#39;articolo 58 della Costituzione, in materia di elettorato per l&#39;elezione del Senato della Repubblica» (GU n. 251 del 20 ottobre 2021): art. 1: dal primo comma dell&#39;art. 58 della Costituzione sono soppresse le parole «dagli elettori che hanno superato il venticinquesimo anno di età»; il requisito dei quarant&#39;anni per essere eletti senatori non è toccato</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sulla scheda della Camera e su Normattiva. Durante il mandato il testo ha superato la prima deliberazione del Senato; la legge è entrata in vigore con il governo Draghi e riguarda solo l&#39;elettorato attivo del Senato: la parte sull&#39;elettorato passivo non è stata fatta.</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=1511&amp;sede=&amp;tipo=" rel="noopener">Proposta di legge costituzionale C. 1511, scheda dei lavori (Camera)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge.costituzionale:2021-10-18;1" rel="noopener">Legge costituzionale 18 ottobre 2021, n. 1 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-autonomia-differenziata" data-tema="riforme_istituzionali">
+  <div class="riga-meta"><span>Riforme istituzionali</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Completare l&#39;autonomia differenziata «giusta e cooperativa», definendo prima i livelli essenziali delle prestazioni, i fabbisogni standard e il fondo perequativo, con il Parlamento coinvolto.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 20: «È necessario completare il processo di autonomia differenziata giusta e cooperativa, che […] definisca i livelli essenziali delle prestazioni concernenti i diritti civili e sociali, i fabbisogni standard; attui compiutamente l&#39;articolo 119, quinto comma, della Costituzione». Dichiarazioni programmatiche, capoverso «Nel quadro delle riforme istituzionali…»; replica: «abbiamo un impegno preso insieme: quello di realizzare il progetto di autonomia differenziata».</span>
+    <span>Criterio: Mantenuta se entro il mandato entra in vigore una legge quadro sull&#39;autonomia differenziata o un&#39;intesa con una regione approvata per legge; parziale se un testo è approvato da una Camera.</span>
+<span>Atto: Legge 26 giugno 2024 n. 86, «Disposizioni per l&#39;attuazione dell&#39;autonomia differenziata delle Regioni a statuto ordinario ai sensi dell&#39;articolo 116, terzo comma, della Costituzione» (GU n. 150 del 28 giugno 2024): la prima legge quadro arriva con il governo Meloni</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Non abbiamo letto l&#39;iter del disegno di legge quadro preparato nel 2019-2020 dal ministro per gli Affari regionali: nessuna legge e nessuna intesa sono state approvate durante il mandato.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-06-26;86" rel="noopener">Legge 26 giugno 2024, n. 86 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-conflitto-interessi" data-tema="riforme_istituzionali">
+  <div class="riga-meta"><span>Riforme istituzionali</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Approvare una seria legge sul conflitto di interessi.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 14: «L&#39;Italia ha bisogno di una seria legge sul conflitto di interessi».</span>
+    <span>Criterio: Mantenuta se entra in vigore una nuova legge sul conflitto di interessi; parziale se un testo è approvato da una Camera.</span>
+<span>Atto: Camera, proposta di legge C. 702 e abbinate (conflitto di interessi): testo base adottato in commissione Affari costituzionali il 6 ottobre 2020; alla fine della legislatura l&#39;iter è «in corso di esame in Commissione»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sulla scheda della Camera.</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=702&amp;sede=&amp;tipo=" rel="noopener">Proposta di legge C. 702, scheda dei lavori (Camera)</a></div></article>
+<article class="promessa" id="conte2-riforma-rai" data-tema="altro">
+  <div class="riga-meta"><span>Altro</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Riformare il sistema radiotelevisivo per tutelare indipendenza e pluralismo.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 14: «L&#39;Italia ha bisogno […] di una riforma del sistema radiotelevisivo improntato alla tutela dell&#39;indipendenza e del pluralismo».</span>
+    <span>Criterio: Mantenuta se entra in vigore una legge che cambia la governance del servizio pubblico radiotelevisivo; parziale se un testo è approvato da una Camera.</span>
+<span>Atto: Normattiva, legge 28 dicembre 2015 n. 220 «Riforma della RAI e del servizio pubblico radiotelevisivo»: nessun aggiornamento all&#39;atto segnalato dopo l&#39;entrata in vigore (30 gennaio 2016), consultata il 31 ottobre 2026</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Non abbiamo cercato i disegni di legge presentati sulla RAI nella XVIII legislatura: lo stato si basa sul fatto che la legge sulla governance della RAI è rimasta quella del 2015. Il testo unico dei servizi di media audiovisivi è stato sostituito nel dicembre 2021 (decreto legislativo 208/2021, governo Draghi; non riletto qui), in attuazione di una direttiva europea.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;220" rel="noopener">Legge 28 dicembre 2015, n. 220 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-ambiente-costituzione" data-tema="altro">
+  <div class="riga-meta"><span>Altro</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Inserire la protezione dell&#39;ambiente e della biodiversità tra i principi fondamentali della Costituzione.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 7: «Il Governo intende realizzare un Green New Deal, che comporti un radicale cambio di paradigma culturale e porti a inserire la protezione dell&#39;ambiente e della biodiversità tra i principi fondamentali del nostro sistema costituzionale». Dichiarazioni programmatiche, capoverso «Lo voglio dire chiaramente…»: «ci adopereremo affinché la protezione dell&#39;ambiente, delle biodiversità e - auspico - anche dello sviluppo sostenibile siano inseriti tra i principi fondamentali».</span>
+    <span>Criterio: Mantenuta se la legge costituzionale entra in vigore entro il mandato; parziale se supera almeno una deliberazione d&#39;aula durante il mandato.</span>
+<span>Atto: Camera, scheda della proposta di legge costituzionale C. 3156 (dal Senato, S. 83 e abbinati): il Senato la approva in prima deliberazione e la trasmette alla Camera il 9 giugno 2021; approvazione definitiva l&#39;8 febbraio 2022</span><span>Atto: Legge costituzionale 11 febbraio 2022 n. 1, «Modifiche agli articoli 9 e 41 della Costituzione in materia di tutela dell&#39;ambiente» (GU n. 44 del 22 febbraio 2022)</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sulla scheda della Camera e su Normattiva. La prima deliberazione d&#39;aula è di quattro mesi dopo la fine del governo: la riforma c&#39;è, ma non durante questo mandato.</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=3156&amp;sede=&amp;tipo=" rel="noopener">Proposta di legge costituzionale C. 3156, scheda dei lavori (Camera)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge.costituzionale:2022-02-11;1" rel="noopener">Legge costituzionale 11 febbraio 2022, n. 1 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-riforma-csm" data-tema="giustizia">
+  <div class="riga-meta"><span>Giustizia</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Riformare il metodo di elezione dei membri del Consiglio superiore della magistratura, garantendo l&#39;indipendenza della magistratura dalla politica.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 15: «riformare il metodo di elezione dei membri del Consiglio superiore della Magistratura; garantire l&#39;indipendenza della magistratura dalla politica». Dichiarazioni programmatiche, capoverso «Il nostro Paese necessita, poi, di una riforma della giustizia…».</span>
+    <span>Criterio: Mantenuta se entro il mandato entra in vigore la riforma del sistema elettorale del CSM; parziale se è approvata da una Camera.</span>
+<span>Atto: Camera, scheda del disegno di legge C. 2681 (riforma dell&#39;ordinamento giudiziario e del CSM): presentato dal governo il 28 settembre 2020, approvato dalla Camera il 26 aprile 2022</span><span>Atto: Legge 17 giugno 2022 n. 71 (GU n. 142 del 20 giugno 2022), delega per la riforma dell&#39;ordinamento giudiziario: approvata durante il governo Draghi</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sulla scheda della Camera e su Normattiva. Il governo ha presentato il disegno di legge, ma nessun voto d&#39;aula è arrivato durante il mandato.</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=2681&amp;sede=&amp;tipo=" rel="noopener">Disegno di legge C. 2681, scheda dei lavori (Camera)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2022-06-17;71" rel="noopener">Legge 17 giugno 2022, n. 71 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-tempi-processi" data-tema="giustizia">
+  <div class="riga-meta"><span>Giustizia</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Rendere più efficiente la giustizia civile, penale e tributaria, con una drastica riduzione dei tempi dei processi.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 15: «Occorre rendere più efficiente il sistema della giustizia civile, penale e tributaria, anche attraverso una drastica riduzione dei tempi». Dichiarazioni programmatiche, capoverso «Il nostro Paese necessita, poi, di una riforma della giustizia civile, penale e tributaria…».</span>
+    <span>Criterio: Mantenuta se entro il mandato entrano in vigore le riforme del processo civile e penale; parziale se almeno una è approvata da una Camera. La durata effettiva dei processi è un dato da conto economico, non entra qui.</span>
+<span>Atto: Camera, scheda del disegno di legge C. 2435 (efficienza del processo penale): presentato dal governo il 13 marzo 2020, approvato dalla Camera il 3 agosto 2021</span><span>Atto: Legge 27 settembre 2021 n. 134 (processo penale) e legge 26 novembre 2021 n. 206 (processo civile): approvate durante il governo Draghi, come riforme del PNRR</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sulla scheda della Camera e su Normattiva. La riforma del processo civile era al Senato (S. 1662, non consultato: senato.it non è stato letto). Nessuna delle due riforme ha avuto un voto d&#39;aula durante il mandato. La giustizia tributaria è stata riformata nel 2022 (non riletto qui).</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=2435&amp;sede=&amp;tipo=" rel="noopener">Disegno di legge C. 2435, scheda dei lavori (Camera)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2021-09-27;134" rel="noopener">Legge 27 settembre 2021, n. 134 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2021-11-26;206" rel="noopener">Legge 26 novembre 2021, n. 206 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-acqua-pubblica" data-tema="altro">
+  <div class="riga-meta"><span>Altro</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Approvare «subito» la legge sull&#39;acqua pubblica, completando l&#39;iter in corso.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 22: «L&#39;acqua è un bene comune: bisogna approvare subito una legge sull&#39;acqua pubblica, completando l&#39;iter legislativo in corso». Dichiarazioni programmatiche, capoverso «La tutela dei beni comuni, infine…»: «Intendiamo approvare in tempi celeri una legge sull&#39;acqua pubblica».</span>
+    <span>Criterio: Mantenuta se la legge entra in vigore; parziale se è approvata da una Camera.</span>
+<span>Atto: Camera, scheda della proposta di legge C. 52 (Daga) e abbinate, gestione pubblica del ciclo delle acque: ultima seduta di commissione il 6 marzo 2019; nessuna seduta durante il governo Conte II; alla fine della legislatura l&#39;iter è «in corso di esame in Commissione»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sulla scheda della Camera.</p><div class="collegamenti"><a href="https://www.camera.it/leg18/126?tab=1&amp;leg=18&amp;idDocumento=52&amp;sede=&amp;tipo=" rel="noopener">Proposta di legge C. 52, scheda dei lavori (Camera)</a></div></article>
+<article class="promessa" id="conte2-decreti-sicurezza" data-tema="immigrazione">
+  <div class="riga-meta"><span>Immigrazione</span><span class="bollino">Fatto</span></div>
+  <h3>Rivedere i decreti sicurezza alla luce delle osservazioni del Presidente della Repubblica.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 18: «La disciplina in materia di sicurezza dovrà essere rivisitata, alla luce delle recenti osservazioni formulate dal Presidente della Repubblica». Dichiarazioni programmatiche, capoverso «Rivedremo la disciplina in materia di sicurezza…».</span>
+    <span>Criterio: Mantenuta se entra in vigore un atto che modifica i decreti-legge 113/2018 e 53/2019, compresa la disciplina sulle navi in mare oggetto delle osservazioni del Presidente della Repubblica.</span>
+<span>Atto: Decreto-legge 21 ottobre 2020 n. 130 (GU n. 261 del 21 ottobre 2020), convertito dalla legge 18 dicembre 2020 n. 173, art. 1: nuovi casi di conversione dei permessi di soggiorno in permessi di lavoro (tra cui la protezione speciale); riscrive il potere del ministro dell&#39;Interno di limitare o vietare il transito delle navi, che non si applica alle operazioni di soccorso comunicate e svolte secondo le regole internazionali</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo originario). Le osservazioni del Presidente della Repubblica (sulla conversione del decreto-legge 53/2019) non sono state rilette in questa sessione: il collegamento con il nuovo decreto è dichiarato dal governo.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-10-21;130" rel="noopener">Decreto-legge 21 ottobre 2020, n. 130 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-stop-trivelle" data-tema="energia">
+  <div class="riga-meta"><span>Energia</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Introdurre una norma che non consenta più il rilascio di nuove concessioni di trivellazione per estrarre idrocarburi.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 9: «Bisogna introdurre una normativa che non consenta, per il futuro, il rilascio di nuove concessioni di trivellazione per estrazione di idrocarburi». Dichiarazioni programmatiche, capoversi «Che promuova la rigenerazione urbana…» e «Lo voglio dire chiaramente…»: «Siamo determinati ad introdurre una normativa che non consenta più il rilascio di nuove concessioni […] chi verrà dopo di noi […] dovrà farlo modificando questa nuova norma di legge».</span>
+    <span>Criterio: Mantenuta se entra in vigore una norma che vieta in via permanente nuove concessioni di coltivazione di idrocarburi. Una sospensione temporanea non basta.</span>
+<span>Atto: Decreto-legge 30 dicembre 2019 n. 162, convertito dalla legge 28 febbraio 2020 n. 8, art. 12 c. 4-bis: il termine per adottare il Piano per la transizione energetica sostenibile delle aree idonee (PiTESAI) passa da diciotto a ventiquattro mesi; nel frattempo restano sospesi i procedimenti per nuovi permessi di prospezione e ricerca (decreto-legge 135/2018, art. 11-ter, cc. 4 e 6)</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo vigente al 13 febbraio 2021). Il governo ha prorogato la sospensione temporanea decisa dal governo Conte I in attesa di un piano che dirà dove si può estrarre, non ha vietato le nuove concessioni. La sospensione riguarda i permessi di prospezione e ricerca, non le concessioni di coltivazione.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-12-30;162~art12" rel="noopener">Decreto-legge 30 dicembre 2019, n. 162, art. 12 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2018-12-14;135~art11ter" rel="noopener">Decreto-legge 14 dicembre 2018, n. 135, art. 11-ter (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-fondo-green-new-deal" data-tema="energia">
+  <div class="riga-meta"><span>Energia</span><span class="bollino">Fatto</span></div>
+  <h3>Istituire un fondo, anche pluriennale, per orientare le imprese verso la transizione ecologica (Green New Deal).</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 7: «introdurre un apposito fondo che valga a orientare, anche su base pluriennale, le iniziative imprenditoriali in questa direzione».</span>
+    <span>Criterio: Mantenuta se una legge istituisce un fondo pluriennale per investimenti delle imprese nella decarbonizzazione e nell&#39;economia circolare.</span>
+<span>Atto: Legge 160/2019, art. 1 cc. 85-86: fondo con 470 milioni per il 2020, 930 milioni per il 2021 e 1.420 milioni per ciascuno degli anni 2022 e 2023, alimentato anche dai proventi delle aste delle quote di emissione, per garanzie e interventi su progetti che abbiano come obiettivo «la decarbonizzazione dell&#39;economia, l&#39;economia circolare» e altre finalità ambientali</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Quanto del fondo sia stato effettivamente impiegato non è stato verificato.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-export-armi" data-tema="esteri_difesa">
+  <div class="riga-meta"><span>Esteri e difesa</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Rendere più stringente la legge sull&#39;esportazione di armi, evitando l&#39;export di armi e componenti che possano colpire la popolazione civile.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 13: «Con riguardo all&#39;esportazione di armi, occorre rendere la normativa più stringente, evitando l&#39;esportazione delle armi e della componentistica che possano colpire la popolazione civile».</span>
+    <span>Criterio: Mantenuta se entro il mandato entra in vigore una modifica restrittiva della legge 185/1990 sull&#39;esportazione dei materiali d&#39;armamento; parziale se un testo è approvato da una Camera. I singoli provvedimenti amministrativi di revoca non cambiano la normativa.</span>
+<span>Atto: Normattiva, legge 9 luglio 1990 n. 185: «ultimo aggiornamento all&#39;atto: 10/10/2013» (consultata il 31 ottobre 2026): la legge non è stata modificata durante il mandato</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Nel gennaio 2021 il governo ha revocato le autorizzazioni a esportare missili e bombe d&#39;aereo verso Arabia Saudita ed Emirati Arabi Uniti (annuncio del ministro degli Esteri riportato dalla stampa; l&#39;atto dell&#39;UAMA non è stato letto): è un atto amministrativo nel solco della legge esistente, non la normativa più stringente promessa.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-07-09;185" rel="noopener">Legge 9 luglio 1990, n. 185 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-concessioni-autostradali" data-tema="infrastrutture">
+  <div class="riga-meta"><span>Infrastrutture</span><span class="bollino">Fatto</span></div>
+  <h3>Avviare la revisione delle concessioni autostradali.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 22: «Sarà inoltre avviata la revisione delle concessioni autostradali, confermando il piano tariffario unico». Dichiarazioni programmatiche, capoverso «Renderemo più efficiente, più razionale il sistema delle concessioni…».</span>
+    <span>Criterio: Mantenuta se entro il mandato una legge cambia le regole delle concessioni autostradali in essere. Il «piano tariffario unico» non è definito nel testo e non entra nel giudizio.</span>
+<span>Atto: Decreto-legge 30 dicembre 2019 n. 162, convertito dalla legge 28 febbraio 2020 n. 8, art. 35: in caso di revoca, decadenza o risoluzione di una concessione autostradale l&#39;ANAS può subentrare nella gestione; l&#39;indennizzo segue l&#39;art. 176 del codice dei contratti pubblici «anche in sostituzione delle eventuali clausole convenzionali […] difformi, anche se approvate per legge», e l&#39;efficacia della revoca non dipende dal pagamento delle somme dovute</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo originario). La promessa di portare a termine il procedimento su Autostrade per l&#39;Italia dopo il crollo del ponte Morandi è una voce a parte nell&#39;inventario: il suo esito si è definito dopo il mandato.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-12-30;162~art35" rel="noopener">Decreto-legge 30 dicembre 2019, n. 162, art. 35 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-identita-digitale" data-tema="altro">
+  <div class="riga-meta"><span>Altro</span><span class="bollino">Fatto a metà</span></div>
+  <h3>Dare ai cittadini un&#39;unica identità digitale entro un anno (settembre 2020).</h3>
+  <div class="dettagli">
+    <span>Fonte: Dichiarazioni programmatiche alla Camera, 9 settembre 2019, capoverso «Dobbiamo perseguire una strategia di azione…»: «dobbiamo lavorare perché i cittadini abbiano un&#39;unica riassuntiva identità digitale di qui a un anno».</span>
+    <span>Criterio: Mantenuta se entro settembre 2020 una norma rende un&#39;unica identità digitale lo strumento per accedere ai servizi pubblici online; parziale se la norma c&#39;è ma entra in vigore dopo o lascia più strumenti.</span>
+<span>Atto: Decreto-legge 16 luglio 2020 n. 76 (GU n. 178 del 16 luglio 2020), convertito dalla legge 11 settembre 2020 n. 120, art. 24: dal 28 febbraio 2021 le pubbliche amministrazioni usano «esclusivamente le identità digitali e la carta di identità elettronica» per l&#39;accesso ai servizi online e non possono più rilasciare credenziali diverse da SPID, CIE o CNS</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo originario). Gli strumenti restano più d&#39;uno (SPID, carta d&#39;identità elettronica, carta nazionale dei servizi) e l&#39;obbligo scatta il 28 febbraio 2021, dopo la scadenza annunciata e dopo la fine del governo.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-07-16;76~art24" rel="noopener">Decreto-legge 16 luglio 2020, n. 76, art. 24 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-ricostruzione-organica" data-tema="altro">
+  <div class="riga-meta"><span>Altro</span><span class="bollino pieno">Non fatto</span></div>
+  <h3>Approvare una normativa organica per accelerare la ricostruzione dopo i terremoti, valida per ogni calamità naturale.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 9: «È necessario accelerare la ricostruzione delle aree terremotate, anche attraverso l&#39;adozione di una normativa organica che consenta di rendere più spedite le procedure». Replica alla Camera, ultimo capoverso: «dobbiamo assolutamente varare una riforma organica che possa essere utilizzata in ogni caso di calamità naturale o di evento sismico. Lo dobbiamo fare una volta per tutte».</span>
+    <span>Criterio: Mantenuta se entra in vigore una legge quadro sulla ricostruzione dopo le calamità; parziale se un testo è approvato da una Camera.</span>
+<span>Atto: Legge 18 marzo 2025 n. 40, «Legge quadro in materia di ricostruzione post-calamità» (GU n. 76 del 1° aprile 2025): la legge quadro arriva con il governo Meloni</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Durante il mandato ci sono stati decreti specifici sulla ricostruzione (per esempio il decreto-legge 123/2019, non riletto qui), cioè proprio i provvedimenti ad hoc che la promessa voleva superare. Non abbiamo ricostruito l&#39;iter di eventuali proposte organiche nella XVIII legislatura.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-03-18;40" rel="noopener">Legge 18 marzo 2025, n. 40 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-piano-sud" data-tema="altro">
+  <div class="riga-meta"><span>Altro</span><span class="bollino">Fatto</span></div>
+  <h3>Lanciare un piano straordinario di investimenti per la crescita e il lavoro al Sud.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 19: «Va lanciato un piano straordinario di investimenti per la crescita e il lavoro al Sud». Dichiarazioni programmatiche, capoverso «L&#39;azione di rilancio degli investimenti…»: «occorre rilanciare un piano straordinario di investimenti per il Mezzogiorno».</span>
+    <span>Criterio: Mantenuta se il governo adotta un piano per il Sud con risorse indicate e misure di legge per lavoro e investimenti nel Mezzogiorno.</span>
+<span>Atto: Dipartimento per le politiche di coesione, Relazione sugli interventi nelle aree sottoutilizzate 2020: la legge di bilancio 2020 «ha posto le basi per l&#39;azione strategia e coordinata di rilancio degli investimenti pubblici e privati nel Mezzogiorno, raccolta nel &#34;Piano Sud 2030 – Sviluppo e coesione per l&#39;Italia&#34;, l&#39;atto di indirizzo politico che orienta le politiche di coesione in Italia»</span><span>Atto: Decreto-legge 14 agosto 2020 n. 104, convertito dalla legge 13 ottobre 2020 n. 126, art. 27 «Decontribuzione Sud»: sgravio contributivo per i rapporti di lavoro nelle regioni con PIL pro capite più basso, dal 1° ottobre al 31 dicembre 2020; la legge 178/2020, art. 1 c. 161, lo estende «fino al 31 dicembre 2029», a scalare</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 sugli atti citati. Il documento del Piano Sud 2030 (presentato nel febbraio 2020 secondo la stampa) è stato letto solo nella descrizione della Relazione ufficiale: quante risorse siano state davvero spese è da verificare. Lo stato premia l&#39;adozione del piano e delle misure, non i risultati.</p><div class="collegamenti"><a href="https://politichecoesione.governo.it/media/2195/relazione-sugli-interventi-nelle-aree-sottoutilizzate_2020.pdf" rel="noopener">Relazione sugli interventi nelle aree sottoutilizzate 2020 (politichecoesione.governo.it)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-08-14;104~art27" rel="noopener">Decreto-legge 14 agosto 2020, n. 104, art. 27 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-banca-investimenti" data-tema="altro">
+  <div class="riga-meta"><span>Altro · da verificare</span><span class="bollino">Fatto a metà</span></div>
+  <h3>Istituire una banca pubblica per gli investimenti che aiuti le imprese e il Sud.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 19: «anche attraverso il rafforzamento dell&#39;azione della banca pubblica per gli investimenti, che aiuti le imprese in tutta Italia e che si dedichi a colmare il divario territoriale». Dichiarazioni programmatiche, capoverso «L&#39;azione di rilancio degli investimenti…»: «anche attraverso l&#39;istituzione di una banca pubblica per gli investimenti».</span>
+    <span>Criterio: Mantenuta se entro il mandato è costituita una banca pubblica per gli investimenti; parziale se la legge la prevede ma non è costituita.</span>
+<span>Atto: Decreto-legge 16 dicembre 2019 n. 142, «Misure urgenti per il sostegno al sistema creditizio del Mezzogiorno e per la realizzazione di una banca di investimento» (GU n. 294 del 16 dicembre 2019), convertito dalla legge 7 febbraio 2020 n. 5, art. 1: fino a 900 milioni a Invitalia per ricapitalizzare la Banca del Mezzogiorno - Mediocredito Centrale; dopo le operazioni sul credito al Sud, un decreto del ministro dell&#39;Economia «può» disporne la scissione con una nuova società interamente del ministero</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo originario). Il decreto di scissione che avrebbe creato la nuova banca non risulta tra gli atti trovati: dato dedotto dalle ricerche, da ricontrollare. Se fosse stato adottato entro il 13 febbraio 2021, lo stato diventerebbe «mantenuta».</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-12-16;142" rel="noopener">Decreto-legge 16 dicembre 2019, n. 142 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-sace-export" data-tema="altro">
+  <div class="riga-meta"><span>Altro</span><span class="bollino">Fatto</span></div>
+  <h3>Rafforzare il sostegno pubblico all&#39;export con un nuovo modello di condivisione dei rischi tra SACE e Ministero dell&#39;economia.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 28: «potenziando le attività di consulenza e di supporto finanziario e assicurativo in favore degli esportatori, anche attraverso l&#39;individuazione di un adeguato modello di condivisione dei rischi tra Sace e MEF».</span>
+    <span>Criterio: Mantenuta se una legge introduce un modello di ripartizione dei rischi tra SACE e Stato per le operazioni all&#39;export.</span>
+<span>Atto: Decreto-legge 8 aprile 2020 n. 23 (GU n. 94 dell&#39;8 aprile 2020), convertito dalla legge 5 giugno 2020 n. 40, art. 2: riscrive l&#39;art. 6 del decreto-legge 269/2003; SACE assume gli impegni dell&#39;assicurazione all&#39;export per il dieci per cento e «il novanta per cento dei medesimi impegni è assunto dallo Stato»</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva (testo originario).</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-04-08;23~art2" rel="noopener">Decreto-legge 8 aprile 2020, n. 23, art. 2 (Normattiva)</a></div></article>
+<article class="promessa" id="conte2-impresa-40" data-tema="altro">
+  <div class="riga-meta"><span>Altro</span><span class="bollino">Fatto</span></div>
+  <h3>Rafforzare il piano Impresa 4.0 e gli incentivi agli investimenti privati.</h3>
+  <div class="dettagli">
+    <span>Fonte: Programma di governo, 5 settembre 2019, punto 3: «Il piano Impresa 4.0 è la strada tracciata da implementare e rafforzare». Punto 1: tra le priorità della legge di bilancio 2020, «il rafforzamento degli incentivi per gli investimenti privati».</span>
+    <span>Criterio: Mantenuta se le leggi di bilancio del mandato confermano e rafforzano gli incentivi fiscali agli investimenti in beni strumentali e tecnologie 4.0.</span>
+<span>Atto: Legge 160/2019, art. 1 cc. 184 e seguenti: credito d&#39;imposta per gli investimenti in beni strumentali, ricerca e sviluppo e innovazione tecnologica effettuati dal 1° gennaio 2020</span><span>Atto: Legge 178/2020, art. 1 cc. 1051 e seguenti: nuovo credito d&#39;imposta per gli investimenti in beni strumentali, esteso agli investimenti fino al 2022 (o al 30 giugno 2023 con ordine e acconto entro il 2022)</span>    <span>Aggiornata il 31.10.2026</span>
+  </div>
+<p class="nota">Verifica del 31 ottobre 2026 su Normattiva. Non abbiamo confrontato le aliquote con il regime precedente: «rafforzare» è letto come conferma ed estensione degli incentivi.</p><div class="collegamenti"><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160" rel="noopener">Legge 27 dicembre 2019, n. 160 (Normattiva)</a><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178" rel="noopener">Legge 30 dicembre 2020, n. 178 (Normattiva)</a></div></article>
 <aside class="modulo">
   <h3>Allerta promesse</h3>
   <p>L’allerta sulle promesse non è ancora attiva. La newsletter non è ancora attiva: intanto le notizie del giorno escono sul canale Telegram.</p>
