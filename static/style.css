@@ -453,11 +453,19 @@ mark { background: var(--accento); color: var(--su-accento); padding: 0 2px; }
 @media (max-width: 600px) { .bollino-coro { font-size: 10px; padding: 2px 6px; } }
 
 /* Condividi: link semplici, nessuno script di terze parti che tracci chi legge. */
-.condividi { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 0; }
+.condividi { display: flex; flex-wrap: nowrap; align-items: center; gap: 8px; margin: 16px 0 0; position: relative; }
+.condividi a, .condividi button { flex: 0 0 auto; }
 .condividi a, .condividi button { color: var(--testo); background: none; border: 1px solid var(--linea); border-radius: 50%;
   width: 44px; height: 44px; padding: 0; text-decoration: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
 .condividi .etichetta-sezione { margin-right: 4px; }
-.condividi .avviso-copia { font-family: var(--mono); font-size: 12px; color: var(--tenue); }
+.condividi .avviso-copia { font-family: var(--mono); font-size: 12px; color: var(--tenue); position: absolute; left: 0; top: 100%; margin-top: 4px; }
+/* Sul telefono le icone stanno su una riga sola (indicazione del proprietario, 31 ottobre 2026) */
+@media (max-width: 480px) {
+  .condividi { gap: 6px; }
+  .condividi a, .condividi button { width: 38px; height: 38px; }
+  .condividi svg { width: 18px; height: 18px; }
+  .condividi .etichetta-sezione { margin-right: 2px; font-size: 11px; }
+}
 .condividi a:hover, .condividi button:hover { border-color: var(--testo); }
 .fine-articolo { margin: 32px 0 0; padding-top: 16px; border-top: 1px solid var(--linea); }
 
