@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url><loc>https://contrappunto.news/articoli/2026-11-03-russia-data-center-10-per-cento-stato.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-03</news:publication_date><news:title>Putin ordina ai data center privati russi di riservare il 10% allo Stato</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-03-manovra-tagli-calamita.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-03</news:publication_date><news:title>Manovra, 1,2 miliardi in meno per le calamità nel 2027-29 (secondo ANSA)</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-03-abu-dhabi-colloqui-russia-ucraina.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-03</news:publication_date><news:title>Witkoff: colloqui Russia-Ucraina ad Abu Dhabi il 10-11 novembre (da confermare)</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-02-ucraina-russia-app-allerta-hackerate.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-02</news:publication_date><news:title>Ucraina, falso allarme nucleare sull'app di allerta: Kiev accusa Mosca</news:title>
@@ -10,7 +22,7 @@
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-02-supermercati-frigoriferi-cyber.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-02</news:publication_date><news:title>Svezia e Belgio, congelatori dei supermercati in tilt: sospetto attacco hacker</news:title>
+  <news:publication_date>2026-11-02</news:publication_date><news:title>Supermercati, frigoriferi in tilt in Europa e in Italia: sospetto attacco hacker</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-02-sanita-manovra-bertolaso.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
@@ -135,97 +147,5 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-01-bare-cinesi-dumping.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-01</news:publication_date><news:title>Bare cinesi, i produttori europei preparano la denuncia antidumping (secondo Politico)</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-zelensky-erdogan-istanbul.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Zelensky da Erdoğan: intesa per lavorare al corridoio del grano (secondo Kiev)</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-tirana-proteste-rama.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Tirana, molotov e idranti al 19° giorno di proteste contro Rama</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-scuola-tagli-posti-manovra.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Scuola, la manovra taglia 6.974 posti dal 2027: 4.925 sono docenti</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-sahara-occidentale-minurso.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Sahara Occidentale, la missione ONU scade dopo 35 anni per due veti incrociati</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-pensioni-rivalutazione-manovra.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Pensioni, la manovra taglia di nuovo la rivalutazione sopra quattro volte il minimo</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-patriot-ucraina-europa-paga.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Patriot all'Ucraina: Washington vende, gli alleati pagano</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-mosca-minaccia-tsaritsyno.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Mosca chiude il museo Tsaritsyno: allarme USA per un attacco «credibile»</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-midterm-voto-anticipato.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Midterm, 51 milioni hanno già votato: più voti anticipati che in tutto il 2022</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-manovra-sanita-schillaci.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Manovra, alla sanità 2,4 miliardi in più: Schillaci ne chiedeva 5,5</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-manovra-2027-irpef-un-anno.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Taglio Irpef fino a 55 mila, ma solo per il 2027: lo dice il testo della manovra</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-iran-trump-raid-midterm.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Trump: raid in Iran dal 4 novembre (da confermare)</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-hormuz-petroliere-mine.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Hormuz, petroliere in fiamme sulle mine: per l'Iran erano su rotte vietate</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-germania-inflazione-carburante.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Germania, inflazione giù al 2,8% con lo sconto sul carburante</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-genz-proteste-germania-europa.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Germania, Gen Z in piazza contro la visita militare obbligatoria: idranti a Francoforte</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-flat-tax-100mila-partite-iva.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Meloni e la flat tax a 100 mila: lo sconto vale per le tasse sul reddito, non per l'IVA</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-fitch-francia-outlook-negativo.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Fitch avverte Parigi: prospettive del debito francese da stabili a negative</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-exit-tax-manovra.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Exit tax in manovra: chi espatria con almeno 800 mila euro investiti paga subito</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-ebola-congo.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Ebola in Congo, oltre 5.000 morti: è la peggiore epidemia nella storia del paese</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-colosseo-subappalti.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Colosseo, stop ai subappalti dopo la morte dell'operaio: l'annuncio è della Cgil</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-caro-voli-natale.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Caro-voli di Natale: da Milano a Reggio Calabria almeno 427 euro andata e ritorno</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-canada-ue-membro-associato.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Il Canada vuole diventare «membro associato» dell'UE, ma il testo firmato non lo dice</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-almasri-stati-uniti-bando.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Almasri, gli Stati Uniti lo bandiscono per torture: l'Italia lo aveva rimandato in Libia</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-10-31-agcom-viagogo-oscurato.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-10-31</news:publication_date><news:title>Agcom oscura Viagogo in Italia: non ha pagato le multe sui biglietti rivenduti</news:title>
 </news:news></url>
 </urlset>
