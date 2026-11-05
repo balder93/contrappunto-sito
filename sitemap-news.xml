@@ -12,6 +12,10 @@
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-05</news:publication_date><news:title>Spagna, Díaz propone il salario minimo a 1.286 euro nel 2027 (+5,3%)</news:title>
 </news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-05-russia-sequestro-japan-tobacco.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-05</news:publication_date><news:title>Putin toglie a Japan Tobacco il comando delle fabbriche in Russia</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-05-polonia-tribunale-costituzionale-assemblea.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-05</news:publication_date><news:title>Polonia, giudice contestata convoca la Corte costituzionale il 10 novembre</news:title>
@@ -23,6 +27,10 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-05-meloni-rapporto-usa-midterm.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-05</news:publication_date><news:title>Meloni dopo le midterm: con gli Usa non cambia nulla</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-05-mattarella-sud-liberi-di-restare.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-05</news:publication_date><news:title>Mattarella a Napoli: chi nasce al Sud deve poter scegliere di restare</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-05-manovra-lega-gusmeroli-romeo.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
@@ -40,9 +48,17 @@
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-05</news:publication_date><news:title>Guerra in Iran, il conto al distributore: gasolio +31% e benzina +21%</news:title>
 </news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-05-hormuz-petroliere-mine.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-05</news:publication_date><news:title>Teheran: cinque petroliere in fiamme a Hormuz, quattro su mine (non confermato)</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-05-francia-sciopero-generale-salari.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-05</news:publication_date><news:title>Francia, sindacati in piazza per i salari e contro il bilancio</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-05-finlandia-condanna-cavi-baltico.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-05</news:publication_date><news:title>Finlandia, condannati capitano e nostromo della Fitburg per i cavi nel Baltico</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-05-electrolux-esuberi-volontari.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
@@ -182,7 +198,7 @@
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-03-falsi-allarmi-bomba-voli-europei.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-03</news:publication_date><news:title>Allarmi bomba su voli in quattro paesi europei, caccia a Fiumicino: nessun ordigno</news:title>
+  <news:publication_date>2026-11-03</news:publication_date><news:title>Falsi allarmi bomba via e-mail, seconda ondata sui voli europei: nessun ordigno</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-03-electrolux-mimit-trattativa.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
