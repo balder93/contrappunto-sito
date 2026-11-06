@@ -8,6 +8,10 @@
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-06</news:publication_date><news:title>Una giudice ferma per 14 giorni l'arco di Trump a Washington</news:title>
 </news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-06-spagna-olio-ritiro-12-per-cento.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-06</news:publication_date><news:title>Spagna, il governo blocca in magazzino il 12% dell'olio d'oliva fino al 2027</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-06-polonia-metsola-sejm-tusk.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-06</news:publication_date><news:title>Polonia, il PiS espone «Tusk = Dictator» mentre Metsola parla al Sejm</news:title>
@@ -15,10 +19,6 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-06-newsom-548-condanne-morte.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-06</news:publication_date><news:title>California, Newsom vuole commutare in ergastolo tutte le 548 condanne a morte</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-06-meloni-ucraina-una-voce-sola.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-06</news:publication_date><news:title>Meloni a Costa: l'Ue decida chi tratta sull'Ucraina, e con quale mandato</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-06-manovra-sindacati-chigi.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
@@ -39,6 +39,10 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-06-borse-tech-midterm-ia.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-06</news:publication_date><news:title>Wall Street, Nasdaq -5,5%: pesano le regole temute e i dubbi sulla spesa per l'IA</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-06-bartolozzi-consulta-almasri.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-06</news:publication_date><news:title>Almasri, la Consulta: Bartolozzi si può processare senza il sì della Camera</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-06-arkea-cyberattacco-100-milioni.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
