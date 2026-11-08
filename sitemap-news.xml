@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url><loc>https://contrappunto.news/articoli/2026-11-08-trump-indagini-democratici.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-08</news:publication_date><news:title>Trump ordina al dipartimento di Giustizia di indagare sui democratici</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-08-tajani-dati-dark-web-comitato.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-08</news:publication_date><news:title>Tajani: i miei dati sul dark web, e c'è chi paga per quelli dei familiari</news:title>
@@ -11,10 +15,6 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-08-iran-hormuz-mine-task-force.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-08</news:publication_date><news:title>Iran, gli Usa lanciano «Iron Gate» contro le rotte di terra di Teheran</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-ceuta-campo-migranti-porto.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Ceuta svuota il campo migranti: chi ha l'asilo respinto torna in Marocco</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-08-bollette-decreto-bis-rinviato.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
