@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url><loc>https://contrappunto.news/articoli/2026-11-09-ue-emissioni-2030-piani-correttivi-italia.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-09</news:publication_date><news:title>Emissioni, l'Ue chiederà all'Italia e ad altri otto Paesi un piano correttivo</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-09-ucraina-abu-dhabi-trump-europa.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-09</news:publication_date><news:title>Trump prima di Abu Dhabi: l'Ucraina avrà «una forma un po' diversa»</news:title>
@@ -19,10 +23,6 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-09-papa-milei-argentina.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-09</news:publication_date><news:title>Il Papa davanti a Milei: l'economia deve essere al servizio della persona</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-09-orban-fratello-arrestato-traffico.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-09</news:publication_date><news:title>Magyar: fermato il fratello di Orbán con il sospetto di contrabbando di persone (da confermare)</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-09-nvidia-huang-indagine-cina.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
@@ -44,13 +44,29 @@
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-09</news:publication_date><news:title>Rubio difende la guerra all'Iran dopo il voto perso: «necessaria»</news:title>
 </news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-09-francia-salario-minimo-lecornu.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-09</news:publication_date><news:title>Francia, Lecornu anticipa l'aumento del salario minimo: 24 euro netti in più</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-09-ex-ilva-arvedi-jindal.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-09</news:publication_date><news:title>Ex Ilva, offerte segrete di Arvedi e Jindal: fino a 390 milioni pubblici in bilico</news:title>
 </news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-09-cybersicurezza-tajani-piantedosi.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-09</news:publication_date><news:title>Cyber, Tajani accusa la sinistra. L'Agenzia aveva 422 addetti, ne prevede 669</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-09-credit-agricole-banco-bpm-fusione.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-09</news:publication_date><news:title>Crédit Agricole propone a Banco Bpm la fusione, con 1 miliardo di dividendo</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-09-cina-usa-tregua-dazi-proroga.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-09</news:publication_date><news:title>Cina-Usa, Pechino proroga di due mesi la tregua sui dazi</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-09-brasile-inquerito-fake-news-archiviazione.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-09</news:publication_date><news:title>Brasile, la Procura chiede di archiviare l'inchiesta sulle fake news</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-08-trump-indagini-democratici.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
