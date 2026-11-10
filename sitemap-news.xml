@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url><loc>https://contrappunto.news/articoli/2026-11-10-trump-iran-guerra-finita.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-10</news:publication_date><news:title>Trump: l'Iran militarmente è «finito», nuovi attacchi Usa «improbabili»</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-10-hegseth-impeachment-massie.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-10</news:publication_date><news:title>Impeachment di Hegseth, il repubblicano Massie forza il voto alla Camera entro mercoledì</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-10-corte-suprema-muro-big-bend.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-10</news:publication_date><news:title>Corte suprema Usa, via libera al muro di Trump a Big Bend</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-10-cina-surplus-commerciale-mille-miliardi.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-10</news:publication_date><news:title>Cina, surplus commerciale oltre i mille miliardi di dollari in dieci mesi</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-10-california-tassa-miliardari-respinta.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-10</news:publication_date><news:title>California, gli elettori bocciano la tassa sui miliardari (Prop 40)</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-09-ue-emissioni-2030-piani-correttivi-italia.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-09</news:publication_date><news:title>Emissioni, l'Ue chiederà all'Italia e ad altri otto Paesi un piano correttivo</news:title>
@@ -23,6 +43,10 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-09-spagna-tiktok-sospensione.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-09</news:publication_date><news:title>Spagna, il governo ipotizza lo stop a TikTok per i video di abusi su minori</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-09-spagna-supremo-voto-legge-nipoti.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-09</news:publication_date><news:title>Spagna, il Supremo respinge Vox: votano quasi 190.000 figli di nuovi cittadini</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-09-papa-milei-argentina.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
@@ -119,9 +143,5 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-08-bollette-decreto-bis-rinviato.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-08</news:publication_date><news:title>Bollette, rinviato a lunedì il tetto al gas: 17 euro l'anno di risparmio (Ecco)</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-07-cracovia-sparatoria-rynek.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-07</news:publication_date><news:title>Cracovia, uomo spara sui passanti in piazza: sei vittime (bilancio provvisorio)</news:title>
 </news:news></url>
 </urlset>
