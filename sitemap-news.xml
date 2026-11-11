@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url><loc>https://contrappunto.news/articoli/2026-11-11-spia-usa-arrestato-regno-unito-russia.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-11</news:publication_date><news:title>Arrestato in Inghilterra militare USA di un comando NATO: sospettato di spiare per Mosca</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-11-repubblicani-dopo-le-midterm-jordan-thune.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-11</news:publication_date><news:title>Jim Jordan, alleato di Trump, guiderà i repubblicani sconfitti alla Camera</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-11-inflazione-usa-ottobre-fed-dollaro.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-11</news:publication_date><news:title>Inflazione USA +0,4% a ottobre, più del previsto: la Fed verso il rialzo a dicembre</news:title>
+</news:news></url>
+<url><loc>https://contrappunto.news/articoli/2026-11-11-abu-dhabi-quadro-sicurezza-europa.html</loc><news:news>
+  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
+  <news:publication_date>2026-11-11</news:publication_date><news:title>Ucraina, Washington chiede ad Abu Dhabi un nuovo quadro di sicurezza con Mosca</news:title>
+</news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-10-viminale-cyberattacchi-allarmi-bomba.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-10</news:publication_date><news:title>Attacchi hacker, vertice al Viminale: più coordinamento, nessuna cifra sui fondi</news:title>
@@ -36,9 +52,9 @@
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-10</news:publication_date><news:title>Israele, il partito di Eisenkot presenta la legge per l'inchiesta sul 7 ottobre</news:title>
 </news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-10-hegseth-impeachment-massie.html</loc><news:news>
+<url><loc>https://contrappunto.news/articoli/2026-11-10-houellebecq-indagato-odio-islam.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-10</news:publication_date><news:title>Hegseth, il repubblicano Massie forza il voto sull'impeachment entro mercoledì</news:title>
+  <news:publication_date>2026-11-10</news:publication_date><news:title>Houellebecq indagato in Francia per istigazione all'odio (nessun processo per ora)</news:title>
 </news:news></url>
 <url><loc>https://contrappunto.news/articoli/2026-11-10-giorgetti-tredicesimo-pacchetto-kiev.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
@@ -167,45 +183,5 @@
 <url><loc>https://contrappunto.news/articoli/2026-11-09-anac-presidente-nomina.html</loc><news:news>
   <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
   <news:publication_date>2026-11-09</news:publication_date><news:title>Anac, salta il nome promesso da Salvini: Busia resta in proroga</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-trump-indagini-democratici.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Trump ordina al dipartimento di Giustizia di indagare sui democratici</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-trieste-dipiazza-sparo-in-testa.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Trieste, Dipiazza su chi lancia bombe carta: «Io gli sparo in testa»</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-tajani-dati-dark-web-comitato.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Tajani: i miei dati sul dark web, e c'è chi paga per quelli dei familiari</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-russia-rosstat-hack-morti-guerra.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Hacker: 394-450 mila russi morti in guerra nei registri Rosstat (non verificato)</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-kiev-raid-vigilia-abu-dhabi.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Mosca bombarda Kiev e manda i militari al tavolo di Abu Dhabi</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-iran-hormuz-mine-task-force.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Iran, gli Usa lanciano «Iron Gate» contro le rotte di terra di Teheran</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-houthi-aramco-riad.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Attacco houthi a Riad, danni alla torre Aramco (lievi, per i sauditi)</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-gasolio-fine-taglio-accise.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Gasolio, finito lo sconto sulle accise: +4,9 centesimi al litro con l'Iva</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-ceuta-campo-migranti-porto.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Ceuta svuota il campo migranti: chi ha l'asilo respinto torna in Marocco</news:title>
-</news:news></url>
-<url><loc>https://contrappunto.news/articoli/2026-11-08-bollette-decreto-bis-rinviato.html</loc><news:news>
-  <news:publication><news:name>Contrappunto</news:name><news:language>it</news:language></news:publication>
-  <news:publication_date>2026-11-08</news:publication_date><news:title>Bollette, rinviato a lunedì il tetto al gas: 17 euro l'anno di risparmio (Ecco)</news:title>
 </news:news></url>
 </urlset>
