@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel><title>Contrappunto</title><link>https://contrappunto.news/</link><description>Ogni notizia, soppesata: le fonti di tutti i fronti a confronto.</description><language>it</language>
+<item><title>Chip Nvidia H200 finiti a un'università cinese in lista nera USA</title><link>https://contrappunto.news/articoli/2026-11-12-nvidia-h200-universita-cinese.html</link><guid>https://contrappunto.news/articoli/2026-11-12-nvidia-h200-universita-cinese.html</guid>
+  <pubDate>Thu, 12 Nov 2026 06:00:00 +0000</pubDate>
+  <description>Due chip non provano che i controlli falliscono, ma una regola che si regge sulle autocertificazioni va fatta rispettare: meglio poche regole chiare e applicate che divieti a pioggia.</description></item>
+<item><title>Mississippi, il democratico Colom batte Hyde-Smith e strappa il seggio al Senato</title><link>https://contrappunto.news/articoli/2026-11-12-mississippi-colom-senato.html</link><guid>https://contrappunto.news/articoli/2026-11-12-mississippi-colom-senato.html</guid>
+  <pubDate>Thu, 12 Nov 2026 06:00:00 +0000</pubDate>
+  <description>A nostro avviso il Mississippi ha votato sui prezzi: ai repubblicani conviene abbassarli, non spiegarli.</description></item>
+<item><title>Cop31, Guterres: i combustibili fossili devono fare la fine dei dinosauri</title><link>https://contrappunto.news/articoli/2026-11-12-cop31-guterres-fossili.html</link><guid>https://contrappunto.news/articoli/2026-11-12-cop31-guterres-fossili.html</guid>
+  <pubDate>Thu, 12 Nov 2026 06:00:00 +0000</pubDate>
+  <description>Gli obiettivi sul clima vanno bene, i divieti per legge e i sussidi verdi no: il conto finisce nelle bollette.</description></item>
+<item><title>Brasile, Lula chiede di escludere i sussidi al diesel dall'obiettivo di bilancio</title><link>https://contrappunto.news/articoli/2026-11-12-brasile-ajuste-fiscal-diesel.html</link><guid>https://contrappunto.news/articoli/2026-11-12-brasile-ajuste-fiscal-diesel.html</guid>
+  <pubDate>Thu, 12 Nov 2026 06:00:00 +0000</pubDate>
+  <description>Togliere una spesa dal conto della meta non è un taglio: la spesa resta, cambia solo come la si misura.</description></item>
 <item><title>Droni ucraini sui data center: Yandex perde per sempre il 2,84% dei dati cloud</title><link>https://contrappunto.news/articoli/2026-11-11-yandex-cloud-dati-persi-droni.html</link><guid>https://contrappunto.news/articoli/2026-11-11-yandex-cloud-dati-persi-droni.html</guid>
   <pubDate>Wed, 11 Nov 2026 06:00:00 +0000</pubDate>
   <description>Un backup nello stesso posto non è un backup: in Italia imprese e PA copino i dati critici in sedi diverse, e lo Stato cominci dai suoi.</description></item>
@@ -36,6 +48,9 @@
 <item><title>Fairford: gli USA incriminano tre uomini legati all'Iran (per l'accusa)</title><link>https://contrappunto.news/articoli/2026-11-11-fairford-tre-agenti-iraniani-incriminati.html</link><guid>https://contrappunto.news/articoli/2026-11-11-fairford-tre-agenti-iraniani-incriminati.html</guid>
   <pubDate>Wed, 11 Nov 2026 06:00:00 +0000</pubDate>
   <description>Un atto d'accusa non è un verdetto. Per le basi in Italia il rischio vero potrebbero essere persone reclutate sul posto, più che i missili.</description></item>
+<item><title>Difesa, piano Crosetto: 22 miliardi per armamenti oltre il 2031</title><link>https://contrappunto.news/articoli/2026-11-11-difesa-dpp-22-miliardi-crosetto.html</link><guid>https://contrappunto.news/articoli/2026-11-11-difesa-dpp-22-miliardi-crosetto.html</guid>
+  <pubDate>Wed, 11 Nov 2026 06:00:00 +0000</pubDate>
+  <description>Difendere il paese è un compito dello Stato, ma un esercito con armi nuove e risorse d'esercizio in calo non è difeso meglio.</description></item>
 <item><title>Morto a 66 anni l'ambasciatore russo negli USA, Aleksandr Darchiev</title><link>https://contrappunto.news/articoli/2026-11-11-darchiev-ambasciatore-russo-usa-morto.html</link><guid>https://contrappunto.news/articoli/2026-11-11-darchiev-ambasciatore-russo-usa-morto.html</guid>
   <pubDate>Wed, 11 Nov 2026 06:00:00 +0000</pubDate>
   <description>Il negoziato con Mosca lo fanno Putin, Witkoff e Kushner, non l'ambasciata: cambia poco, conta chi arriverà dopo.</description></item>
@@ -105,19 +120,4 @@
 <item><title>California, gli elettori bocciano la tassa sui miliardari (Prop 40)</title><link>https://contrappunto.news/articoli/2026-11-10-california-tassa-miliardari-respinta.html</link><guid>https://contrappunto.news/articoli/2026-11-10-california-tassa-miliardari-respinta.html</guid>
   <pubDate>Tue, 10 Nov 2026 06:00:00 +0000</pubDate>
   <description>Una patrimoniale «una tantum» contro chi può andarsene: un avviso per chi la propone in Italia.</description></item>
-<item><title>Manovra 2027: alle banche 4,8 miliardi di tasse in tre anni</title><link>https://contrappunto.news/articoli/2026-11-10-banche-manovra-22-miliardi-abi.html</link><guid>https://contrappunto.news/articoli/2026-11-10-banche-manovra-22-miliardi-abi.html</guid>
-  <pubDate>Tue, 10 Nov 2026 06:00:00 +0000</pubDate>
-  <description>Il 22 dell'Abi somma tre manovre e conta anche gli anticipi; il conto che resta è l'Irap più alta senza scadenza, circa 1,15 miliardi l'anno con le assicurazioni.</description></item>
-<item><title>Gli Usa spostano aerei da una seconda base britannica per la «minaccia dell'Iran» (WSJ)</title><link>https://contrappunto.news/articoli/2026-11-10-aerei-usa-basi-uk-minaccia-iran.html</link><guid>https://contrappunto.news/articoli/2026-11-10-aerei-usa-basi-uk-minaccia-iran.html</guid>
-  <pubDate>Tue, 10 Nov 2026 06:00:00 +0000</pubDate>
-  <description>Per Trump la guerra con l'Iran è «finita», ma chi ospita le basi americane ne porta ancora il rischio, e nessuno spiega di quale minaccia si tratti.</description></item>
-<item><title>Gasolio, tornano le accise mobili: taglio di 4,9 centesimi fino al 23 novembre</title><link>https://contrappunto.news/articoli/2026-11-10-accise-mobili-gasolio-4-9-centesimi.html</link><guid>https://contrappunto.news/articoli/2026-11-10-accise-mobili-gasolio-4-9-centesimi.html</guid>
-  <pubDate>Tue, 10 Nov 2026 06:00:00 +0000</pubDate>
-  <description>Non è una tassa più bassa: è l'Iva incassata in più sui rincari che torna a rate per due settimane. Meglio un taglio stabile, deciso una volta sola.</description></item>
-<item><title>Rubio prima di Abu Dhabi: anche Mosca deve accettare le garanzie per Kiev</title><link>https://contrappunto.news/articoli/2026-11-10-abu-dhabi-colloqui-garanzie-rubio.html</link><guid>https://contrappunto.news/articoli/2026-11-10-abu-dhabi-colloqui-garanzie-rubio.html</guid>
-  <pubDate>Tue, 10 Nov 2026 06:00:00 +0000</pubDate>
-  <description>L'ha detto il 9 novembre a Parigi, «in order for it to work»: le testate italiane che abbiamo letto la tacciono, TASS e UNN la gonfiano. Il nodo è chi farà scattare la garanzia, e Roma deve sapere chi paga e quanto.</description></item>
-<item><title>Emissioni, l'Ue chiederà all'Italia e ad altri otto Paesi un piano correttivo</title><link>https://contrappunto.news/articoli/2026-11-09-ue-emissioni-2030-piani-correttivi-italia.html</link><guid>https://contrappunto.news/articoli/2026-11-09-ue-emissioni-2030-piani-correttivi-italia.html</guid>
-  <pubDate>Mon, 09 Nov 2026 06:00:00 +0000</pubDate>
-  <description>Una regola firmata si rispetta o si cambia apertamente. Ma quote nazionali fisse per settore non premiano la tecnologia che costa meno.</description></item>
 </channel></rss>
